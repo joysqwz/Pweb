@@ -1,3 +1,27 @@
+let activeButton = null; 
+let saveButton = null; 
+
+function changeMode(button) {
+		if (activeButton) {
+				activeButton.classList.remove('button--active');
+				activeButton.classList.add('button--inactive');
+		}
+		activeButton = button;
+		activeButton.classList.add('button--active');
+		activeButton.classList.remove('button--inactive');
+}
+
+function saveMode() {
+		if (activeButton) {
+				if (activeButton.classList.contains('button--save')) {
+						activeButton.classList.remove('button--save');
+						activeButton.classList.add('button--active');
+				} else {
+						activeButton.classList.remove('button--active');
+						activeButton.classList.add('button--save');
+				}
+		}
+}
 // const wrapper = document.querySelector('.wrapper');
 // const loginLink = document.querySelector('.login-link');
 // const registerLink = document.querySelector('.register-link');
