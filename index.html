@@ -26,12 +26,54 @@
   </header>
 
   <main class="content">
-    <div class="content__body container">
+    <div class="content__body">
       <div class="button-list">
         <button type="button" class='button button--inactive' onClick='changeMode(this)' id='btn-one'>Лист 1</button>
         <button type="button" class='button button--inactive' onClick='changeMode(this)' id='btn-two'>Лист 2</button>
         <button type="button" class='button button--inactive' onClick='changeMode(this)' id='btn-three'>Лист 3</button>
         <button type="button" class='button button--inactive' onClick='changeMode(this)' id='btn-four'>Лист 4</button>
+      </div>
+      <div class="content__wrapper container">
+        <img
+        class="logo__main"
+        src="./images/logoMtA.svg"
+        alt=""
+        width="140" height="80" loading="lazy"
+      />
+      <div class="content__main">
+        <div class="first-page">
+          <div class="basic">
+              <div class="basic__list">
+                <label for="Name">Имя:</label>
+                <input type="text" name='Name'>
+                <label for="Player">Игрок:</label>
+                <input type="text" name='Player'>
+                <label for="Chronicle">Хроника:</label>
+                <input type="text" name='Chronicle'>
+              </div>
+              <div class="basic__list">
+                <label for="Nature">Натура:</label>
+                <input type="text" name='Nature'>
+                <label for="Mask">Маска:</label>
+                <input type="text" name='Mask'>
+                <label for="Energy">Энергия:</label>
+                <input type="text" name='Energy'>
+              </div>
+              <div class="basic__list">
+                <label for="Faction">Фракция:</label>
+                <input type="text" name='Faction'>
+                <label for="Sect">Секта:</label>
+                <input type="text" name='Sect'>
+                <label for="Concept">Концепция:</label>
+                <input type="text" name='Concept'>
+              </div>
+              
+          </div>
+        </div>
+        <div class="second-page visually-hidden">2</div>
+        <div class="third-page visually-hidden">3</div>
+        <div class="fourth-page visually-hidden">4</div>
+      </div>
       </div>
     </div>
 

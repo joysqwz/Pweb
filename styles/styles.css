@@ -158,7 +158,7 @@ svg * {
   font-display: swap;
 }
 @font-face {
-  font-family: "Lato";
+  font-family: "Lato-Regular";
   src: url("./fonts/Lato-Regular.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
@@ -346,4 +346,69 @@ body {
   -webkit-backdrop-filter: blur(6px);
           backdrop-filter: blur(6px);
   box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.1);
+}
+
+.content__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 10px;
+  border-radius: 24px;
+  margin-top: 20px;
+  height: 100%;
+  width: 100%;
+  gap: 20px;
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 24px 1px rgba(0, 0, 0, 0.15);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+}
+
+.content__main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.first-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.basic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.basic__list {
+  display: grid;
+  align-items: center;
+  row-gap: 5px;
+  grid-template: 1fr 1fr/1fr 2.2fr;
+}
+.basic__list input {
+  all: unset;
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 24px;
+  padding: 0 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(255, 115, 216, 0);
+  transition-duration: 0.2s;
+}
+@media (hover: hover) {
+  .basic__list input:hover {
+    border: 2px solid rgba(255, 115, 216, 0.2);
+  }
+}
+@media (hover: none) {
+  .basic__list input:active {
+    border: 2px solid rgba(255, 115, 216, 0.2);
+  }
 }/*# sourceMappingURL=styles.css.map */

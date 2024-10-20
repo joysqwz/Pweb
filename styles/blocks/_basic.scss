@@ -1,0 +1,27 @@
+.basic {
+	@include flex-center;
+	gap: 30px;
+	// max-height: 250px;
+
+	&__list {
+		display: grid;
+		align-items: center;
+		row-gap: 5px;
+		grid-template: 1fr 1fr / 1fr 2.2fr;
+
+	input {
+		all: unset;
+		width: 80%;
+		background-color: rgba(255, 255, 255, 0.5);
+		border-radius: 24px;
+		padding: 0 10px;
+		box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+		border: 2px solid rgba(255, 115, 216, 0);
+		transition-duration: 0.2s;
+		
+		@include hover {
+			border: 2px solid rgba(255, 115, 216, 0.2);
+		}
+	}
+	}
+}
