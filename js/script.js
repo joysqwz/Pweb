@@ -52,17 +52,6 @@ function saveMode() {
 				}
 		}
 }
-// const wrapper = document.querySelector('.wrapper');
-// const loginLink = document.querySelector('.login-link');
-// const registerLink = document.querySelector('.register-link');
-
-// registerLink.addEventListener('click', ()=> {
-// 	wrapper.classList.add('active');
-// });
-
-// loginLink.addEventListener('click', ()=> {
-// 	wrapper.classList.remove('active');
-// });
 
 (function() {
 	var canvas = document.createElement('canvas'),
@@ -78,8 +67,8 @@ function saveMode() {
 
 	// Устанавливаем размеры канваса
 	function setCanvasSize() {
-			canvas.width = innerWidth;
-			canvas.height = innerHeight;
+			canvas.width = document.body.clientWidth; // Ширина body
+			canvas.height = document.body.clientHeight; // Высота body
 	}
 
 	// Добавляем изображения в массив
@@ -100,11 +89,7 @@ function saveMode() {
 	canvas.style.left = '0';
 	canvas.style.zIndex = '0';
 
-	document.querySelector('body').appendChild(canvas);
-
-	// Убираем отступы и прокрутку
-	// document.body.style.margin = '0';
-	// document.body.style.overflow = 'hidden';
+	document.querySelector('body').appendChild(canvas); // Добавляем canvas в body
 
 	// Устанавливаем размеры канваса при загрузке
 	setCanvasSize();
