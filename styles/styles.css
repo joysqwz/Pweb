@@ -179,7 +179,7 @@ svg * {
   --color-border-btn-fill: var(--color-accent500);
   --font-family-base: "Lato", sans-serif;
   --font-family-content: "Goudy Bookletter 1911", sans-serif;
-  --container-width: 1280px;
+  --container-width: 1240px;
   --container-padding-x: 20px;
 }
 
