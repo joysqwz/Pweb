@@ -3,7 +3,7 @@
 	height: 100%;
 
   background-color: rgba(255, 255, 255, 0.9);
-  border: 2px outset var(--color-accent-trans-50);
+  border: 2px outset var(--color-accent50);
   border-radius: 25px;
   backdrop-filter: blur(3px);
   box-shadow: 0 0 30px 6px rgba(0, 0, 0, 0.15), inset 0 0 24px 3px rgba(0, 0, 0, 0.1);
@@ -76,7 +76,7 @@
 	margin-bottom: 4px;
 	cursor: pointer;
   border: none;
-	background-color: var(--color-accent-trans-50);
+	background-color: var(--color-accent500);
   color: rgb(0, 0, 0);
 }
 

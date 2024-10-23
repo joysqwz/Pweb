@@ -4,6 +4,10 @@
   padding-inline: var(--container-padding-x);
 }
 
+.heading {
+  font-family:'Goudy Bookletter 1911';
+}
+
 .visually-hidden {
   @include visually-hidden;
 }
