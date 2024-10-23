@@ -13,7 +13,7 @@
   <header class="header">
     <div class="header__inner container ">
       <a class="header__logo logo" href="/Pweb/">
-        <img class="logo__image" src="./images/logo.svg" alt="logo" width="40" height="40" loading="lazy" />
+        <img class="logo__image" src="./images/logo.svg" alt="logo" width="40" height="40" loading="lazy">
       </a>
       <div class="button__wrapper">
         <button class='button-auth' id='openBtn'>Войти</button>
@@ -23,11 +23,11 @@
             <form class="auth form">
               <div class="input-group">
                 <label for="username">Логин</label>
-                <input type="text" name="username" id="username" placeholder="">
+                <input type="text" name="username" id="username" placeholder="qwerty">
               </div>
               <div class="input-group">
                 <label for="password">Пароль</label>
-                <input type="password" name="password" id="password" placeholder="">
+                <input type="password" name="password" id="password" placeholder="********">
                 <div class="forgot">
                   <a rel="noopener noreferrer" href="#">Восстановить пароль?</a>
                 </div>
@@ -43,19 +43,22 @@
             <form class="reg form">
               <div class="input-group">
                 <label for="username">Логин</label>
-                <input type="text" name="username" id="reg-username" placeholder="">
+                <input type="text" name="username" id="reg-username" placeholder="qwerty">
               </div>
               <div class="input-group">
-                <label for="mail">Адрес электронной почты</label>
-                <input type="mail" name="mail" id="reg-mail" placeholder="">
+                <label for="reg-email">Адрес электронной почты</label>
+                <input type="email" name="email" id="reg-email" placeholder="qwerty@mail.com">
               </div>
               <div class="input-group">
                 <label for="password">Пароль</label>
-                <input type="password" name="password" id="reg-password" placeholder="">
+                <input type="password" name="password" id="reg-password" placeholder="********">
               </div>
               <div class="input-group">
                 <label for="password">Подтверждение пароля</label>
-                <input type="password" name="password" id="reg-conf-password" placeholder="">
+                <input type="password" name="password" id="reg-conf-password" placeholder="********">
+                <div class="forgot">
+                  <a rel="noopener noreferrer" href="#">Восстановить пароль?</a>
+                </div>
               </div>
               <button class="sign">Зарегистрироваться</button>
             </form>
@@ -63,9 +66,9 @@
               <a rel="noopener noreferrer" href="#" class="login-link">Войти</a>
             </p>
           </div>
-        </div>
         </dialog>
       </div>
+    </div>
   </header>
 
   <main class="content">
@@ -77,33 +80,34 @@
         <button type="button" class='button button--inactive' onClick='changeMode(this)' id='btn-four'>Лист 4</button>
       </div>
       <div class="content__wrapper container">
-        <img class="logo__main" src="./images/MageAscensionRevisedLogo.png" alt="" width="140" height="80" loading="lazy" />
+        <img class="logo__main" src="./images/MageAscensionRevisedLogo.png" alt="" width="160" height="80"
+          loading="lazy">
         <div class="content__main">
           <div class="first-page">
             <div class="basic">
               <div class="basic__list">
                 <label for="Name">Имя:</label>
-                <input type="text" name='Name'>
+                <input type="text" name='Name' id='Name'>
                 <label for="Player">Игрок:</label>
-                <input type="text" name='Player'>
+                <input type="text" name='Player' id='Player'>
                 <label for="Chronicle">Хроника:</label>
-                <input type="text" name='Chronicle'>
+                <input type="text" name='Chronicle' id='Chronicle'>
               </div>
               <div class="basic__list">
                 <label for="Nature">Натура:</label>
-                <input type="text" name='Nature'>
+                <input type="text" name='Nature' id='Nature'>
                 <label for="Mask">Маска:</label>
-                <input type="text" name='Mask'>
+                <input type="text" name='Mask' id='Mask'>
                 <label for="Energy">Энергия:</label>
-                <input type="text" name='Energy'>
+                <input type="text" name='Energy' id='Energy'>
               </div>
               <div class="basic__list">
                 <label for="Faction">Фракция:</label>
-                <input type="text" name='Faction'>
+                <input type="text" name='Faction' id='Faction'>
                 <label for="Sect">Секта:</label>
-                <input type="text" name='Sect'>
+                <input type="text" name='Sect' id='Sect'>
                 <label for="Concept">Концепция:</label>
-                <input type="text" name='Concept'>
+                <input type="text" name='Concept' id='Concept'>
               </div>
             </div>
           </div>
