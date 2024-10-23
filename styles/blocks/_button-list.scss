@@ -9,22 +9,22 @@
 	transition-duration: 0.2s;
 
 	&--active {
-	background-color: rgba(255, 115, 216, 0.3);
-	border-color:  rgba(255, 115, 216, 0.4);
-	box-shadow: 0 0 12px 2px rgba(255, 115, 216, 1);
-	}
-	&--inactive {
-		background-color: rgba(251, 194, 235, 0.6);
-		border-color:  rgb(251, 194, 235);
-	}
-	&--fill {
-		color: rgba(0,0,0, 0.6);
-		background-color: rgba(251, 194, 235, 0.2);
-		border-color:  rgba(251, 194, 235, 0.3);
-	}
+		background-color: var(--color-back-btn-active);
+		border-color:  var(--color-borer-btn-active);
+		box-shadow: 0 0 9px 3px var(--color-shadow-btn-active);
+		}
+		&--inactive {
+			background-color: var(--color-back-btn-inactive);
+			border-color:  var(--color-border-btn-inactive);
+		}
+		&--fill {
+			color: rgba(0,0,0, 0.6);
+			background-color: var(--color-back-btn-fill);
+			border-color: var(--color-border-btn-fill);
+		}
 
 	@include hover {
-		transform: translateY(-3px);
+		transform: translateY(-2px);
 	}
 }
 

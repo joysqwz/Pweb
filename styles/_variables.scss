@@ -1,9 +1,18 @@
 :root {
   --color-dark: #191A23;
   --color-light: #FFFFFF;
-  --color-accent: #B9FF66;
+  --color-accent: #B18AFF;
+  --color-accent-trans-20: rgba(177, 138, 255, 0.2);
+  --color-accent-trans-50: rgba(177, 138, 255, 0.5);
+  --color-back-btn-active: var(--color-accent-trans-50);
+  --color-borer-btn-active: var(--color-accent-trans-20);
+  --color-shadow-btn-active: var(--color-accent);
+  --color-back-btn-inactive: var(--color-accent-trans-50);
+  --color-border-btn-inactive: var(--color-accent);
+  --color-back-btn-fill: var(--color-accent-trans-20);
+  --color-border-btn-fill: var(--color-accent-trans-50);
   --font-family-base: 'Lato', sans-serif;
   --font-family-content: 'Goudy Bookletter 1911', sans-serif;
-  --container-width: 1240px;
+  --container-width: 1280px;
   --container-padding-x: 20px;
 }

@@ -1,4 +1,34 @@
-let activeButton = null; 
+const form = document.querySelector('.button__wrapper')
+const loginLink = document.querySelector('.login-link')
+const registerLink = document.querySelector('.register-link')
+
+registerLink.addEventListener('click', () => {
+	form.classList.add('active')
+})
+
+loginLink.addEventListener('click', () => {
+	form.classList.remove('active')
+})
+
+
+openBtn.addEventListener('click', () => {
+	modal.show()
+})
+
+document.addEventListener('click', (e) => {
+	const isClickOnOpenBtn = e.target === openBtn;
+	if (isClickOnOpenBtn) return
+	const isClickOnDialog = e.target === modal;
+	const isClickOnDialogContent = modal.contains(e.target)
+	const isClickOutsideOfDialog = !(
+		isClickOnDialog || isClickOnDialogContent
+	);
+	if (isClickOutsideOfDialog) {
+		modal.close()
+	}
+})
+
+let activeButton = document.getElementById('btn-one');
 let saveButton = null; 
 
 function changeMode(button) {
