@@ -1,6 +1,10 @@
 :root {
-  --color-dark: #191A23;
-  --color-light: #FFFFFF;
+  --font-family-base: 'Lato', sans-serif;
+  --font-family-content: 'GoudyBookletter1911', sans-serif;
+  --font-family-title: 'PTSerif', sans-serif;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-gray: #cccccc;
   --color-accent: #B18AFF;
   --color-accent200: rgba(177, 138, 255, 0.2);
   --color-accent500: rgba(177, 138, 255, 0.5);
@@ -11,8 +15,6 @@
   --color-border-btn-inactive: var(--color-accent);
   --color-back-btn-fill: var(--color-accent200);
   --color-border-btn-fill: var(--color-accent500);
-  --font-family-base: 'Lato', sans-serif;
-  --font-family-content: 'Goudy Bookletter 1911', sans-serif;
   --container-width: 1240px;
   --container-padding-x: 20px;
 }

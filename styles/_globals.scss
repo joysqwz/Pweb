@@ -1,4 +1,19 @@
 body {
   font-family: var(--font-family-base);
+  font-weight: 400;
+  color: var(--color-black);
+}
 
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 14px;
+}
+
+h2, h3 {
+  font-family: var(--font-family-title);
+  font-weight: 400;
+  margin: 0;
 }

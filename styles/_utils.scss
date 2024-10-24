@@ -2,6 +2,10 @@
   max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
   margin-inline: auto;
   padding-inline: var(--container-padding-x);
+
+  @include desktop {
+    margin-inline: 10px;
+  }
 }
 
 .heading {
