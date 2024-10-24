@@ -23,25 +23,12 @@
 	align-items: center;
 
 	label {
-		width: 120px;
+		width: 160px;
 	}
 
-	&--label-width150 {
+	&--width90 {
 		label {
-			width: 150px;
-		}
-	}
-
-	&--underline {
-		>label {
-			width: 180px;
-
-			&::after {
-				content: '';
-				display: block;
-				height: 1px;
-				background: var(--color-black);
-			}
+			width: 90px;
 		}
 	}
 }
