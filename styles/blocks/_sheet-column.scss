@@ -1,0 +1,58 @@
+.sheet-3colrow {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 40px;
+
+	&--gap100 {
+		gap: 100px;
+	}
+}
+
+.sheet-col {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	gap: 10px;
+	font-size: 16px;
+	font-family: var(--font-family-content);
+}
+
+.col-group {
+	display: flex;
+	align-items: center;
+
+	label {
+		width: 120px;
+	}
+
+	&--label-width150 {
+		label {
+			width: 150px;
+		}
+	}
+
+	&--underline {
+		>label {
+			width: 180px;
+
+			&::after {
+				content: '';
+				display: block;
+				height: 1px;
+				background: var(--color-black);
+			}
+		}
+	}
+}
+
+.label-underline {
+	label {
+		&::after {
+			content: '';
+			display: block;
+			height: 1px;
+			background: var(--color-black);
+		}
+	}
+}

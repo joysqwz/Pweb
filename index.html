@@ -13,7 +13,7 @@
   <header class="header">
     <div class="header__inner container">
       <a class="header__logo logo" href="/Pweb/">
-        <img class="logo__image" src="./images/logo.svg" alt="logo" width="40" height="40" loading="lazy">
+        <img class="logo__image" src="./images/logo.svg" alt="logo" width="50" height="50" loading="lazy">
       </a>
       <div class="button__wrapper">
         <button class='button-auth' id='openBtn'>Войти</button>
@@ -73,49 +73,204 @@
       <div class="button-list">
         <button type="button" class='button button--active' onClick='changeMode(this)' id='btn-one'>Лист 1</button>
         <button type="button" class='button button--inactive' onClick='changeMode(this)' id='btn-two'>Лист 2</button>
-        <button type="button" class='button button--fill' onClick='changeMode(this)' id='btn-three'>Лист 3</button>
+        <button type="button" class='button button--inactive' onClick='changeMode(this)' id='btn-three'>Лист 3</button>
         <button type="button" class='button button--inactive' onClick='changeMode(this)' id='btn-four'>Лист 4</button>
       </div>
       <div class="content__wrapper container">
         <img class="logo__main" src="./images/logoMtA.png" alt="" width="160" height="80" loading="lazy">
+
         <div class="first-page">
           <div class="sheet-3colrow">
             <div class="sheet-col">
               <div class="col-group">
-                <label>Имя:</label><input type="text" name="attr_character_name">
+                <label>Имя:</label><input type="text" name="attr_character_name" class='input-base'>
               </div>
               <div class="col-group">
-                <label>Игрок:</label><input type="text" name="attr_player">
+                <label>Игрок:</label><input type="text" name="attr_player" class='input-base'>
               </div>
               <div class="col-group">
-                <label>Хроника:</label><input type="text" name="attr_Chronicle">
-              </div>
-            </div>
-            <div class="sheet-col">
-              <div class="col-group">
-                <label>Натура:</label><input type="text" name="attr_Nature">
-              </div>
-              <div class="col-group">
-                <label>Маска:</label><input type="text" name="attr_Mask">
-              </div>
-              <div class="col-group">
-                <label>Энергия:</label><input type="text" name="attr_Energy">
+                <label>Хроника:</label><input type="text" name="attr_Chronicle" class='input-base'>
               </div>
             </div>
             <div class="sheet-col">
               <div class="col-group">
-                <label>Фракция:</label><input type="text" name="attr_Fraction">
+                <label>Натура:</label><input type="text" name="attr_Nature" class='input-base'>
               </div>
               <div class="col-group">
-                <label>Секта:</label><input type="text" name="attr_Sect">
+                <label>Маска:</label><input type="text" name="attr_Mask" class='input-base'>
               </div>
               <div class="col-group">
-                <label>Концепция:</label><input type="text" name="attr_Concept">
+                <label>Энергия:</label><input type="text" name="attr_Energy" class='input-base'>
+              </div>
+            </div>
+            <div class="sheet-col">
+              <div class="col-group">
+                <label>Фракция:</label><input type="text" name="attr_Fraction" class='input-base'>
+              </div>
+              <div class="col-group">
+                <label>Секта:</label><input type="text" name="attr_Sect" class='input-base'>
+              </div>
+              <div class="col-group">
+                <label>Концепция:</label><input type="text" name="attr_Concept" class='input-base'>
               </div>
             </div>
           </div>
+
+          <div class="attributes">
+            <h2>Атрибуты</h2>
+            <div class="sheet-3colrow">
+              <div class="sheet-col sheet-col-center">
+                <h3>Физические</h3>
+                <div class="col-group col-group--underline">
+                  <label>Сила</label>
+                  <div class="rating">
+                    <input value="5" name="strength" id="strength-5" type="radio">
+                    <label for="strength-5"></label>
+                    <input value="4" name="strength" id="strength-4" type="radio">
+                    <label for="strength-4"></label>
+                    <input value="3" name="strength" id="strength-3" type="radio">
+                    <label for="strength-3"></label>
+                    <input value="2" name="strength" id="strength-2" type="radio">
+                    <label for="strength-2"></label>
+                    <input value="1" name="strength" id="strength-1" type="radio">
+                    <label for="strength-1"></label>
+                  </div>
+                </div>
+                <div class="col-group col-group--underline">
+                  <label>Ловкость</label>
+                  <div class="rating">
+                    <input value="5" name="dexterity" id="dexterity-5" type="radio">
+                    <label for="dexterity-5"></label>
+                    <input value="4" name="dexterity" id="dexterity-4" type="radio">
+                    <label for="dexterity-4"></label>
+                    <input value="3" name="dexterity" id="dexterity-3" type="radio">
+                    <label for="dexterity-3"></label>
+                    <input value="2" name="dexterity" id="dexterity-2" type="radio">
+                    <label for="dexterity-2"></label>
+                    <input value="1" name="dexterity" id="dexterity-1" type="radio">
+                    <label for="dexterity-1"></label>
+                  </div>
+                </div>
+                <div class="col-group col-group--underline">
+                  <label>Выносливость</label>
+                  <div class="rating">
+                    <input value="5" name="stamina" id="stamina-5" type="radio">
+                    <label for="stamina-5"></label>
+                    <input value="4" name="stamina" id="stamina-4" type="radio">
+                    <label for="stamina-4"></label>
+                    <input value="3" name="stamina" id="stamina-3" type="radio">
+                    <label for="stamina-3"></label>
+                    <input value="2" name="stamina" id="stamina-2" type="radio">
+                    <label for="stamina-2"></label>
+                    <input value="1" name="stamina" id="stamina-1" type="radio">
+                    <label for="stamina-1"></label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sheet-col sheet-col-center col-group--label-width150">
+                <h3>Социальные</h3>
+                <div class="col-group col-group--underline">
+                  <label>Обаяние</label>
+                  <div class="rating">
+                    <input value="5" name="charisma" id="charisma-5" type="radio">
+                    <label for="charisma-5"></label>
+                    <input value="4" name="charisma" id="charisma-4" type="radio">
+                    <label for="charisma-4"></label>
+                    <input value="3" name="charisma" id="charisma-3" type="radio">
+                    <label for="charisma-3"></label>
+                    <input value="2" name="charisma" id="charisma-2" type="radio">
+                    <label for="charisma-2"></label>
+                    <input value="1" name="charisma" id="charisma-1" type="radio">
+                    <label for="charisma-1"></label>
+                  </div>
+                </div>
+                <div class="col-group col-group--underline">
+                  <label>Манипулирование</label>
+                  <div class="rating">
+                    <input value="5" name="manipulation" id="manipulation-5" type="radio">
+                    <label for="manipulation-5"></label>
+                    <input value="4" name="manipulation" id="manipulation-4" type="radio">
+                    <label for="manipulation-4"></label>
+                    <input value="3" name="manipulation" id="manipulation-3" type="radio">
+                    <label for="manipulation-3"></label>
+                    <input value="2" name="manipulation" id="manipulation-2" type="radio">
+                    <label for="manipulation-2"></label>
+                    <input value="1" name="manipulation" id="manipulation-1" type="radio">
+                    <label for="manipulation-1"></label>
+                  </div>
+                </div>
+                <div class="col-group col-group--underline">
+                  <label>Внешность</label>
+                  <div class="rating">
+                    <input value="5" name="appearance" id="appearance-5" type="radio">
+                    <label for="appearance-5"></label>
+                    <input value="4" name="appearance" id="appearance-4" type="radio">
+                    <label for="appearance-4"></label>
+                    <input value="3" name="appearance" id="appearance-3" type="radio">
+                    <label for="appearance-3"></label>
+                    <input value="2" name="appearance" id="appearance-2" type="radio">
+                    <label for="appearance-2"></label>
+                    <input value="1" name="appearance" id="appearance-1" type="radio">
+                    <label for="appearance-1"></label>
+                  </div>
+                </div>
+              </div>
+              <div class="sheet-col sheet-col-center">
+                <h3>Ментальные</h3>
+                <div class="col-group col-group--underline">
+                  <label>Восприятие</label>
+                  <div class="rating">
+                    <input value="5" name="perception" id="perception-5" type="radio">
+                    <label for="perception-5"></label>
+                    <input value="4" name="perception" id="perception-4" type="radio">
+                    <label for="perception-4"></label>
+                    <input value="3" name="perception" id="perception-3" type="radio">
+                    <label for="perception-3"></label>
+                    <input value="2" name="perception" id="perception-2" type="radio">
+                    <label for="perception-2"></label>
+                    <input value="1" name="perception" id="perception-1" type="radio">
+                    <label for="perception-1"></label>
+                  </div>
+                </div>
+                <div class="col-group col-group--underline">
+                  <label>Интеллект</label>
+                  <div class="rating">
+                    <input value="5" name="intelligence" id="intelligence-5" type="radio">
+                    <label for="intelligence-5"></label>
+                    <input value="4" name="intelligence" id="intelligence-4" type="radio">
+                    <label for="intelligence-4"></label>
+                    <input value="3" name="intelligence" id="intelligence-3" type="radio">
+                    <label for="intelligence-3"></label>
+                    <input value="2" name="intelligence" id="intelligence-2" type="radio">
+                    <label for="intelligence-2"></label>
+                    <input value="1" name="intelligence" id="intelligence-1" type="radio">
+                    <label for="intelligence-1"></label>
+                  </div>
+                </div>
+                <div class="col-group col-group--underline">
+                  <label>Смекалка</label>
+                  <div class="rating">
+                    <input value="5" name="wits" id="wits-5" type="radio">
+                    <label for="wits-5"></label>
+                    <input value="4" name="wits" id="wits-4" type="radio">
+                    <label for="wits-4"></label>
+                    <input value="3" name="wits" id="wits-3" type="radio">
+                    <label for="wits-3"></label>
+                    <input value="2" name="wits" id="wits-2" type="radio">
+                    <label for="wits-2"></label>
+                    <input value="1" name="wits" id="wits-1" type="radio">
+                    <label for="wits-1"></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
+
       </div>
+    </div>
     </div>
 
   </main>
