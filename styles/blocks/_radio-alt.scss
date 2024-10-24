@@ -15,7 +15,7 @@
 }
 
 .rating label:before {
-  content: '\2738';
+  content: '\2B24'; 
   font-size: 20px;
 }
 
@@ -24,4 +24,8 @@
 .rating label:hover ~ label {
   color: var(--color-accent);
   transition: color 0.3s;
+}
+
+.rating input:checked label {
+  content: '\2B20'; 
 }
