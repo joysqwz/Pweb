@@ -82,35 +82,35 @@
         <div class="first-page">
           <div class="sheet-3colrow">
             <div class="sheet-col">
-              <div class="col-group">
+              <div class="col-group col-group--width90">
                 <label>Имя:</label><input type="text" name="attr_character_name" class='input-base'>
               </div>
-              <div class="col-group">
+              <div class="col-group col-group--width90">
                 <label>Игрок:</label><input type="text" name="attr_player" class='input-base'>
               </div>
-              <div class="col-group">
+              <div class="col-group col-group--width90">
                 <label>Хроника:</label><input type="text" name="attr_Chronicle" class='input-base'>
               </div>
             </div>
             <div class="sheet-col">
-              <div class="col-group">
+              <div class="col-group col-group--width90">
                 <label>Натура:</label><input type="text" name="attr_Nature" class='input-base'>
               </div>
-              <div class="col-group">
+              <div class="col-group col-group--width90">
                 <label>Маска:</label><input type="text" name="attr_Mask" class='input-base'>
               </div>
-              <div class="col-group">
+              <div class="col-group col-group--width90">
                 <label>Энергия:</label><input type="text" name="attr_Energy" class='input-base'>
               </div>
             </div>
             <div class="sheet-col">
-              <div class="col-group">
+              <div class="col-group col-group--width90">
                 <label>Фракция:</label><input type="text" name="attr_Fraction" class='input-base'>
               </div>
-              <div class="col-group">
+              <div class="col-group col-group--width90">
                 <label>Секта:</label><input type="text" name="attr_Sect" class='input-base'>
               </div>
-              <div class="col-group">
+              <div class="col-group col-group--width90">
                 <label>Концепция:</label><input type="text" name="attr_Concept" class='input-base'>
               </div>
             </div>
@@ -121,7 +121,7 @@
             <div class="sheet-3colrow">
               <div class="sheet-col sheet-col-center">
                 <h3>Физические</h3>
-                <div class="col-group col-group--underline">
+                <div class="col-group">
                   <label>Сила</label>
                   <div class="rating">
                     <input value="5" name="strength" id="strength-5" type="radio">
@@ -136,7 +136,7 @@
                     <label for="strength-1"></label>
                   </div>
                 </div>
-                <div class="col-group col-group--underline">
+                <div class="col-group">
                   <label>Ловкость</label>
                   <div class="rating">
                     <input value="5" name="dexterity" id="dexterity-5" type="radio">
@@ -151,7 +151,7 @@
                     <label for="dexterity-1"></label>
                   </div>
                 </div>
-                <div class="col-group col-group--underline">
+                <div class="col-group">
                   <label>Выносливость</label>
                   <div class="rating">
                     <input value="5" name="stamina" id="stamina-5" type="radio">
@@ -170,7 +170,7 @@
 
               <div class="sheet-col sheet-col-center col-group--label-width150">
                 <h3>Социальные</h3>
-                <div class="col-group col-group--underline">
+                <div class="col-group">
                   <label>Обаяние</label>
                   <div class="rating">
                     <input value="5" name="charisma" id="charisma-5" type="radio">
@@ -185,7 +185,7 @@
                     <label for="charisma-1"></label>
                   </div>
                 </div>
-                <div class="col-group col-group--underline">
+                <div class="col-group">
                   <label>Манипулирование</label>
                   <div class="rating">
                     <input value="5" name="manipulation" id="manipulation-5" type="radio">
@@ -200,7 +200,7 @@
                     <label for="manipulation-1"></label>
                   </div>
                 </div>
-                <div class="col-group col-group--underline">
+                <div class="col-group">
                   <label>Внешность</label>
                   <div class="rating">
                     <input value="5" name="appearance" id="appearance-5" type="radio">
@@ -218,7 +218,7 @@
               </div>
               <div class="sheet-col sheet-col-center">
                 <h3>Ментальные</h3>
-                <div class="col-group col-group--underline">
+                <div class="col-group">
                   <label>Восприятие</label>
                   <div class="rating">
                     <input value="5" name="perception" id="perception-5" type="radio">
@@ -233,7 +233,7 @@
                     <label for="perception-1"></label>
                   </div>
                 </div>
-                <div class="col-group col-group--underline">
+                <div class="col-group">
                   <label>Интеллект</label>
                   <div class="rating">
                     <input value="5" name="intelligence" id="intelligence-5" type="radio">
@@ -248,7 +248,7 @@
                     <label for="intelligence-1"></label>
                   </div>
                 </div>
-                <div class="col-group col-group--underline">
+                <div class="col-group">
                   <label>Смекалка</label>
                   <div class="rating">
                     <input value="5" name="wits" id="wits-5" type="radio">
@@ -265,10 +265,668 @@
                 </div>
               </div>
             </div>
-
           </div>
-        </div>
 
+          <div class="attributes">
+            <h2>Способности</h2>
+            <div class="sheet-3colrow">
+              <div class="sheet-col sheet-col-center">
+                <h3>Таланты</h3>
+                <div class="col-group">
+                  <label>Атлетика</label>
+                  <div class="rating">
+                    <input value="5" name="strength" id="strength-5" type="radio">
+                    <label for="strength-5"></label>
+                    <input value="4" name="strength" id="strength-4" type="radio">
+                    <label for="strength-4"></label>
+                    <input value="3" name="strength" id="strength-3" type="radio">
+                    <label for="strength-3"></label>
+                    <input value="2" name="strength" id="strength-2" type="radio">
+                    <label for="strength-2"></label>
+                    <input value="1" name="strength" id="strength-1" type="radio">
+                    <label for="strength-1"></label>
+                  </div>
+                </div>
+                <div class="col-group">
+                  <label>Бдительность</label>
+                  <div class="rating">
+                    <input value="5" name="dexterity" id="dexterity-5" type="radio">
+                    <label for="dexterity-5"></label>
+                    <input value="4" name="dexterity" id="dexterity-4" type="radio">
+                    <label for="dexterity-4"></label>
+                    <input value="3" name="dexterity" id="dexterity-3" type="radio">
+                    <label for="dexterity-3"></label>
+                    <input value="2" name="dexterity" id="dexterity-2" type="radio">
+                    <label for="dexterity-2"></label>
+                    <input value="1" name="dexterity" id="dexterity-1" type="radio">
+                    <label for="dexterity-1"></label>
+                  </div>
+                </div>
+                <div class="col-group">
+                  <label>Драка</label>
+                  <div class="rating">
+                    <input value="5" name="stamina" id="stamina-5" type="radio">
+                    <label for="stamina-5"></label>
+                    <input value="4" name="stamina" id="stamina-4" type="radio">
+                    <label for="stamina-4"></label>
+                    <input value="3" name="stamina" id="stamina-3" type="radio">
+                    <label for="stamina-3"></label>
+                    <input value="2" name="stamina" id="stamina-2" type="radio">
+                    <label for="stamina-2"></label>
+                    <input value="1" name="stamina" id="stamina-1" type="radio">
+                    <label for="stamina-1"></label>
+                  </div>
+                </div>
+                <div class="col-group">
+                  <label>Запугивание</label>
+                  <div class="rating">
+                    <input value="5" name="stamina" id="stamina-5" type="radio">
+                    <label for="stamina-5"></label>
+                    <input value="4" name="stamina" id="stamina-4" type="radio">
+                    <label for="stamina-4"></label>
+                    <input value="3" name="stamina" id="stamina-3" type="radio">
+                    <label for="stamina-3"></label>
+                    <input value="2" name="stamina" id="stamina-2" type="radio">
+                    <label for="stamina-2"></label>
+                    <input value="1" name="stamina" id="stamina-1" type="radio">
+                    <label for="stamina-1"></label>
+                  </div>
+                </div>
+                <div class="col-group">
+                  <label>Искусство</label>
+                  <div class="rating">
+                    <input value="5" name="stamina" id="stamina-5" type="radio">
+                    <label for="stamina-5"></label>
+                    <input value="4" name="stamina" id="stamina-4" type="radio">
+                    <label for="stamina-4"></label>
+                    <input value="3" name="stamina" id="stamina-3" type="radio">
+                    <label for="stamina-3"></label>
+                    <input value="2" name="stamina" id="stamina-2" type="radio">
+                    <label for="stamina-2"></label>
+                    <input value="1" name="stamina" id="stamina-1" type="radio">
+                    <label for="stamina-1"></label>
+                  </div>
+                </div>
+                <div class="col-group">
+                  <label>Красноречие</label>
+                  <div class="rating">
+                    <input value="5" name="stamina" id="stamina-5" type="radio">
+                    <label for="stamina-5"></label>
+                    <input value="4" name="stamina" id="stamina-4" type="radio">
+                    <label for="stamina-4"></label>
+                    <input value="3" name="stamina" id="stamina-3" type="radio">
+                    <label for="stamina-3"></label>
+                    <input value="2" name="stamina" id="stamina-2" type="radio">
+                    <label for="stamina-2"></label>
+                    <input value="1" name="stamina" id="stamina-1" type="radio">
+                    <label for="stamina-1"></label>
+                  </div>
+                </div>
+                <div class="col-group">
+                  <label>Лидерство</label>
+                  <div class="rating">
+                    <input value="5" name="stamina" id="stamina-5" type="radio">
+                    <label for="stamina-5"></label>
+                    <input value="4" name="stamina" id="stamina-4" type="radio">
+                    <label for="stamina-4"></label>
+                    <input value="3" name="stamina" id="stamina-3" type="radio">
+                    <label for="stamina-3"></label>
+                    <input value="2" name="stamina" id="stamina-2" type="radio">
+                    <label for="stamina-2"></label>
+                    <input value="1" name="stamina" id="stamina-1" type="radio">
+                    <label for="stamina-1"></label>
+                  </div>
+                </div>
+                <div class="col-group">
+                  <label>Уличные порядки</label>
+                  <div class="rating">
+                    <input value="5" name="stamina" id="stamina-5" type="radio">
+                    <label for="stamina-5"></label>
+                    <input value="4" name="stamina" id="stamina-4" type="radio">
+                    <label for="stamina-4"></label>
+                    <input value="3" name="stamina" id="stamina-3" type="radio">
+                    <label for="stamina-3"></label>
+                    <input value="2" name="stamina" id="stamina-2" type="radio">
+                    <label for="stamina-2"></label>
+                    <input value="1" name="stamina" id="stamina-1" type="radio">
+                    <label for="stamina-1"></label>
+                  </div>
+                </div>
+                <div class="col-group">
+                  <label>Хитрость</label>
+                  <div class="rating">
+                    <input value="5" name="stamina" id="stamina-5" type="radio">
+                    <label for="stamina-5"></label>
+                    <input value="4" name="stamina" id="stamina-4" type="radio">
+                    <label for="stamina-4"></label>
+                    <input value="3" name="stamina" id="stamina-3" type="radio">
+                    <label for="stamina-3"></label>
+                    <input value="2" name="stamina" id="stamina-2" type="radio">
+                    <label for="stamina-2"></label>
+                    <input value="1" name="stamina" id="stamina-1" type="radio">
+                    <label for="stamina-1"></label>
+                  </div>
+                </div>
+                <div class="col-group">
+                  <label>Экстрасенсорика</label>
+                  <div class="rating">
+                    <input value="5" name="stamina" id="stamina-5" type="radio">
+                    <label for="stamina-5"></label>
+                    <input value="4" name="stamina" id="stamina-4" type="radio">
+                    <label for="stamina-4"></label>
+                    <input value="3" name="stamina" id="stamina-3" type="radio">
+                    <label for="stamina-3"></label>
+                    <input value="2" name="stamina" id="stamina-2" type="radio">
+                    <label for="stamina-2"></label>
+                    <input value="1" name="stamina" id="stamina-1" type="radio">
+                    <label for="stamina-1"></label>
+                  </div>
+                </div>
+                <div class="col-group">
+                  <label>Эмпатия</label>
+                  <div class="rating">
+                    <input value="5" name="stamina" id="stamina-5" type="radio">
+                    <label for="stamina-5"></label>
+                    <input value="4" name="stamina" id="stamina-4" type="radio">
+                    <label for="stamina-4"></label>
+                    <input value="3" name="stamina" id="stamina-3" type="radio">
+                    <label for="stamina-3"></label>
+                    <input value="2" name="stamina" id="stamina-2" type="radio">
+                    <label for="stamina-2"></label>
+                    <input value="1" name="stamina" id="stamina-1" type="radio">
+                    <label for="stamina-1"></label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sheet-col sheet-col-center">
+                <h3>Навыки</h3>
+                <div class="col-group">
+                  <label>Боевые искусства</label>
+                  <div class="rating">
+                    <input value="5" name="strength" id="strength-5" type="radio">
+                    <label for="strength-5"></label>
+                    <input value="4" name="strength" id="strength-4" type="radio">
+                    <label for="strength-4"></label>
+                    <input value="3" name="strength" id="strength-3" type="radio">
+                    <label for="strength-3"></label>
+                    <input value="2" name="strength" id="strength-2" type="radio">
+                    <label for="strength-2"></label>
+                    <input value="1" name="strength" id="strength-1" type="radio">
+                    <label for="strength-1"></label>
+                  </div>
+                </div>
+                <div class="col-group">
+                  <label>Вождение</label>
+                  <div class="rating">
+                    <input value="5" name="dexterity" id="dexterity-5" type="radio">
+                    <label for="dexterity-5"></label>
+                    <input value="4" name="dexterity" id="dexterity-4" type="radio">
+                    <label for="dexterity-4"></label>
+                    <input value="3" name="dexterity" id="dexterity-3" type="radio">
+                    <label for="dexterity-3"></label>
+                    <input value="2" name="dexterity" id="dexterity-2" type="radio">
+                    <label for="dexterity-2"></label>
+                    <input value="1" name="dexterity" id="dexterity-1" type="radio">
+                    <label for="dexterity-1"></label>
+                  </div>
+                </div>
+                <div class="col-group">
+                  <label>Выживание</label>
+                  <div class="rating">
+                    <input value="5" name="stamina" id="stamina-5" type="radio">
+                    <label for="stamina-5"></label>
+                    <input value="4" name="stamina" id="stamina-4" type="radio">
+                    <label for="stamina-4"></label>
+                    <input value="3" name="stamina" id="stamina-3" type="radio">
+                    <label for="stamina-3"></label>
+                    <input value="2" name="stamina" id="stamina-2" type="radio">
+                    <label for="stamina-2"></label>
+                    <input value="1" name="stamina" id="stamina-1" type="radio">
+                    <label for="stamina-1"></label>
+                  </div>
+                </div>
+                <div class="col-group">
+                  <label>Исследование</label>
+                  <div class="rating">
+                    <input value="5" name="stamina" id="stamina-5" type="radio">
+                    <label for="stamina-5"></label>
+                    <input value="4" name="stamina" id="stamina-4" type="radio">
+                    <label for="stamina-4"></label>
+                    <input value="3" name="stamina" id="stamina-3" type="radio">
+                    <label for="stamina-3"></label>
+                    <input value="2" name="stamina" id="stamina-2" type="radio">
+                    <label for="stamina-2"></label>
+                    <input value="1" name="stamina" id="stamina-1" type="radio">
+                    <label for="stamina-1"></label>
+                  </div>
+                </div>
+                <div class="col-group">
+                  <label>Медитация</label>
+                  <div class="rating">
+                    <input value="5" name="stamina" id="stamina-5" type="radio">
+                    <label for="stamina-5"></label>
+                    <input value="4" name="stamina" id="stamina-4" type="radio">
+                    <label for="stamina-4"></label>
+                    <input value="3" name="stamina" id="stamina-3" type="radio">
+                    <label for="stamina-3"></label>
+                    <input value="2" name="stamina" id="stamina-2" type="radio">
+                    <label for="stamina-2"></label>
+                    <input value="1" name="stamina" id="stamina-1" type="radio">
+                    <label for="stamina-1"></label>
+                  </div>
+                </div>
+                <div class="col-group">
+                  <label>Огнестрельное оружие</label>
+                  <div class="rating">
+                    <input value="5" name="stamina" id="stamina-5" type="radio">
+                    <label for="stamina-5"></label>
+                    <input value="4" name="stamina" id="stamina-4" type="radio">
+                    <label for="stamina-4"></label>
+                    <input value="3" name="stamina" id="stamina-3" type="radio">
+                    <label for="stamina-3"></label>
+                    <input value="2" name="stamina" id="stamina-2" type="radio">
+                    <label for="stamina-2"></label>
+                    <input value="1" name="stamina" id="stamina-1" type="radio">
+                    <label for="stamina-1"></label>
+                  </div>
+                </div>
+                <div class="col-group">
+                  <label>Ремёсла</label>
+                  <div class="rating">
+                    <input value="5" name="stamina" id="stamina-5" type="radio">
+                    <label for="stamina-5"></label>
+                    <input value="4" name="stamina" id="stamina-4" type="radio">
+                    <label for="stamina-4"></label>
+                    <input value="3" name="stamina" id="stamina-3" type="radio">
+                    <label for="stamina-3"></label>
+                    <input value="2" name="stamina" id="stamina-2" type="radio">
+                    <label for="stamina-2"></label>
+                    <input value="1" name="stamina" id="stamina-1" type="radio">
+                    <label for="stamina-1"></label>
+                  </div>
+                </div>
+                <div class="col-group">
+                  <label>Скрытность</label>
+                  <div class="rating">
+                    <input value="5" name="stamina" id="stamina-5" type="radio">
+                    <label for="stamina-5"></label>
+                    <input value="4" name="stamina" id="stamina-4" type="radio">
+                    <label for="stamina-4"></label>
+                    <input value="3" name="stamina" id="stamina-3" type="radio">
+                    <label for="stamina-3"></label>
+                    <input value="2" name="stamina" id="stamina-2" type="radio">
+                    <label for="stamina-2"></label>
+                    <input value="1" name="stamina" id="stamina-1" type="radio">
+                    <label for="stamina-1"></label>
+                  </div>
+                </div>
+                <div class="col-group">
+                  <label>Технологии</label>
+                  <div class="rating">
+                    <input value="5" name="stamina" id="stamina-5" type="radio">
+                    <label for="stamina-5"></label>
+                    <input value="4" name="stamina" id="stamina-4" type="radio">
+                    <label for="stamina-4"></label>
+                    <input value="3" name="stamina" id="stamina-3" type="radio">
+                    <label for="stamina-3"></label>
+                    <input value="2" name="stamina" id="stamina-2" type="radio">
+                    <label for="stamina-2"></label>
+                    <input value="1" name="stamina" id="stamina-1" type="radio">
+                    <label for="stamina-1"></label>
+                  </div>
+                </div>
+                <div class="col-group">
+                  <label>Холлодное оружие</label>
+                  <div class="rating">
+                    <input value="5" name="stamina" id="stamina-5" type="radio">
+                    <label for="stamina-5"></label>
+                    <input value="4" name="stamina" id="stamina-4" type="radio">
+                    <label for="stamina-4"></label>
+                    <input value="3" name="stamina" id="stamina-3" type="radio">
+                    <label for="stamina-3"></label>
+                    <input value="2" name="stamina" id="stamina-2" type="radio">
+                    <label for="stamina-2"></label>
+                    <input value="1" name="stamina" id="stamina-1" type="radio">
+                    <label for="stamina-1"></label>
+                  </div>
+                </div>
+                <div class="col-group">
+                  <label>Этикет</label>
+                  <div class="rating">
+                    <input value="5" name="stamina" id="stamina-5" type="radio">
+                    <label for="stamina-5"></label>
+                    <input value="4" name="stamina" id="stamina-4" type="radio">
+                    <label for="stamina-4"></label>
+                    <input value="3" name="stamina" id="stamina-3" type="radio">
+                    <label for="stamina-3"></label>
+                    <input value="2" name="stamina" id="stamina-2" type="radio">
+                    <label for="stamina-2"></label>
+                    <input value="1" name="stamina" id="stamina-1" type="radio">
+                    <label for="stamina-1"></label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sheet-col sheet-col-center">
+                <h3>Познания</h3>
+                <div class="col-group">
+                  <label>Гуманитарные науки</label>
+                  <div class="rating">
+                    <input value="5" name="strength" id="strength-5" type="radio">
+                    <label for="strength-5"></label>
+                    <input value="4" name="strength" id="strength-4" type="radio">
+                    <label for="strength-4"></label>
+                    <input value="3" name="strength" id="strength-3" type="radio">
+                    <label for="strength-3"></label>
+                    <input value="2" name="strength" id="strength-2" type="radio">
+                    <label for="strength-2"></label>
+                    <input value="1" name="strength" id="strength-1" type="radio">
+                    <label for="strength-1"></label>
+                  </div>
+                </div>
+                <div class="col-group">
+                  <label>Естественные науки</label>
+                  <div class="rating">
+                    <input value="5" name="dexterity" id="dexterity-5" type="radio">
+                    <label for="dexterity-5"></label>
+                    <input value="4" name="dexterity" id="dexterity-4" type="radio">
+                    <label for="dexterity-4"></label>
+                    <input value="3" name="dexterity" id="dexterity-3" type="radio">
+                    <label for="dexterity-3"></label>
+                    <input value="2" name="dexterity" id="dexterity-2" type="radio">
+                    <label for="dexterity-2"></label>
+                    <input value="1" name="dexterity" id="dexterity-1" type="radio">
+                    <label for="dexterity-1"></label>
+                  </div>
+                </div>
+                <div class="col-group">
+                  <label>Загадки</label>
+                  <div class="rating">
+                    <input value="5" name="stamina" id="stamina-5" type="radio">
+                    <label for="stamina-5"></label>
+                    <input value="4" name="stamina" id="stamina-4" type="radio">
+                    <label for="stamina-4"></label>
+                    <input value="3" name="stamina" id="stamina-3" type="radio">
+                    <label for="stamina-3"></label>
+                    <input value="2" name="stamina" id="stamina-2" type="radio">
+                    <label for="stamina-2"></label>
+                    <input value="1" name="stamina" id="stamina-1" type="radio">
+                    <label for="stamina-1"></label>
+                  </div>
+                </div>
+                <div class="col-group">
+                  <label>Законы</label>
+                  <div class="rating">
+                    <input value="5" name="stamina" id="stamina-5" type="radio">
+                    <label for="stamina-5"></label>
+                    <input value="4" name="stamina" id="stamina-4" type="radio">
+                    <label for="stamina-4"></label>
+                    <input value="3" name="stamina" id="stamina-3" type="radio">
+                    <label for="stamina-3"></label>
+                    <input value="2" name="stamina" id="stamina-2" type="radio">
+                    <label for="stamina-2"></label>
+                    <input value="1" name="stamina" id="stamina-1" type="radio">
+                    <label for="stamina-1"></label>
+                  </div>
+                </div>
+                <div class="col-group">
+                  <label>Компьютеры</label>
+                  <div class="rating">
+                    <input value="5" name="stamina" id="stamina-5" type="radio">
+                    <label for="stamina-5"></label>
+                    <input value="4" name="stamina" id="stamina-4" type="radio">
+                    <label for="stamina-4"></label>
+                    <input value="3" name="stamina" id="stamina-3" type="radio">
+                    <label for="stamina-3"></label>
+                    <input value="2" name="stamina" id="stamina-2" type="radio">
+                    <label for="stamina-2"></label>
+                    <input value="1" name="stamina" id="stamina-1" type="radio">
+                    <label for="stamina-1"></label>
+                  </div>
+                </div>
+                <div class="col-group">
+                  <label>Космология</label>
+                  <div class="rating">
+                    <input value="5" name="stamina" id="stamina-5" type="radio">
+                    <label for="stamina-5"></label>
+                    <input value="4" name="stamina" id="stamina-4" type="radio">
+                    <label for="stamina-4"></label>
+                    <input value="3" name="stamina" id="stamina-3" type="radio">
+                    <label for="stamina-3"></label>
+                    <input value="2" name="stamina" id="stamina-2" type="radio">
+                    <label for="stamina-2"></label>
+                    <input value="1" name="stamina" id="stamina-1" type="radio">
+                    <label for="stamina-1"></label>
+                  </div>
+                </div>
+                <div class="col-group">
+                  <label>Медицина</label>
+                  <div class="rating">
+                    <input value="5" name="stamina" id="stamina-5" type="radio">
+                    <label for="stamina-5"></label>
+                    <input value="4" name="stamina" id="stamina-4" type="radio">
+                    <label for="stamina-4"></label>
+                    <input value="3" name="stamina" id="stamina-3" type="radio">
+                    <label for="stamina-3"></label>
+                    <input value="2" name="stamina" id="stamina-2" type="radio">
+                    <label for="stamina-2"></label>
+                    <input value="1" name="stamina" id="stamina-1" type="radio">
+                    <label for="stamina-1"></label>
+                  </div>
+                </div>
+                <div class="col-group">
+                  <label>Оккультизм</label>
+                  <div class="rating">
+                    <input value="5" name="stamina" id="stamina-5" type="radio">
+                    <label for="stamina-5"></label>
+                    <input value="4" name="stamina" id="stamina-4" type="radio">
+                    <label for="stamina-4"></label>
+                    <input value="3" name="stamina" id="stamina-3" type="radio">
+                    <label for="stamina-3"></label>
+                    <input value="2" name="stamina" id="stamina-2" type="radio">
+                    <label for="stamina-2"></label>
+                    <input value="1" name="stamina" id="stamina-1" type="radio">
+                    <label for="stamina-1"></label>
+                  </div>
+                </div>
+                <div class="col-group">
+                  <label>Политика</label>
+                  <div class="rating">
+                    <input value="5" name="stamina" id="stamina-5" type="radio">
+                    <label for="stamina-5"></label>
+                    <input value="4" name="stamina" id="stamina-4" type="radio">
+                    <label for="stamina-4"></label>
+                    <input value="3" name="stamina" id="stamina-3" type="radio">
+                    <label for="stamina-3"></label>
+                    <input value="2" name="stamina" id="stamina-2" type="radio">
+                    <label for="stamina-2"></label>
+                    <input value="1" name="stamina" id="stamina-1" type="radio">
+                    <label for="stamina-1"></label>
+                  </div>
+                </div>
+                <div class="col-group">
+                  <label>Расследование</label>
+                  <div class="rating">
+                    <input value="5" name="stamina" id="stamina-5" type="radio">
+                    <label for="stamina-5"></label>
+                    <input value="4" name="stamina" id="stamina-4" type="radio">
+                    <label for="stamina-4"></label>
+                    <input value="3" name="stamina" id="stamina-3" type="radio">
+                    <label for="stamina-3"></label>
+                    <input value="2" name="stamina" id="stamina-2" type="radio">
+                    <label for="stamina-2"></label>
+                    <input value="1" name="stamina" id="stamina-1" type="radio">
+                    <label for="stamina-1"></label>
+                  </div>
+                </div>
+                <div class="col-group">
+                  <label>Эзотерика</label>
+                  <div class="rating">
+                    <input value="5" name="stamina" id="stamina-5" type="radio">
+                    <label for="stamina-5"></label>
+                    <input value="4" name="stamina" id="stamina-4" type="radio">
+                    <label for="stamina-4"></label>
+                    <input value="3" name="stamina" id="stamina-3" type="radio">
+                    <label for="stamina-3"></label>
+                    <input value="2" name="stamina" id="stamina-2" type="radio">
+                    <label for="stamina-2"></label>
+                    <input value="1" name="stamina" id="stamina-1" type="radio">
+                    <label for="stamina-1"></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="attributes">
+            <h2>Сферы</h2>
+            <div class="sheet-3colrow">
+              <div class="sheet-col sheet-col-center">
+                <div class="col-group">
+                  <label>Жизнь</label>
+                  <div class="rating">
+                    <input value="5" name="life" id="life-5" type="radio">
+                    <label for="life-5"></label>
+                    <input value="4" name="life" id="life-4" type="radio">
+                    <label for="life-4"></label>
+                    <input value="3" name="life" id="life-3" type="radio">
+                    <label for="life-3"></label>
+                    <input value="2" name="life" id="life-2" type="radio">
+                    <label for="life-2"></label>
+                    <input value="1" name="life" id="life-1" type="radio">
+                    <label for="life-1"></label>
+                  </div>
+                </div>
+                <div class="col-group">
+                  <label>Материя</label>
+                  <div class="rating">
+                    <input value="5" name="matter" id="matter-5" type="radio">
+                    <label for="matter-5"></label>
+                    <input value="4" name="matter" id="matter-4" type="radio">
+                    <label for="matter-4"></label>
+                    <input value="3" name="matter" id="matter-3" type="radio">
+                    <label for="matter-3"></label>
+                    <input value="2" name="matter" id="matter-2" type="radio">
+                    <label for="matter-2"></label>
+                    <input value="1" name="matter" id="matter-1" type="radio">
+                    <label for="matter-1"></label>
+                  </div>
+                </div>
+                <div class="col-group">
+                  <label>Силы</label>
+                  <div class="rating">
+                    <input value="5" name="forces" id="forces-5" type="radio">
+                    <label for="forces-5"></label>
+                    <input value="4" name="forces" id="forces-4" type="radio">
+                    <label for="forces-4"></label>
+                    <input value="3" name="forces" id="forces-3" type="radio">
+                    <label for="forces-3"></label>
+                    <input value="2" name="forces" id="forces-2" type="radio">
+                    <label for="forces-2"></label>
+                    <input value="1" name="forces" id="forces-1" type="radio">
+                    <label for="forces-1"></label>
+                  </div>
+                </div>
+              </div>
+              <div class="sheet-col sheet-col-center col-group--label-width150">
+                <div class="col-group">
+                  <label>Время</label>
+                  <div class="rating">
+                    <input value="5" name="time" id="time-5" type="radio">
+                    <label for="time-5"></label>
+                    <input value="4" name="time" id="time-4" type="radio">
+                    <label for="time-4"></label>
+                    <input value="3" name="time" id="time-3" type="radio">
+                    <label for="time-3"></label>
+                    <input value="2" name="time" id="time-2" type="radio">
+                    <label for="time-2"></label>
+                    <input value="1" name="time" id="time-1" type="radio">
+                    <label for="time-1"></label>
+                  </div>
+                </div>
+                <div class="col-group">
+                  <label>Связи</label>
+                  <div class="rating">
+                    <input value="5" name="correspodence" id="correspodence-5" type="radio">
+                    <label for="correspodence-5"></label>
+                    <input value="4" name="correspodence" id="correspodence-4" type="radio">
+                    <label for="correspodence-4"></label>
+                    <input value="3" name="correspodence" id="correspodence-3" type="radio">
+                    <label for="correspodence-3"></label>
+                    <input value="2" name="correspodence" id="correspodence-2" type="radio">
+                    <label for="correspodence-2"></label>
+                    <input value="1" name="correspodence" id="correspodence-1" type="radio">
+                    <label for="correspodence-1"></label>
+                  </div>
+                </div>
+                <div class="col-group">
+                  <label>Энтропия</label>
+                  <div class="rating">
+                    <input value="5" name="entropy" id="entropy-5" type="radio">
+                    <label for="entropy-5"></label>
+                    <input value="4" name="entropy" id="entropy-4" type="radio">
+                    <label for="entropy-4"></label>
+                    <input value="3" name="entropy" id="entropy-3" type="radio">
+                    <label for="entropy-3"></label>
+                    <input value="2" name="entropy" id="entropy-2" type="radio">
+                    <label for="entropy-2"></label>
+                    <input value="1" name="entropy" id="entropy-1" type="radio">
+                    <label for="entropy-1"></label>
+                  </div>
+                </div>
+              </div>
+              <div class="sheet-col sheet-col-center">
+                <div class="col-group">
+                  <label>Дух</label>
+                  <div class="rating">
+                    <input value="5" name="spirit" id="spirit-5" type="radio">
+                    <label for="spirit-5"></label>
+                    <input value="4" name="spirit" id="spirit-4" type="radio">
+                    <label for="spirit-4"></label>
+                    <input value="3" name="spirit" id="spirit-3" type="radio">
+                    <label for="spirit-3"></label>
+                    <input value="2" name="spirit" id="spirit-2" type="radio">
+                    <label for="spirit-2"></label>
+                    <input value="1" name="spirit" id="spirit-1" type="radio">
+                    <label for="spirit-1"></label>
+                  </div>
+                </div>
+                <div class="col-group">
+                  <label>Разум</label>
+                  <div class="rating">
+                    <input value="5" name="mind" id="mind-5" type="radio">
+                    <label for="mind-5"></label>
+                    <input value="4" name="mind" id="mind-4" type="radio">
+                    <label for="mind-4"></label>
+                    <input value="3" name="mind" id="mind-3" type="radio">
+                    <label for="mind-3"></label>
+                    <input value="2" name="mind" id="mind-2" type="radio">
+                    <label for="mind-2"></label>
+                    <input value="1" name="mind" id="mind-1" type="radio">
+                    <label for="mind-1"></label>
+                  </div>
+                </div>
+                <div class="col-group">
+                  <label>Основы</label>
+                  <div class="rating">
+                    <input value="5" name="prime" id="prime-5" type="radio">
+                    <label for="prime-5"></label>
+                    <input value="4" name="prime" id="prime-4" type="radio">
+                    <label for="prime-4"></label>
+                    <input value="3" name="prime" id="prime-3" type="radio">
+                    <label for="prime-3"></label>
+                    <input value="2" name="prime" id="prime-2" type="radio">
+                    <label for="prime-2"></label>
+                    <input value="1" name="prime" id="prime-1" type="radio">
+                    <label for="prime-1"></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
     </div>
