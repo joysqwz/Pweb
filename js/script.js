@@ -60,8 +60,8 @@ function saveMode() {
 			properties = {
 					bgColor: 'rgba(0, 0, 0, 0)', // Прозрачный фон
 					particleImages: [], // Массив для хранения изображений
-					particleRadius: 10, // Увеличиваем радиус для изображения
-					particleCount: 60,
+					particleRadius: 18, // Увеличиваем радиус для изображения
+					particleCount: 70,
 					particleMaxVelocity: 0.1,
 			};
 
