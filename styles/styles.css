@@ -251,11 +251,18 @@ body {
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 24px;
 }
 
 h3 {
+  font-size: 18px;
+}
+
+h4 {
   font-size: 14px;
+  font-family: var(--font-family-content);
+  font-weight: 400;
+  margin: 0;
 }
 
 h2, h3 {
@@ -591,17 +598,13 @@ body {
   align-items: center;
 }
 .col-group label {
-  width: 160px;
-}
-.col-group--width90 label {
   width: 90px;
 }
-
-.label-underline label::after {
-  content: "";
-  display: block;
-  height: 1px;
-  background: var(--color-black);
+.col-group h4 {
+  width: 160px;
+}
+.col-group--width90 h4 {
+  width: 90px;
 }
 
 .attributes h2 {

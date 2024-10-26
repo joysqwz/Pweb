@@ -23,23 +23,16 @@
 	align-items: center;
 
 	label {
+		width: 90px;
+	}
+
+	h4 {
 		width: 160px;
 	}
 
 	&--width90 {
-		label {
+		h4 {
 			width: 90px;
-		}
-	}
-}
-
-.label-underline {
-	label {
-		&::after {
-			content: '';
-			display: block;
-			height: 1px;
-			background: var(--color-black);
 		}
 	}
 }
