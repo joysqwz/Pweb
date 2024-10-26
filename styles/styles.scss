@@ -1,24 +1,23 @@
-@import
-  'normalize',
-  'fonts',
-  'mixins',
-  'media',
-  'variables',
-  'utils',
-  'globals';
+@import 
+'normalize',
+'fonts',
+'mixins',
+'media',
+'variables',
+'utils',
+'globals';
 
-@import
-  'blocks/header',
-  'blocks/body-gradient',
-  'blocks/content',
-  'blocks/button-list',
-  'blocks/first-page',
-  'blocks/btn-auth',
-  'blocks/auth-overlay',
-  'blocks/sheet-column',
-  'blocks/attributes',
-  'blocks/title-blocks',
-  'blocks/input-style',
-  'blocks/radio-alt',
-  'blocks/footer'
-
+@import 
+'blocks/header',
+'blocks/footer',
+'blocks/body-gradient',
+'blocks/content',
+'blocks/button-list',
+'blocks/first-page',
+'blocks/btn-auth',
+'blocks/auth-overlay',
+'blocks/sheet-column',
+'blocks/attributes',
+'blocks/title-blocks',
+'blocks/input-style',
+'blocks/radio-alt'
