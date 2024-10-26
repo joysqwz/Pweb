@@ -1,0 +1,19 @@
+.contacts {
+	@include flex-center;
+	flex-direction: column;
+
+	&__wrapper {
+		padding: 10px;
+		margin-top: 100px;
+		position: relative;
+		z-index: 1;
+		height: 80px;
+		border-top-left-radius: 24px;
+		border-top-right-radius: 24px;
+		background-color: rgba(255, 255, 255, 0.5);
+		backdrop-filter: blur(3px);
+		border-top: 2px solid var(--color-accent500);
+		border-left: 2px solid var(--color-accent500);;
+		border-right: 2px solid var(--color-accent500);;
+	}
+}
