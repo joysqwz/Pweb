@@ -1,0 +1,9 @@
+.section {
+	h2 {
+		@include flex-center;
+	}
+}
+
+.sheet-col-center {
+	@include flex-center;
+}
