@@ -322,6 +322,8 @@ body {
   background: linear-gradient(270deg, rgb(220, 202, 255), rgb(233, 206, 255), rgb(239, 214, 250));
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
+  display: flex;
+  flex-direction: column;
 }
 
 .content__wrapper {
@@ -597,6 +599,12 @@ body {
   display: flex;
   align-items: center;
 }
+.col-group--input-line input {
+  all: unset;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3764705882);
+  font-size: 14px;
+}
 .col-group label {
   width: 90px;
 }
@@ -644,11 +652,9 @@ body {
 .rating {
   display: inline-block;
 }
-
 .rating input {
   display: none;
 }
-
 .rating label {
   float: right;
   cursor: pointer;
@@ -656,19 +662,27 @@ body {
   transition: color 0.3s;
   width: 20px;
 }
-
-.rating label:before {
+.rating label::before {
   content: "⬤";
   font-size: 20px;
 }
-
 .rating input:checked ~ label,
 .rating label:hover,
 .rating label:hover ~ label {
   color: var(--color-accent);
   transition: color 0.3s;
 }
-
-.rating input:checked label {
-  content: "⬠";
+.rating--block label {
+  color: var(--color-black);
+}
+.rating--block label::before {
+  content: "▢";
+  font-size: 20px;
+}
+.rating--x label {
+  color: transparent;
+}
+.rating--x label::before {
+  content: "✖";
+  font-size: 20px;
 }/*# sourceMappingURL=styles.css.map */
