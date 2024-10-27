@@ -1,4 +1,4 @@
-.sheet-3colrow {
+.sheet-colrow {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
@@ -18,9 +18,44 @@
 	font-family: var(--font-family-content);
 }
 
+.row-group {
+	display: flex;
+	align-items: center;
+
+	input {
+		all: unset;
+		background-color: rgba(255, 255, 255, 0.1);
+		border-bottom: 2px solid #00000060;
+		font-size: 14px;
+	}
+
+	&--fd-column {
+		flex-direction: column;
+	}
+
+	&--input-width120 {
+		input {
+			width: 140px;
+		}
+	}
+
+	&--input-width90 {
+		input {
+			width: 90px;
+		}
+	}
+
+	&--input-width60 {
+		input {
+			width: 60px;
+		}
+	}
+}
+
 .col-group {
 	display: flex;
 	align-items: center;
+
 
 	&--input-line {
 		input {
@@ -29,7 +64,6 @@
 			border-bottom: 2px solid #00000060;
 			font-size: 14px;
 		}
-
 	}
 
 	label {

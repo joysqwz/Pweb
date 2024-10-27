@@ -1,5 +1,4 @@
-@import 
-'normalize',
+@import 'normalize',
 'fonts',
 'mixins',
 'media',
@@ -7,8 +6,7 @@
 'utils',
 'globals';
 
-@import 
-'blocks/header',
+@import 'blocks/header',
 'blocks/footer',
 'blocks/body-gradient',
 'blocks/content',
@@ -20,4 +18,6 @@
 'blocks/section',
 'blocks/title-blocks',
 'blocks/input-style',
-'blocks/radio-alt'
+'blocks/radio-alt',
+'blocks/sheet-textarea',
+'blocks/table'

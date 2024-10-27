@@ -25,7 +25,7 @@ document.addEventListener('click', (e) => {
 	}
 });
 
-let activeButton = document.getElementById('btn-one');
+let activeButton = document.getElementById('btn-two');
 let saveButton = null;
 
 function setCanvasSize() {
