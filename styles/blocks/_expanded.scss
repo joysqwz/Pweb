@@ -1,0 +1,44 @@
+.expanded {
+	@include flex-center;
+	gap: 20px;
+
+	&__group {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		gap: 10px;
+
+		label {
+			display: inline-block;
+			word-wrap: normal;
+		}
+
+		&--fd-row {
+			flex-direction: row;
+		}
+
+		&--ai-start {
+			align-items: start;
+		}
+	}
+
+	&__group-row {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: row;
+
+		input {
+			all: unset;
+			background-color: rgba(255, 255, 255, 0.1);
+			border-bottom: 2px solid #00000060;
+			font-size: 14px;
+			width: 100%;
+		}
+	}
+
+	&--fd-column {
+		flex-direction: column;
+	}
+}

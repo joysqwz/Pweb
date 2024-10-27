@@ -50,12 +50,18 @@
 			width: 60px;
 		}
 	}
+
+	&--input-invisible {
+		input {
+			all: unset;
+			width: 150px;
+		}
+	}
 }
 
 .col-group {
 	display: flex;
 	align-items: center;
-
 
 	&--input-line {
 		input {

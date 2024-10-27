@@ -617,6 +617,10 @@ body {
 .row-group--input-width60 input {
   width: 60px;
 }
+.row-group--input-invisible input {
+  all: unset;
+  width: 150px;
+}
 
 .col-group {
   display: flex;
@@ -754,6 +758,20 @@ body {
   outline: none;
 }
 
+.textarea-style {
+  outline: none;
+  resize: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 2px solid var(--color-accent200);
+  padding: 5px;
+  text-wrap: wrap;
+  margin-bottom: 10px;
+  line-height: 1;
+}
+.textarea-style:focus {
+  outline: none;
+}
+
 table {
   border-collapse: collapse;
   font-size: 14px;
@@ -774,4 +792,44 @@ table td,
 table th {
   padding: 3px;
   width: 0;
+}
+
+.expanded {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.expanded__group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.expanded__group label {
+  display: inline-block;
+  word-wrap: normal;
+}
+.expanded__group--fd-row {
+  flex-direction: row;
+}
+.expanded__group--ai-start {
+  align-items: start;
+}
+.expanded__group-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.expanded__group-row input {
+  all: unset;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3764705882);
+  font-size: 14px;
+  width: 100%;
+}
+.expanded--fd-column {
+  flex-direction: column;
 }/*# sourceMappingURL=styles.css.map */
