@@ -68,15 +68,14 @@
       </div>
     </div>
   </header>
-
   <main class="content" style="flex: 1 0 auto">
     <div class="content__body">
       <div class="button-list">
-        <button type="button" class="button button--inactive" onClick="changeMode(this)" id="btn-one"
-          data-target="page1">
+        <button type="button" class="button button--active" onClick="changeMode(this)" id="btn-one" data-target="page1">
           Лист 1
         </button>
-        <button type="button" class="button button--active" onClick="changeMode(this)" id="btn-two" data-target="page2">
+        <button type="button" class="button button--inactive" onClick="changeMode(this)" id="btn-two"
+          data-target="page2">
           Лист 2
         </button>
         <button type="button" class="button button--inactive" onClick="changeMode(this)" id="btn-three"
@@ -90,8 +89,7 @@
       </div>
       <div class="content__wrapper container">
         <img class="logo__main" src="./images/logoMtA.svg" alt="" width="220" height="110" loading="lazy" />
-
-        <div class="page visually-hidden" id="page1">
+        <div class="page" id="page1">
           <div class="sheet-colrow">
             <div class="sheet-col">
               <div class="col-group col-group--width90">
@@ -1178,7 +1176,6 @@
             </div>
           </div>
         </div>
-
         <div class="page visually-hidden" id="page2">
           <div class="section">
             <h2>Достоинства и Недостатки</h2>
@@ -1512,7 +1509,6 @@
 
           </div>
         </div>
-
         <div class="page visually-hidden" id="page3">
           <div class="section">
             <h2>Описание дополнений</h2>
@@ -1590,7 +1586,7 @@
             </div>
           </div>
         </div>
-        <div class="page" id='page4'>
+        <div class="page visually-hidden" id='page4'>
           <div class="section">
             <div class="expanded expanded--fd-column">
               <div class="expanded__group">
@@ -1676,7 +1672,6 @@
           </div>
         </div>
   </main>
-
   <footer class="footer">
     <div class="contacts__wrapper container">
       <div class="contacts">

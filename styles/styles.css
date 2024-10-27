@@ -253,6 +253,16 @@ body {
 h2 {
   font-size: 24px;
 }
+h2::before, h2::after {
+  content: "";
+  width: 220px;
+  height: 20px;
+  margin: 0 10px;
+  background-image: url("../images/h2-style.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 h3 {
   font-size: 18px;
@@ -265,7 +275,8 @@ h4 {
   margin: 0;
 }
 
-h2, h3 {
+h2,
+h3 {
   font-family: var(--font-family-title);
   font-weight: 400;
   margin: 0;
