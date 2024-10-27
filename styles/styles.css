@@ -258,7 +258,7 @@ h2::before, h2::after {
   width: 220px;
   height: 20px;
   margin: 0 10px;
-  background-image: url("../images/h2-style.svg");
+  background-image: url("/images/h2-style.svg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
