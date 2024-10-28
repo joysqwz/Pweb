@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8" />
@@ -11,63 +11,55 @@
 <body>
   <header class="header">
     <div class="header__inner container">
-      <a class="header__logo logo" href="/Pweb/">
-        <img class="logo__image" src="./images/logo.svg" alt="logo" width="50" height="50" loading="lazy" />
+      <a class="header__logo">
+        <img class='header__logo-image' src="./images/logo.svg" alt="логотип" width="50" height="50" loading="lazy" />
       </a>
-      <div class="button__wrapper">
-        <button class="button-auth" id="openBtn">Войти</button>
-        <dialog id="modal" class="modal">
-          <div class="form-container form-login">
-            <p class="title">Авторизация</p>
-            <form class="auth form">
-              <div class="input-group">
-                <label for="username">Логин</label>
-                <input type="text" name="username" id="username" placeholder="qwerty" />
+      <div class="user-profile">
+        <button class="user-profile__button-login" id="openBtn">Войти</button>
+        <dialog id="modal" class="user-profile__modal">
+          <div class="modal__wrapper modal__wrapper--authorization">
+            <p class="modal__title">Авторизация</p>
+            <form class="modal__form modal__form--authorization">
+              <div class="modal__group-input">
+                <label class="modal__label" for="username">Логин</label>
+                <input class="modal__input" type="text" name="username" id="username" placeholder="qwerty" />
               </div>
-              <div class="input-group">
-                <label for="password">Пароль</label>
-                <input type="password" name="password" id="password" placeholder="********" />
-                <div class="forgot">
-                  <a rel="noopener noreferrer" href="#">Восстановить пароль?</a>
-                </div>
+              <div class="modal__group-input">
+                <label class="modal__label" for="password">Пароль</label>
+                <input class="modal__input" type="password" name="password" id="password" placeholder="********" />
               </div>
-              <button class="sign">Войти</button>
+              <p class="modal__password-question">Восстановить пароль?</p>
+              <button class="modal__button modal__button--submit">Войти</button>
+              <p class="modal__account-question">Нет аккаунта? <span>Зарегистрироваться</span></p>
             </form>
-            <p class="signup">
-              Нет аккаунта?
-              <a rel="noopener noreferrer" href="#" class="register-link">Зарегистрироваться</a>
-            </p>
           </div>
-          <div class="form-container form-register">
-            <p class="title">Регистрация</p>
-            <form class="reg form">
-              <div class="input-group">
-                <label for="username">Логин</label>
-                <input type="text" name="username" id="reg-username" placeholder="qwerty" />
+          <div class="modal__wrapper modal__wrapper--registration">
+            <p class="modal__title">Регистрация</p>
+            <form class="modal__form modal__form--registration">
+              <div class="modal__group-input">
+                <label class="modal__label" for="reg-username">Логин</label>
+                <input class="modal__input" type="text" name="username" id="reg-username" placeholder="qwerty" />
               </div>
-              <div class="input-group">
-                <label for="reg-email">Адрес электронной почты</label>
-                <input type="email" name="email" id="reg-email" placeholder="qwerty@mail.com" />
+              <div class="modal__group-input">
+                <label class="modal__label" for="reg-email">Адрес электронной почты</label>
+                <input class="modal__input" type="email" name="email" id="reg-email" placeholder="qwerty@mail.com" />
               </div>
-              <div class="input-group">
-                <label for="password">Пароль</label>
-                <input type="password" name="password" id="reg-password" placeholder="********" />
+              <div class="modal__group-input">
+                <label class="modal__label" for="reg-password">Пароль</label>
+                <input class="modal__input" type="password" name="password" id="reg-password" placeholder="********" />
               </div>
-              <div class="input-group">
-                <label for="password">Подтверждение пароля</label>
-                <input type="password" name="password" id="reg-conf-password" placeholder="********" />
+              <div class="modal__group-input">
+                <label class="modal__label" for="reg-conf-password">Подтверждение пароля</label>
+                <input class="modal__input" type="password" name="password" id="reg-conf-password" placeholder="********" />
               </div>
-              <button class="sign">Зарегистрироваться</button>
+              <button class="modal__button modal__button--submit">Зарегистрироваться</button>
+              <p class="modal__account-question">Есть аккаунт?</p>
             </form>
-            <p class="signup">
-              Есть аккаунт?
-              <a rel="noopener noreferrer" href="#" class="login-link">Войти</a>
-            </p>
           </div>
         </dialog>
       </div>
-    </div>
   </header>
+
   <main class="content" style="flex: 1 0 auto">
     <div class="content__body">
       <div class="button-list">
@@ -1621,16 +1613,22 @@
                   <input name="description_age" id="description_age" type="text" style='width: 100%;' />
                 </div>
                 <div class='row-group'>
-                  <label for="description_apparent-age" style='margin-right: 10px; width: 220px;'>Внешний возраст:</label>
-                  <input name="description_apparent-age" id="description_apparent-age" type="text" style='width: 100%;' />
+                  <label for="description_apparent-age" style='margin-right: 10px; width: 220px;'>Внешний
+                    возраст:</label>
+                  <input name="description_apparent-age" id="description_apparent-age" type="text"
+                    style='width: 100%;' />
                 </div>
                 <div class='row-group'>
-                  <label for="description_date-of-birth" style='margin-right: 10px; width: 200px;'>Дата рождения:</label>
-                  <input name="description_date-of-birth" id="description_date-of-birth" type="text" style='width: 100%;' />
+                  <label for="description_date-of-birth" style='margin-right: 10px; width: 200px;'>Дата
+                    рождения:</label>
+                  <input name="description_date-of-birth" id="description_date-of-birth" type="text"
+                    style='width: 100%;' />
                 </div>
                 <div class='row-group'>
-                  <label for="description_age-of-awakening" style='margin-right: 10px; width: 310px;'>Возраст пробуждения:</label>
-                  <input name="description_age-of-awakening" id="description_age-of-awakening" type="text" style='width: 100%;' />
+                  <label for="description_age-of-awakening" style='margin-right: 10px; width: 310px;'>Возраст
+                    пробуждения:</label>
+                  <input name="description_age-of-awakening" id="description_age-of-awakening" type="text"
+                    style='width: 100%;' />
                 </div>
                 <div class='row-group'>
                   <label for="description_hair" style='margin-right: 10px;'>Причёска:</label>
@@ -1652,10 +1650,10 @@
                   <label for="description_height" style='margin-right: 10px;'>Рост:</label>
                   <input name="description_height" id="description_height" type="text" style='width: 100%;' />
                 </div>
-                <!-- <div class='row-group'>
+                <div class='row-group'>
                   <label for="description_weight" style='margin-right: 10px;'>Вес:</label>
                   <input name="description_weight" id="description_weight" type="text" style='width: 100%;' />
-                </div> -->
+                </div>
                 <div class='row-group'>
                   <label for="description_sex" style='margin-right: 10px;'>Пол:</label>
                   <input name="description_sex" id="description_sex" type="text" style='width: 100%;' />
@@ -1665,8 +1663,7 @@
                 <textarea name="description_" id="description_" class='textarea-style' rows="8" cols="33"
                   style='margin-top: 10px;'></textarea>
                 <label for="appearance">Внешний вид/Природа аватара</label>
-                <textarea name="appearance" id="appearance" class='textarea-style' rows="3"
-                  cols="33"></textarea>
+                <textarea name="appearance" id="appearance" class='textarea-style' rows="3" cols="33"></textarea>
               </div>
             </div>
           </div>
