@@ -22,13 +22,9 @@
 
 		&::after {
 			content: "";
-			width: 30px;
-			height: 30px;
-			background: url("../images/password.svg");
-			top: 10px;
-			right: 5px;
-			position: absolute;
-			display: inline-block;
+			width: 24px;
+			height: 24px;
+			background: url("./../images/login.svg") center / cover no-repeat;
 		}
 	}
 
