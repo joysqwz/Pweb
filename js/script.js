@@ -1,12 +1,12 @@
-const form = document.querySelector('.button__wrapper');
-const loginLink = document.querySelector('.login-link');
-const registerLink = document.querySelector('.register-link');
+const form = document.querySelector('.user-profile');
+const loginQuestion = document.querySelector('.login-question');
+const registerQuestion = document.querySelector('.register-question');
 
-registerLink.addEventListener('click', () => {
+registerQuestion.addEventListener('click', () => {
 	form.classList.add('active');
 });
 
-loginLink.addEventListener('click', () => {
+loginQuestion.addEventListener('click', () => {
 	form.classList.remove('active');
 });
 
@@ -25,50 +25,50 @@ document.addEventListener('click', (e) => {
 	}
 });
 
-let activeButton = document.getElementById('btn-one');
-let saveButton = null;
+// let activeButton = document.getElementById('btn-one');
+// let saveButton = null;
 
-function setCanvasSize() {
-	const canvas = document.querySelector('canvas');
-	if (canvas) {
-		canvas.width = document.body.clientWidth;
-		canvas.height = document.body.clientHeight;
-	}
-}
+// function setCanvasSize() {
+// 	const canvas = document.querySelector('canvas');
+// 	if (canvas) {
+// 		canvas.width = document.body.clientWidth;
+// 		canvas.height = document.body.clientHeight;
+// 	}
+// }
 
-function changeMode(button) {
-	const activePage = document.querySelector('.page:not(.visually-hidden)');
-	if (activePage) {
-		activePage.classList.add('visually-hidden');
-		setCanvasSize();
-	}
+// function changeMode(button) {
+// 	const activePage = document.querySelector('.page:not(.visually-hidden)');
+// 	if (activePage) {
+// 		activePage.classList.add('visually-hidden');
+// 		setCanvasSize();
+// 	}
 
-	if (activeButton) {
-		activeButton.classList.remove('button--active');
-		activeButton.classList.add('button--inactive');
-	}
+// 	if (activeButton) {
+// 		activeButton.classList.remove('button--active');
+// 		activeButton.classList.add('button--inactive');
+// 	}
 
-	activeButton = button;
-	activeButton.classList.add('button--active');
-	activeButton.classList.remove('button--inactive');
+// 	activeButton = button;
+// 	activeButton.classList.add('button--active');
+// 	activeButton.classList.remove('button--inactive');
 
-	const pageToShow = document.getElementById(button.dataset.target);
-	if (pageToShow) {
-		pageToShow.classList.remove('visually-hidden');
-	}
-}
+// 	const pageToShow = document.getElementById(button.dataset.target);
+// 	if (pageToShow) {
+// 		pageToShow.classList.remove('visually-hidden');
+// 	}
+// }
 
-function saveMode() {
-	if (activeButton) {
-		if (activeButton.classList.contains('button--save')) {
-			activeButton.classList.remove('button--save');
-			activeButton.classList.add('button--active');
-		} else {
-			activeButton.classList.remove('button--active');
-			activeButton.classList.add('button--save');
-		}
-	}
-}
+// function saveMode() {
+// 	if (activeButton) {
+// 		if (activeButton.classList.contains('button--save')) {
+// 			activeButton.classList.remove('button--save');
+// 			activeButton.classList.add('button--active');
+// 		} else {
+// 			activeButton.classList.remove('button--active');
+// 			activeButton.classList.add('button--save');
+// 		}
+// 	}
+// }
 
 (function () {
 	var canvas = document.createElement('canvas'),

@@ -11,56 +11,59 @@
 <body>
   <header class="header">
     <div class="header__inner container">
-      <a class="header__logo">
-        <img class='header__logo-image' src="./images/logo.svg" alt="логотип" width="50" height="50" loading="lazy" />
+      <a class="header__logo" href='/Pweb/'>
+        <img class='header__logo-image' src="./images/logo.svg" alt="логотип" width="46" height="46" loading="lazy" />
       </a>
       <div class="user-profile">
-        <button class="user-profile__button-login" id="openBtn">Войти</button>
+        <button class="user-profile__button-login" id="openBtn">
+          <!-- <img src="./images/login.svg" alt="войти" width='40' height='20'> -->
+        </button>
         <dialog id="modal" class="user-profile__modal">
           <div class="modal__wrapper modal__wrapper--authorization">
             <p class="modal__title">Авторизация</p>
             <form class="modal__form modal__form--authorization">
               <div class="modal__group-input">
-                <label class="modal__label" for="username">Логин</label>
-                <input class="modal__input" type="text" name="username" id="username" placeholder="qwerty" />
+                <label for="username">Логин</label>
+                <input type="text" name="username" id="username" placeholder="qwerty" />
               </div>
               <div class="modal__group-input">
-                <label class="modal__label" for="password">Пароль</label>
-                <input class="modal__input" type="password" name="password" id="password" placeholder="********" />
+                <label for="password">Пароль</label>
+                <input type="password" name="password" id="password" placeholder="********" />
               </div>
               <p class="modal__password-question">Восстановить пароль?</p>
               <button class="modal__button modal__button--submit">Войти</button>
-              <p class="modal__account-question">Нет аккаунта? <span>Зарегистрироваться</span></p>
+              <p class="modal__account-question">Нет аккаунта? <span class='register-question'>Зарегистрироваться</span>
+              </p>
             </form>
           </div>
           <div class="modal__wrapper modal__wrapper--registration">
             <p class="modal__title">Регистрация</p>
             <form class="modal__form modal__form--registration">
               <div class="modal__group-input">
-                <label class="modal__label" for="reg-username">Логин</label>
-                <input class="modal__input" type="text" name="username" id="reg-username" placeholder="qwerty" />
+                <label for="reg-username">Логин</label>
+                <input type="text" name="username" id="reg-username" placeholder="qwerty" />
               </div>
               <div class="modal__group-input">
-                <label class="modal__label" for="reg-email">Адрес электронной почты</label>
-                <input class="modal__input" type="email" name="email" id="reg-email" placeholder="qwerty@mail.com" />
+                <label for="reg-email">Адрес электронной почты</label>
+                <input type="email" name="email" id="reg-email" placeholder="qwerty@mail.com" />
               </div>
               <div class="modal__group-input">
-                <label class="modal__label" for="reg-password">Пароль</label>
-                <input class="modal__input" type="password" name="password" id="reg-password" placeholder="********" />
+                <label for="reg-password">Пароль</label>
+                <input type="password" name="password" id="reg-password" placeholder="********" />
               </div>
               <div class="modal__group-input">
-                <label class="modal__label" for="reg-conf-password">Подтверждение пароля</label>
-                <input class="modal__input" type="password" name="password" id="reg-conf-password" placeholder="********" />
+                <label for="reg-conf-password">Подтверждение пароля</label>
+                <input type="password" name="password" id="reg-conf-password" placeholder="********" />
               </div>
               <button class="modal__button modal__button--submit">Зарегистрироваться</button>
-              <p class="modal__account-question">Есть аккаунт?</p>
+              <p class="modal__account-question">Есть аккаунт? <span class='login-question'>Войти</span></p>
             </form>
           </div>
         </dialog>
       </div>
   </header>
 
-  <main class="content" style="flex: 1 0 auto">
+  <main class="content">
     <div class="content__body">
       <div class="button-list">
         <button type="button" class="button button--active" onClick="changeMode(this)" id="btn-one" data-target="page1">
