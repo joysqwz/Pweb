@@ -58,13 +58,13 @@ function changeMode(button) {
 	}
 
 	if (activeButton) {
-		activeButton.classList.remove('button--active');
-		activeButton.classList.add('button--inactive');
+		activeButton.classList.remove('content__button--active');
+		activeButton.classList.add('content__button--inactive');
 	}
 
 	activeButton = button;
-	activeButton.classList.add('button--active');
-	activeButton.classList.remove('button--inactive');
+	activeButton.classList.add('content__button--active');
+	activeButton.classList.remove('content__button--inactive');
 
 	const pageToShow = document.getElementById(button.dataset.target);
 	if (pageToShow) {
@@ -74,12 +74,12 @@ function changeMode(button) {
 
 function saveMode() {
 	if (activeButton) {
-		if (activeButton.classList.contains('button--save')) {
-			activeButton.classList.remove('button--save');
-			activeButton.classList.add('button--active');
+		if (activeButton.classList.contains('content__button--save')) {
+			activeButton.classList.remove('content__button--save');
+			activeButton.classList.add('content__button--active');
 		} else {
-			activeButton.classList.remove('button--active');
-			activeButton.classList.add('button--save');
+			activeButton.classList.remove('content__button--active');
+			activeButton.classList.add('content__button--save');
 		}
 	}
 }
