@@ -62,21 +62,21 @@
   </header>
 
   <main class="content">
-    <div class="content__body">
+    <div class="content__body container container--width800">
       <div class="content__navigation">
         <button type="button" class="content__button content__button--active" onClick="changeMode(this)" id="btn-one"
           data-target="page1">
           Лист 1
         </button>
-        <button type="button" class="content__button content__button--active" onClick="changeMode(this)" id="btn-two"
+        <button type="button" class="content__button content__button--inactive" onClick="changeMode(this)" id="btn-two"
           data-target="page2">
           Лист 2
         </button>
-        <button type="button" class="content__button content__button--active" onClick="changeMode(this)" id="btn-three"
-          data-target="page3">
+        <button type="button" class="content__button content__button--inactive" onClick="changeMode(this)"
+          id="btn-three" data-target="page3">
           Лист 3
         </button>
-        <button type="button" class="content__button content__button--active" onClick="changeMode(this)" id="btn-four"
+        <button type="button" class="content__button content__button--inactive" onClick="changeMode(this)" id="btn-four"
           data-target="page4">
           Лист 4
         </button>
@@ -120,12 +120,11 @@
               </div>
             </div>
           </div>
-
+          <h2>Атрибуты</h2>
           <div class="content__section">
-            <h2>Атрибуты</h2>
             <div class="content__item-group">
               <h3>Физические</h3>
-              <div class="content__item-group-inner content__item-group-inner--row">
+              <div class="content__item-group-inner ">
                 <h4>Сила</h4>
                 <div class="content__skill-level">
                   <input value="5" name="strength" id="strength-5" type="radio" />
@@ -140,7 +139,7 @@
                   <label for="strength-1"></label>
                 </div>
               </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
+              <div class="content__item-group-inner ">
                 <h4>Ловкость</h4>
                 <div class="content__skill-level">
                   <input value="5" name="dexterity" id="dexterity-5" type="radio" />
@@ -155,7 +154,7 @@
                   <label for="dexterity-1"></label>
                 </div>
               </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
+              <div class="content__item-group-inner ">
                 <h4>Выносливость</h4>
                 <div class="content__skill-level">
                   <input value="5" name="stamina" id="stamina-5" type="radio" />
@@ -173,7 +172,7 @@
             </div>
             <div class="content__item-group">
               <h3>Социальные</h3>
-              <div class="content__item-group-inner content__item-group-inner--row">
+              <div class="content__item-group-inner ">
                 <h4>Обаяние</h4>
                 <div class="content__skill-level">
                   <input value="5" name="charisma" id="charisma-5" type="radio" />
@@ -188,7 +187,7 @@
                   <label for="charisma-1"></label>
                 </div>
               </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
+              <div class="content__item-group-inner ">
                 <h4>Манипулирование</h4>
                 <div class="content__skill-level">
                   <input value="5" name="manipulation" id="manipulation-5" type="radio" />
@@ -203,7 +202,7 @@
                   <label for="manipulation-1"></label>
                 </div>
               </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
+              <div class="content__item-group-inner ">
                 <h4>Внешность</h4>
                 <div class="content__skill-level">
                   <input value="5" name="appearance" id="appearance-5" type="radio" />
@@ -221,7 +220,7 @@
             </div>
             <div class="content__item-group">
               <h3>Ментальные</h3>
-              <div class="content__item-group-inner content__item-group-inner--row">
+              <div class="content__item-group-inner ">
                 <h4>Восприятие</h4>
                 <div class="content__skill-level">
                   <input value="5" name="perception" id="perception-5" type="radio" />
@@ -236,7 +235,7 @@
                   <label for="perception-1"></label>
                 </div>
               </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
+              <div class="content__item-group-inner ">
                 <h4>Интеллект</h4>
                 <div class="content__skill-level">
                   <input value="5" name="intelligence" id="intelligence-5" type="radio" />
@@ -251,7 +250,7 @@
                   <label for="intelligence-1"></label>
                 </div>
               </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
+              <div class="content__item-group-inner ">
                 <h4>Смекалка</h4>
                 <div class="content__skill-level">
                   <input value="5" name="wits" id="wits-5" type="radio" />
@@ -268,13 +267,11 @@
               </div>
             </div>
           </div>
-
+          <h2>Способности</h2>
           <div class="content__section">
-            <h2>Способности</h2>
             <div class="content__item-group">
-
               <h3>Таланты</h3>
-              <div class="content__item-group-inner content__item-group-inner--row">
+              <div class="content__item-group-inner ">
                 <h4>Атлетика</h4>
                 <div class="content__skill-level">
                   <input value="5" name="athletics" id="athletics-5" type="radio" />
@@ -289,7 +286,7 @@
                   <label for="athletics-1"></label>
                 </div>
               </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
+              <div class="content__item-group-inner ">
                 <h4>Бдительность</h4>
                 <div class="content__skill-level">
                   <input value="5" name="alertness" id="alertness-5" type="radio" />
@@ -304,7 +301,7 @@
                   <label for="alertness-1"></label>
                 </div>
               </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
+              <div class="content__item-group-inner ">
                 <h4>Драка</h4>
                 <div class="content__skill-level">
                   <input value="5" name="brawl" id="brawl-5" type="radio" />
@@ -319,7 +316,7 @@
                   <label for="brawl-1"></label>
                 </div>
               </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
+              <div class="content__item-group-inner ">
                 <h4>Запугивание</h4>
                 <div class="content__skill-level">
                   <input value="5" name="intimidation" id="intimidation-5" type="radio" />
@@ -334,7 +331,7 @@
                   <label for="intimidation-1"></label>
                 </div>
               </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
+              <div class="content__item-group-inner ">
                 <h4>Искусство</h4>
                 <div class="content__skill-level">
                   <input value="5" name="art" id="art-5" type="radio" />
@@ -349,7 +346,7 @@
                   <label for="art-1"></label>
                 </div>
               </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
+              <div class="content__item-group-inner ">
                 <h4>Красноречие</h4>
                 <div class="content__skill-level">
                   <input value="5" name="expression" id="expression-5" type="radio" />
@@ -364,7 +361,7 @@
                   <label for="expression-1"></label>
                 </div>
               </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
+              <div class="content__item-group-inner ">
                 <h4>Лидерство</h4>
                 <div class="content__skill-level">
                   <input value="5" name="leadership" id="leadership-5" type="radio" />
@@ -379,7 +376,7 @@
                   <label for="leadership-1"></label>
                 </div>
               </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
+              <div class="content__item-group-inner ">
                 <h4>Уличные порядки</h4>
                 <div class="content__skill-level">
                   <input value="5" name="streetwise" id="streetwise-5" type="radio" />
@@ -394,7 +391,7 @@
                   <label for="streetwise-1"></label>
                 </div>
               </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
+              <div class="content__item-group-inner ">
                 <h4>Хитрость</h4>
                 <div class="content__skill-level">
                   <input value="5" name="subterfuge" id="subterfuge-5" type="radio" />
@@ -409,7 +406,7 @@
                   <label for="subterfuge-1"></label>
                 </div>
               </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
+              <div class="content__item-group-inner ">
                 <h4>Экстрасенсорика</h4>
                 <div class="content__skill-level">
                   <input value="5" name="awareness" id="awareness-5" type="radio" />
@@ -424,7 +421,7 @@
                   <label for="awareness-1"></label>
                 </div>
               </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
+              <div class="content__item-group-inner ">
                 <h4>Эмпатия</h4>
                 <div class="content__skill-level">
                   <input value="5" name="empathy" id="empathy-5" type="radio" />
@@ -440,10 +437,9 @@
                 </div>
               </div>
             </div>
-
             <div class="content__item-group">
               <h3>Навыки</h3>
-              <div class="content__item-group-inner content__item-group-inner--row">
+              <div class="content__item-group-inner ">
                 <h4>Боевые искусства</h4>
                 <div class="content__skill-level">
                   <input value="5" name="martialarts" id="martialarts-5" type="radio" />
@@ -458,7 +454,7 @@
                   <label for="martialarts-1"></label>
                 </div>
               </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
+              <div class="content__item-group-inner ">
                 <h4>Вождение</h4>
                 <div class="content__skill-level">
                   <input value="5" name="drive" id="drive-5" type="radio" />
@@ -473,7 +469,7 @@
                   <label for="drive-1"></label>
                 </div>
               </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
+              <div class="content__item-group-inner ">
                 <h4>Выживание</h4>
                 <div class="content__skill-level">
                   <input value="5" name="survival" id="survival-5" type="radio" />
@@ -488,7 +484,7 @@
                   <label for="survival-1"></label>
                 </div>
               </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
+              <div class="content__item-group-inner ">
                 <h4>Исследование</h4>
                 <div class="content__skill-level">
                   <input value="5" name="research" id="research-5" type="radio" />
@@ -503,7 +499,7 @@
                   <label for="research-1"></label>
                 </div>
               </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
+              <div class="content__item-group-inner ">
                 <h4>Медитация</h4>
                 <div class="content__skill-level">
                   <input value="5" name="meditation" id="meditation-5" type="radio" />
@@ -518,7 +514,7 @@
                   <label for="meditation-1"></label>
                 </div>
               </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
+              <div class="content__item-group-inner ">
                 <h4>Огнестрельное оружие</h4>
                 <div class="content__skill-level">
                   <input value="5" name="firearms" id="firearms-5" type="radio" />
@@ -533,7 +529,7 @@
                   <label for="firearms-1"></label>
                 </div>
               </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
+              <div class="content__item-group-inner ">
                 <h4>Ремёсла</h4>
                 <div class="content__skill-level">
                   <input value="5" name="crafts" id="crafts-5" type="radio" />
@@ -548,7 +544,7 @@
                   <label for="crafts-1"></label>
                 </div>
               </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
+              <div class="content__item-group-inner ">
                 <h4>Скрытность</h4>
                 <div class="content__skill-level">
                   <input value="5" name="stealth" id="stealth-5" type="radio" />
@@ -563,7 +559,7 @@
                   <label for="stealth-1"></label>
                 </div>
               </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
+              <div class="content__item-group-inner ">
                 <h4>Технологии</h4>
                 <div class="content__skill-level">
                   <input value="5" name="technology" id="technology-5" type="radio" />
@@ -578,7 +574,7 @@
                   <label for="technology-1"></label>
                 </div>
               </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
+              <div class="content__item-group-inner ">
                 <h4>Холодное оружие</h4>
                 <div class="content__skill-level">
                   <input value="5" name="melee" id="melee-5" type="radio" />
@@ -593,7 +589,7 @@
                   <label for="melee-1"></label>
                 </div>
               </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
+              <div class="content__item-group-inner ">
                 <h4>Этикет</h4>
                 <div class="content__skill-level">
                   <input value="5" name="etiquette" id="etiquette-5" type="radio" />
@@ -611,7 +607,7 @@
             </div>
             <div class="content__item-group">
               <h3>Познания</h3>
-              <div class="content__item-group-inner content__item-group-inner--row">
+              <div class="content__item-group-inner ">
                 <h4>Гуманитарные науки</h4>
                 <div class="content__skill-level">
                   <input value="5" name="academics" id="academics-5" type="radio" />
@@ -626,7 +622,7 @@
                   <label for="academics-1"></label>
                 </div>
               </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
+              <div class="content__item-group-inner ">
                 <h4>Естественные науки</h4>
                 <div class="content__skill-level">
                   <input value="5" name="science" id="science-5" type="radio" />
@@ -641,7 +637,7 @@
                   <label for="science-1"></label>
                 </div>
               </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
+              <div class="content__item-group-inner ">
                 <h4>Загадки</h4>
                 <div class="content__skill-level">
                   <input value="5" name="enigmas" id="enigmas-5" type="radio" />
@@ -656,7 +652,7 @@
                   <label for="enigmas-1"></label>
                 </div>
               </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
+              <div class="content__item-group-inner ">
                 <h4>Законы</h4>
                 <div class="content__skill-level">
                   <input value="5" name="law" id="law-5" type="radio" />
@@ -671,7 +667,7 @@
                   <label for="law-1"></label>
                 </div>
               </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
+              <div class="content__item-group-inner ">
                 <h4>Компьютеры</h4>
                 <div class="content__skill-level">
                   <input value="5" name="computer" id="computer-5" type="radio" />
@@ -686,7 +682,7 @@
                   <label for="computer-1"></label>
                 </div>
               </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
+              <div class="content__item-group-inner ">
                 <h4>Космология</h4>
                 <div class="content__skill-level">
                   <input value="5" name="cosmology" id="cosmology-5" type="radio" />
@@ -701,7 +697,7 @@
                   <label for="cosmology-1"></label>
                 </div>
               </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
+              <div class="content__item-group-inner ">
                 <h4>Медицина</h4>
                 <div class="content__skill-level">
                   <input value="5" name="medicine" id="medicine-5" type="radio" />
@@ -716,7 +712,7 @@
                   <label for="medicine-1"></label>
                 </div>
               </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
+              <div class="content__item-group-inner ">
                 <h4>Оккультизм</h4>
                 <div class="content__skill-level">
                   <input value="5" name="occult" id="occult-5" type="radio" />
@@ -731,7 +727,7 @@
                   <label for="occult-1"></label>
                 </div>
               </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
+              <div class="content__item-group-inner ">
                 <h4>Политика</h4>
                 <div class="content__skill-level">
                   <input value="5" name="politics" id="politics-5" type="radio" />
@@ -746,7 +742,7 @@
                   <label for="politics-1"></label>
                 </div>
               </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
+              <div class="content__item-group-inner ">
                 <h4>Расследование</h4>
                 <div class="content__skill-level">
                   <input value="5" name="investigation" id="investigation-5" type="radio" />
@@ -761,7 +757,7 @@
                   <label for="investigation-1"></label>
                 </div>
               </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
+              <div class="content__item-group-inner ">
                 <h4>Эзотерика</h4>
                 <div class="content__skill-level">
                   <input value="5" name="esoterica" id="esoterica-5" type="radio" />
@@ -778,10 +774,10 @@
               </div>
             </div>
           </div>
+          <h2>Сферы</h2>
           <div class="content__section">
-            <h2>Сферы</h2>
             <div class="content__item-group">
-              <div class="content__item-group-inner content__item-group-inner--row">
+              <div class="content__item-group-inner ">
                 <h4>Жизнь</h4>
                 <div class="content__skill-level">
                   <input value="5" name="life" id="life-5" type="radio" />
@@ -796,7 +792,7 @@
                   <label for="life-1"></label>
                 </div>
               </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
+              <div class="content__item-group-inner ">
                 <h4>Материя</h4>
                 <div class="content__skill-level">
                   <input value="5" name="matter" id="matter-5" type="radio" />
@@ -811,7 +807,7 @@
                   <label for="matter-1"></label>
                 </div>
               </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
+              <div class="content__item-group-inner ">
                 <h4>Силы</h4>
                 <div class="content__skill-level">
                   <input value="5" name="forces" id="forces-5" type="radio" />
@@ -826,7 +822,9 @@
                   <label for="forces-1"></label>
                 </div>
               </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
+            </div>
+            <div class="content__item-group">
+              <div class="content__item-group-inner ">
                 <h4>Время</h4>
                 <div class="content__skill-level">
                   <input value="5" name="time" id="time-5" type="radio" />
@@ -841,7 +839,7 @@
                   <label for="time-1"></label>
                 </div>
               </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
+              <div class="content__item-group-inner ">
                 <h4>Связи</h4>
                 <div class="content__skill-level">
                   <input value="5" name="correspodence" id="correspodence-5" type="radio" />
@@ -856,7 +854,7 @@
                   <label for="correspodence-1"></label>
                 </div>
               </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
+              <div class="content__item-group-inner ">
                 <h4>Энтропия</h4>
                 <div class="content__skill-level">
                   <input value="5" name="entropy" id="entropy-5" type="radio" />
@@ -872,57 +870,59 @@
                 </div>
               </div>
             </div>
-            <div class="content__item-group-inner content__item-group-inner--row">
-              <h4>Дух</h4>
-              <div class="content__skill-level">
-                <input value="5" name="spirit" id="spirit-5" type="radio" />
-                <label for="spirit-5"></label>
-                <input value="4" name="spirit" id="spirit-4" type="radio" />
-                <label for="spirit-4"></label>
-                <input value="3" name="spirit" id="spirit-3" type="radio" />
-                <label for="spirit-3"></label>
-                <input value="2" name="spirit" id="spirit-2" type="radio" />
-                <label for="spirit-2"></label>
-                <input value="1" name="spirit" id="spirit-1" type="radio" />
-                <label for="spirit-1"></label>
+            <div class="content__item-group">
+              <div class="content__item-group-inner ">
+                <h4>Дух</h4>
+                <div class="content__skill-level">
+                  <input value="5" name="spirit" id="spirit-5" type="radio" />
+                  <label for="spirit-5"></label>
+                  <input value="4" name="spirit" id="spirit-4" type="radio" />
+                  <label for="spirit-4"></label>
+                  <input value="3" name="spirit" id="spirit-3" type="radio" />
+                  <label for="spirit-3"></label>
+                  <input value="2" name="spirit" id="spirit-2" type="radio" />
+                  <label for="spirit-2"></label>
+                  <input value="1" name="spirit" id="spirit-1" type="radio" />
+                  <label for="spirit-1"></label>
+                </div>
               </div>
-            </div>
-            <div class="content__item-group-inner content__item-group-inner--row">
-              <h4>Разум</h4>
-              <div class="content__skill-level">
-                <input value="5" name="mind" id="mind-5" type="radio" />
-                <label for="mind-5"></label>
-                <input value="4" name="mind" id="mind-4" type="radio" />
-                <label for="mind-4"></label>
-                <input value="3" name="mind" id="mind-3" type="radio" />
-                <label for="mind-3"></label>
-                <input value="2" name="mind" id="mind-2" type="radio" />
-                <label for="mind-2"></label>
-                <input value="1" name="mind" id="mind-1" type="radio" />
-                <label for="mind-1"></label>
+              <div class="content__item-group-inner ">
+                <h4>Разум</h4>
+                <div class="content__skill-level">
+                  <input value="5" name="mind" id="mind-5" type="radio" />
+                  <label for="mind-5"></label>
+                  <input value="4" name="mind" id="mind-4" type="radio" />
+                  <label for="mind-4"></label>
+                  <input value="3" name="mind" id="mind-3" type="radio" />
+                  <label for="mind-3"></label>
+                  <input value="2" name="mind" id="mind-2" type="radio" />
+                  <label for="mind-2"></label>
+                  <input value="1" name="mind" id="mind-1" type="radio" />
+                  <label for="mind-1"></label>
+                </div>
               </div>
-            </div>
-            <div class="content__item-group-inner content__item-group-inner--row">
-              <h4>Основы</h4>
-              <div class="content__skill-level">
-                <input value="5" name="prime" id="prime-5" type="radio" />
-                <label for="prime-5"></label>
-                <input value="4" name="prime" id="prime-4" type="radio" />
-                <label for="prime-4"></label>
-                <input value="3" name="prime" id="prime-3" type="radio" />
-                <label for="prime-3"></label>
-                <input value="2" name="prime" id="prime-2" type="radio" />
-                <label for="prime-2"></label>
-                <input value="1" name="prime" id="prime-1" type="radio" />
-                <label for="prime-1"></label>
+              <div class="content__item-group-inner ">
+                <h4>Основы</h4>
+                <div class="content__skill-level">
+                  <input value="5" name="prime" id="prime-5" type="radio" />
+                  <label for="prime-5"></label>
+                  <input value="4" name="prime" id="prime-4" type="radio" />
+                  <label for="prime-4"></label>
+                  <input value="3" name="prime" id="prime-3" type="radio" />
+                  <label for="prime-3"></label>
+                  <input value="2" name="prime" id="prime-2" type="radio" />
+                  <label for="prime-2"></label>
+                  <input value="1" name="prime" id="prime-1" type="radio" />
+                  <label for="prime-1"></label>
+                </div>
               </div>
             </div>
           </div>
-          <div class="content__section">
-            <h2>Преимущества</h2>
+          <h2>Преимущества</h2>
+          <div class="content__section content__section--ai-start">
             <div class="content__item-group">
               <h3>Дополнения</h3>
-              <div class="content__item-group-inner content__item-group-inner--row">
+              <div class="content__item-group-inner content__item-group-inner--gap10">
                 <input type="text" name="backgrounds-onei" />
                 <div class="content__skill-level">
                   <input value="5" name="backgrounds-one" id="backgrounds-one-5" type="radio" />
@@ -937,7 +937,7 @@
                   <label for="backgrounds-one-1"></label>
                 </div>
               </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
+              <div class="content__item-group-inner content__item-group-inner--gap10">
                 <input type="text" name="backgrounds-twoi" />
                 <div class="content__skill-level">
                   <input value="5" name="backgrounds-two" id="backgrounds-two-5" type="radio" />
@@ -952,7 +952,7 @@
                   <label for="backgrounds-two-1"></label>
                 </div>
               </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
+              <div class="content__item-group-inner content__item-group-inner--gap10">
                 <input type="text" name="backgrounds-threei" />
                 <div class="content__skill-level">
                   <input value="5" name="backgrounds-three" id="backgrounds-three-5" type="radio" />
@@ -967,7 +967,7 @@
                   <label for="backgrounds-three-1"></label>
                 </div>
               </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
+              <div class="content__item-group-inner content__item-group-inner--gap10">
                 <input type="text" name="backgrounds-fouri" />
                 <div class="content__skill-level">
                   <input value="5" name="backgrounds-four" id="backgrounds-four-5" type="radio" />
@@ -982,7 +982,7 @@
                   <label for="backgrounds-four-1"></label>
                 </div>
               </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
+              <div class="content__item-group-inner content__item-group-inner--gap10">
                 <input type="text" name="backgrounds-fivei" />
                 <div class="content__skill-level">
                   <input value="5" name="backgrounds-five" id="backgrounds-five-5" type="radio" />
@@ -997,7 +997,7 @@
                   <label for="backgrounds-five-1"></label>
                 </div>
               </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
+              <div class="content__item-group-inner content__item-group-inner--gap10 content__item-group-inner--mb20">
                 <input type="text" name="backgrounds-sixi" />
                 <div class="content__skill-level">
                   <input value="5" name="backgrounds-six" id="backgrounds-six-5" type="radio" />
@@ -1012,10 +1012,101 @@
                   <label for="backgrounds-six-1"></label>
                 </div>
               </div>
+              <h3>Прочие особенности</h3>
+              <div class="content__item-group-inner content__item-group-inner--gap10">
+                <input type="text" name="other-traits-onei" />
+                <div class="content__skill-level">
+                  <input value="5" name="other-traits-one" id="other-traits-one-5" type="radio" />
+                  <label for="other-traits-one-5"></label>
+                  <input value="4" name="other-traits-one" id="other-traits-one-4" type="radio" />
+                  <label for="other-traits-one-4"></label>
+                  <input value="3" name="other-traits-one" id="other-traits-one-3" type="radio" />
+                  <label for="other-traits-one-3"></label>
+                  <input value="2" name="other-traits-one" id="other-traits-one-2" type="radio" />
+                  <label for="other-traits-one-2"></label>
+                  <input value="1" name="other-traits-one" id="other-traits-one-1" type="radio" />
+                  <label for="other-traits-one-1"></label>
+                </div>
+              </div>
+              <div class="content__item-group-inner content__item-group-inner--gap10">
+                <input type="text" name="other-traits-twoi" />
+                <div class="content__skill-level">
+                  <input value="5" name="other-traits-two" id="other-traits-two-5" type="radio" />
+                  <label for="other-traits-two-5"></label>
+                  <input value="4" name="other-traits-two" id="other-traits-two-4" type="radio" />
+                  <label for="other-traits-two-4"></label>
+                  <input value="3" name="other-traits-two" id="other-traits-two-3" type="radio" />
+                  <label for="other-traits-two-3"></label>
+                  <input value="2" name="other-traits-two" id="other-traits-two-2" type="radio" />
+                  <label for="other-traits-two-2"></label>
+                  <input value="1" name="other-traits-two" id="other-traits-two-1" type="radio" />
+                  <label for="other-traits-two-1"></label>
+                </div>
+              </div>
+              <div class="content__item-group-inner content__item-group-inner--gap10">
+                <input type="text" name="other-traits-threei" />
+                <div class="content__skill-level">
+                  <input value="5" name="other-traits-three" id="other-traits-three-5" type="radio" />
+                  <label for="other-traits-three-5"></label>
+                  <input value="4" name="other-traits-three" id="other-traits-three-4" type="radio" />
+                  <label for="other-traits-three-4"></label>
+                  <input value="3" name="other-traits-three" id="other-traits-three-3" type="radio" />
+                  <label for="other-traits-three-3"></label>
+                  <input value="2" name="other-traits-three" id="other-traits-three-2" type="radio" />
+                  <label for="other-traits-three-2"></label>
+                  <input value="1" name="other-traits-three" id="other-traits-three-1" type="radio" />
+                  <label for="other-traits-three-1"></label>
+                </div>
+              </div>
+              <div class="content__item-group-inner content__item-group-inner--gap10">
+                <input type="text" name="other-traits-fouri" />
+                <div class="content__skill-level">
+                  <input value="5" name="other-traits-four" id="other-traits-four-5" type="radio" />
+                  <label for="other-traits-four-5"></label>
+                  <input value="4" name="other-traits-four" id="other-traits-four-4" type="radio" />
+                  <label for="other-traits-four-4"></label>
+                  <input value="3" name="other-traits-four" id="other-traits-four-3" type="radio" />
+                  <label for="other-traits-four-3"></label>
+                  <input value="2" name="other-traits-four" id="other-traits-four-2" type="radio" />
+                  <label for="other-traits-four-2"></label>
+                  <input value="1" name="other-traits-four" id="other-traits-four-1" type="radio" />
+                  <label for="other-traits-four-1"></label>
+                </div>
+              </div>
+              <div class="content__item-group-inner content__item-group-inner--gap10">
+                <input type="text" name="other-traits-fivei" />
+                <div class="content__skill-level">
+                  <input value="5" name="other-traits-five" id="other-traits-five-5" type="radio" />
+                  <label for="other-traits-five-5"></label>
+                  <input value="4" name="other-traits-five" id="other-traits-five-4" type="radio" />
+                  <label for="other-traits-five-4"></label>
+                  <input value="3" name="other-traits-five" id="other-traits-five-3" type="radio" />
+                  <label for="other-traits-five-3"></label>
+                  <input value="2" name="other-traits-five" id="other-traits-five-2" type="radio" />
+                  <label for="other-traits-five-2"></label>
+                  <input value="1" name="other-traits-five" id="other-traits-five-1" type="radio" />
+                  <label for="other-traits-five-1"></label>
+                </div>
+              </div>
+              <div class="content__item-group-inner content__item-group-inner--gap10">
+                <input type="text" name="other-traits-sixi" />
+                <div class="content__skill-level">
+                  <input value="5" name="other-traits-six" id="other-traits-six-5" type="radio" />
+                  <label for="other-traits-six-5"></label>
+                  <input value="4" name="other-traits-six" id="other-traits-six-4" type="radio" />
+                  <label for="other-traits-six-4"></label>
+                  <input value="3" name="other-traits-six" id="other-traits-six-3" type="radio" />
+                  <label for="other-traits-six-3"></label>
+                  <input value="2" name="other-traits-six" id="other-traits-six-2" type="radio" />
+                  <label for="other-traits-six-2"></label>
+                  <input value="1" name="other-traits-six" id="other-traits-six-1" type="radio" />
+                  <label for="other-traits-six-1"></label>
+                </div>
+              </div>
             </div>
-            <div class="content__item-group">
+            <div class="content__item-group content__item-group--gap0">
               <h3>Арете</h3>
-              <div class="content__item-group-inner content__item-group-inner--row">
+              <div class="content__item-group-inner content__item-group-inner--fd-col content__item-group-inner--mb20">
                 <div class="content__skill-level">
                   <input value="10" name="arete" id="arete-10" type="radio" />
                   <label for="arete-10"></label>
@@ -1039,10 +1130,8 @@
                   <label for="arete-1"></label>
                 </div>
               </div>
-            </div>
-            <div class="content__item-group">
               <h3>Сила воли</h3>
-              <div class="content__item-group-inner content__item-group-inner--row">
+              <div class="content__item-group-inner content__item-group-inner--fd-col content__item-group-inner--mb20">
                 <div class="content__skill-level">
                   <input value="10" name="willpower" id="willpower-10" type="radio" />
                   <label for="willpower-10"></label>
@@ -1087,567 +1176,622 @@
                   <input value="1" name="willpower-2" id="willpower-2-1" type="radio" />
                   <label for="willpower-2-1"></label>
                 </div>
+                <div class="content__skill-level content__skill-level--content-block">
+                  <input value="10" name="willpower-2-alt" id="willpower-2-alt-10" type="radio" />
+                  <label for="willpower-2-alt-10"></label>
+                  <input value="9" name="willpower-2-alt" id="willpower-2-alt-9" type="radio" />
+                  <label for="willpower-2-alt-9"></label>
+                  <input value="8" name="willpower-2-alt" id="willpower-2-alt-8" type="radio" />
+                  <label for="willpower-2-alt-8"></label>
+                  <input value="7" name="willpower-2-alt" id="willpower-2-alt-7" type="radio" />
+                  <label for="willpower-2-alt-7"></label>
+                  <input value="6" name="willpower-2-alt" id="willpower-2-alt-6" type="radio" />
+                  <label for="willpower-2-alt-6"></label>
+                  <input value="5" name="willpower-2-alt" id="willpower-2-alt-5" type="radio" />
+                  <label for="willpower-2-alt-5"></label>
+                  <input value="4" name="willpower-2-alt" id="willpower-2-alt-4" type="radio" />
+                  <label for="willpower-2-alt-4"></label>
+                  <input value="3" name="willpower-2-alt" id="willpower-2-alt-3" type="radio" />
+                  <label for="willpower-2-alt-3"></label>
+                  <input value="2" name="willpower-2-alt" id="willpower-2-alt-2" type="radio" />
+                  <label for="willpower-2-alt-2"></label>
+                  <input value="1" name="willpower-2-alt" id="willpower-2-alt-1" type="radio" />
+                  <label for="willpower-2-alt-1"></label>
+                </div>
               </div>
-              <div class="content__skill-level content__skill-level--content-block">
-                <input value="10" name="willpower-2-alt" id="willpower-2-alt-10" type="radio" />
-                <label for="willpower-2-alt-10"></label>
-                <input value="9" name="willpower-2-alt" id="willpower-2-alt-9" type="radio" />
-                <label for="willpower-2-alt-9"></label>
-                <input value="8" name="willpower-2-alt" id="willpower-2-alt-8" type="radio" />
-                <label for="willpower-2-alt-8"></label>
-                <input value="7" name="willpower-2-alt" id="willpower-2-alt-7" type="radio" />
-                <label for="willpower-2-alt-7"></label>
-                <input value="6" name="willpower-2-alt" id="willpower-2-alt-6" type="radio" />
-                <label for="willpower-2-alt-6"></label>
-                <input value="5" name="willpower-2-alt" id="willpower-2-alt-5" type="radio" />
-                <label for="willpower-2-alt-5"></label>
-                <input value="4" name="willpower-2-alt" id="willpower-2-alt-4" type="radio" />
-                <label for="willpower-2-alt-4"></label>
-                <input value="3" name="willpower-2-alt" id="willpower-2-alt-3" type="radio" />
-                <label for="willpower-2-alt-3"></label>
-                <input value="2" name="willpower-2-alt" id="willpower-2-alt-2" type="radio" />
-                <label for="willpower-2-alt-2"></label>
-                <input value="1" name="willpower-2-alt" id="willpower-2-alt-1" type="radio" />
-                <label for="willpower-2-alt-1"></label>
+              <div class="content__item-group-inner content__item-group-inner--fd-col">
+                <h3>Квитэссенция</h3>
+                <div class="circle-container">
+                  <div class="dot"></div>
+                  <input type="checkbox" id="check1"><label for="check1" class="pos-1 o"></label>
+                  <input type="checkbox" id="check2"><label for="check2" class="pos-2 o"></label>
+                  <input type="checkbox" id="check3"><label for="check3" class="pos-3 o"></label>
+                  <input type="checkbox" id="check4"><label for="check4" class="pos-4 o"></label>
+                  <input type="checkbox" id="check5"><label for="check5" class="pos-5 o"></label>
+                  <input type="checkbox" id="check6"><label for="check6" class="pos-6 x"></label>
+                  <input type="checkbox" id="check7"><label for="check7" class="pos-7 x"></label>
+                  <input type="checkbox" id="check8"><label for="check8" class="pos-8 x"></label>
+                  <input type="checkbox" id="check9"><label for="check9" class="pos-9 x"></label>
+                  <input type="checkbox" id="check10"><label for="check10" class="pos-10 x"></label>
+                  <input type="checkbox" id="check11"><label for="check11" class="pos-11 x"></label>
+                  <input type="checkbox" id="check12"><label for="check12" class="pos-12 x"></label>
+                  <input type="checkbox" id="check13"><label for="check13" class="pos-13 x"></label>
+                  <input type="checkbox" id="check14"><label for="check14" class="pos-14 x"></label>
+                  <input type="checkbox" id="check15"><label for="check15" class="pos-15 o"></label>
+                  <input type="checkbox" id="check16"><label for="check16" class="pos-16 o"></label>
+                  <input type="checkbox" id="check17"><label for="check17" class="pos-17 o"></label>
+                  <input type="checkbox" id="check18"><label for="check18" class="pos-18 o"></label>
+                </div>
+                <h3>Парадокс</h3>
               </div>
             </div>
             <div class="content__item-group">
               <h3>Здоровье</h3>
-              <div class="content__item-group-inner content__item-group-inner--row">
-                <h4>Восприятие</h4>
-                <div class="content__skill-level">
-                  <input value="5" name="perception" id="perception-5" type="radio" />
-                  <label for="perception-5"></label>
-                  <input value="4" name="perception" id="perception-4" type="radio" />
-                  <label for="perception-4"></label>
-                  <input value="3" name="perception" id="perception-3" type="radio" />
-                  <label for="perception-3"></label>
-                  <input value="2" name="perception" id="perception-2" type="radio" />
-                  <label for="perception-2"></label>
-                  <input value="1" name="perception" id="perception-1" type="radio" />
-                  <label for="perception-1"></label>
-                </div>
+              <div class="content__item-group-inner">
+                <span>Пустяк</span>
+                <label for="bruised">0</label>
+                <select name="bruised" id="bruised">
+                  <option value=""></option>
+                  <option value="\">\</option>
+                  <option value="x">x</option>
+                  <option value="Ж">ж</option>
+                </select>
               </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
-                <h4>Интеллект</h4>
-                <div class="content__skill-level">
-                  <input value="5" name="intelligence" id="intelligence-5" type="radio" />
-                  <label for="intelligence-5"></label>
-                  <input value="4" name="intelligence" id="intelligence-4" type="radio" />
-                  <label for="intelligence-4"></label>
-                  <input value="3" name="intelligence" id="intelligence-3" type="radio" />
-                  <label for="intelligence-3"></label>
-                  <input value="2" name="intelligence" id="intelligence-2" type="radio" />
-                  <label for="intelligence-2"></label>
-                  <input value="1" name="intelligence" id="intelligence-1" type="radio" />
-                  <label for="intelligence-1"></label>
-                </div>
+              <div class="content__item-group-inner">
+                <span>Боль</span>
+                <label for="hurt">-1</label>
+                <select name="hurt" id="hurt">
+                  <option value=""></option>
+                  <option value="\">\</option>
+                  <option value="x">x</option>
+                  <option value="Ж">ж</option>
+                </select>
               </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
-                <h4>Смекалка</h4>
-                <div class="content__skill-level">
-                  <input value="5" name="wits" id="wits-5" type="radio" />
-                  <label for="wits-5"></label>
-                  <input value="4" name="wits" id="wits-4" type="radio" />
-                  <label for="wits-4"></label>
-                  <input value="3" name="wits" id="wits-3" type="radio" />
-                  <label for="wits-3"></label>
-                  <input value="2" name="wits" id="wits-2" type="radio" />
-                  <label for="wits-2"></label>
-                  <input value="1" name="wits" id="wits-1" type="radio" />
-                  <label for="wits-1"></label>
-                </div>
+              <div class="content__item-group-inner">
+                <span>Потрёпан</span>
+                <label for="injured">-1</label>
+                <select name="injured" id="injured">
+                  <option value=""></option>
+                  <option value="\">\</option>
+                  <option value="x">x</option>
+                  <option value="Ж">ж</option>
+                </select>
+              </div>
+              <div class="content__item-group-inner">
+                <span>Травма</span>
+                <label for="wounded">-2</label>
+                <select name="wounded" id="wounded">
+                  <option value=""></option>
+                  <option value="\">\</option>
+                  <option value="x">x</option>
+                  <option value="Ж">ж</option>
+                </select>
+              </div>
+              <div class="content__item-group-inner">
+                <span>Истерзан</span>
+                <label for="mauled">-2</label>
+                <select name="mauled" id="mauled">
+                  <option value=""></option>
+                  <option value="\">\</option>
+                  <option value="x">x</option>
+                  <option value="Ж">ж</option>
+                </select>
+              </div>
+              <div class="content__item-group-inner">
+                <span>Увечья</span>
+                <label for="crippled">-5</label>
+                <select name="crippled" id="crippled">
+                  <option value=""></option>
+                  <option value="\">\</option>
+                  <option value="x">x</option>
+                  <option value="Ж">ж</option>
+                </select>
+              </div>
+              <div class="content__item-group-inner">
+                <span>Обморок</span>
+                <label for="incapactitated"></label>
+                <select name="incapactitated" id="incapactitated">
+                  <option value=""></option>
+                  <option value="\">\</option>
+                  <option value="x">x</option>
+                  <option value="Ж">ж</option>
+                </select>
+              </div>
+              <div class="content__item-group-inner content__item-group-inner--fd-col">
+                <h3>Опыт</h3>
+                <textarea name="experience" id="experience" rows="3" cols="22"></textarea>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
 
-        <div class="content__page visually-hidden" id="page2">
-          <div class="content__section">
-            <h2>Достоинства и Недостатки</h2>
-            <div class="content__item-group">
-              <h3>Достоинство</h3>
-              <div class="row-group row-group--input-line row-group--fd-column row-group--input-width120">
-                <input type="text" name="merit" id="merit-1" />
-                <input type="text" name="merit" id="merit-2" />
-                <input type="text" name="merit" id="merit-3" />
-                <input type="text" name="merit" id="merit-4" />
-                <input type="text" name="merit" id="merit-5" />
-                <input type="text" name="merit" id="merit-6" />
-                <input type="text" name="merit" id="merit-7" />
-              </div>
-            </div>
-            <div class="content__item-group">
-              <h3>Тип</h3>
-              <div class="row-group row-group--input-line row-group--fd-column row-group--input-width90">
-                <input type="text" name="merit-type" id="merit-type-1" />
-                <input type="text" name="merit-type" id="merit-type-2" />
-                <input type="text" name="merit-type" id="merit-type-3" />
-                <input type="text" name="merit-type" id="merit-type-4" />
-                <input type="text" name="merit-type" id="merit-type-5" />
-                <input type="text" name="merit-type" id="merit-type-6" />
-                <input type="text" name="merit-type" id="merit-type-7" />
-              </div>
-            </div>
-            <div class="content__item-group">
-              <h3>Цена</h3>
-              <div class="row-group row-group--input-line row-group--fd-column row-group--input-width60">
-                <input type="text" name="merit-cost" id="merit-cost-1" />
-                <input type="text" name="merit-cost" id="merit-cost-2" />
-                <input type="text" name="merit-cost" id="merit-cost-3" />
-                <input type="text" name="merit-cost" id="merit-cost-4" />
-                <input type="text" name="merit-cost" id="merit-cost-5" />
-                <input type="text" name="merit-cost" id="merit-cost-6" />
-                <input type="text" name="merit-cost" id="merit-cost-7" />
-              </div>
-            </div>
-            <div class="content__item-group">
-              <h3>Недостаток</h3>
-              <div class="row-group row-group--input-line row-group--fd-column row-group--input-width120">
-                <input type="text" name="flaw" id="flaw-1" />
-                <input type="text" name="flaw" id="flaw-2" />
-                <input type="text" name="flaw" id="flaw-3" />
-                <input type="text" name="flaw" id="flaw-4" />
-                <input type="text" name="flaw" id="flaw-5" />
-                <input type="text" name="flaw" id="flaw-6" />
-                <input type="text" name="flaw" id="flaw-7" />
-              </div>
-            </div>
-            <div class="content__item-group">
-              <h3>Тип</h3>
-              <div class="row-group row-group--input-line row-group--fd-column row-group--input-width90">
-                <input type="text" name="flaw-type" id="flaw-type-1" />
-                <input type="text" name="flaw-type" id="flaw-type-2" />
-                <input type="text" name="flaw-type" id="flaw-type-3" />
-                <input type="text" name="flaw-type" id="flaw-type-4" />
-                <input type="text" name="flaw-type" id="flaw-type-5" />
-                <input type="text" name="flaw-type" id="flaw-type-6" />
-                <input type="text" name="flaw-type" id="flaw-type-7" />
-              </div>
-            </div>
-            <div class="content__item-group">
-              <h3>Цена</h3>
-              <div class="row-group row-group--input-line row-group--fd-column row-group--input-width60">
-                <input type="text" name="flaw-cost" id="flaw-cost-1" />
-                <input type="text" name="flaw-cost" id="flaw-cost-2" />
-                <input type="text" name="flaw-cost" id="flaw-cost-3" />
-                <input type="text" name="flaw-cost" id="flaw-cost-4" />
-                <input type="text" name="flaw-cost" id="flaw-cost-5" />
-                <input type="text" name="flaw-cost" id="flaw-cost-6" />
-                <input type="text" name="flaw-cost" id="flaw-cost-7" />
-              </div>
+    <div class="content__page visually-hidden" id="page2">
+      <div class="content__section">
+        <h2>Достоинства и Недостатки</h2>
+        <div class="content__item-group">
+          <h3>Достоинство</h3>
+          <div class="row-group row-group--input-line row-group--fd-column row-group--input-width120">
+            <input type="text" name="merit" id="merit-1" />
+            <input type="text" name="merit" id="merit-2" />
+            <input type="text" name="merit" id="merit-3" />
+            <input type="text" name="merit" id="merit-4" />
+            <input type="text" name="merit" id="merit-5" />
+            <input type="text" name="merit" id="merit-6" />
+            <input type="text" name="merit" id="merit-7" />
+          </div>
+        </div>
+        <div class="content__item-group">
+          <h3>Тип</h3>
+          <div class="row-group row-group--input-line row-group--fd-column row-group--input-width90">
+            <input type="text" name="merit-type" id="merit-type-1" />
+            <input type="text" name="merit-type" id="merit-type-2" />
+            <input type="text" name="merit-type" id="merit-type-3" />
+            <input type="text" name="merit-type" id="merit-type-4" />
+            <input type="text" name="merit-type" id="merit-type-5" />
+            <input type="text" name="merit-type" id="merit-type-6" />
+            <input type="text" name="merit-type" id="merit-type-7" />
+          </div>
+        </div>
+        <div class="content__item-group">
+          <h3>Цена</h3>
+          <div class="row-group row-group--input-line row-group--fd-column row-group--input-width60">
+            <input type="text" name="merit-cost" id="merit-cost-1" />
+            <input type="text" name="merit-cost" id="merit-cost-2" />
+            <input type="text" name="merit-cost" id="merit-cost-3" />
+            <input type="text" name="merit-cost" id="merit-cost-4" />
+            <input type="text" name="merit-cost" id="merit-cost-5" />
+            <input type="text" name="merit-cost" id="merit-cost-6" />
+            <input type="text" name="merit-cost" id="merit-cost-7" />
+          </div>
+        </div>
+        <div class="content__item-group">
+          <h3>Недостаток</h3>
+          <div class="row-group row-group--input-line row-group--fd-column row-group--input-width120">
+            <input type="text" name="flaw" id="flaw-1" />
+            <input type="text" name="flaw" id="flaw-2" />
+            <input type="text" name="flaw" id="flaw-3" />
+            <input type="text" name="flaw" id="flaw-4" />
+            <input type="text" name="flaw" id="flaw-5" />
+            <input type="text" name="flaw" id="flaw-6" />
+            <input type="text" name="flaw" id="flaw-7" />
+          </div>
+        </div>
+        <div class="content__item-group">
+          <h3>Тип</h3>
+          <div class="row-group row-group--input-line row-group--fd-column row-group--input-width90">
+            <input type="text" name="flaw-type" id="flaw-type-1" />
+            <input type="text" name="flaw-type" id="flaw-type-2" />
+            <input type="text" name="flaw-type" id="flaw-type-3" />
+            <input type="text" name="flaw-type" id="flaw-type-4" />
+            <input type="text" name="flaw-type" id="flaw-type-5" />
+            <input type="text" name="flaw-type" id="flaw-type-6" />
+            <input type="text" name="flaw-type" id="flaw-type-7" />
+          </div>
+        </div>
+        <div class="content__item-group">
+          <h3>Цена</h3>
+          <div class="row-group row-group--input-line row-group--fd-column row-group--input-width60">
+            <input type="text" name="flaw-cost" id="flaw-cost-1" />
+            <input type="text" name="flaw-cost" id="flaw-cost-2" />
+            <input type="text" name="flaw-cost" id="flaw-cost-3" />
+            <input type="text" name="flaw-cost" id="flaw-cost-4" />
+            <input type="text" name="flaw-cost" id="flaw-cost-5" />
+            <input type="text" name="flaw-cost" id="flaw-cost-6" />
+            <input type="text" name="flaw-cost" id="flaw-cost-7" />
+          </div>
+        </div>
+      </div>
+      <div class="content__section">
+        <h2>Другие черты</h2>
+        <div class="content__item-group">
+          <div class="content__item-group-inner ">
+            <input type="text" name="traits" id="traitscol1-1" />
+            <div class="content__skill-level">
+              <input value="5" name="traits1-1" id="traits1-1-5" type="radio" />
+              <label for="traits1-1-5"></label>
+              <input value="4" name="traits1-1" id="traits1-1-4" type="radio" />
+              <label for="traits1-1-4"></label>
+              <input value="3" name="traits1-1" id="traits1-1-3" type="radio" />
+              <label for="traits1-1-3"></label>
+              <input value="2" name="traits1-1" id="traits1-1-2" type="radio" />
+              <label for="traits1-1-2"></label>
+              <input value="1" name="traits1-1" id="traits1-1-1" type="radio" />
+              <label for="traits1-1-1"></label>
             </div>
           </div>
-          <div class="content__section">
-            <h2>Другие черты</h2>
-            <div class="content__item-group">
-              <div class="content__item-group-inner content__item-group-inner--row">
-                <input type="text" name="traits" id="traitscol1-1" />
-                <div class="content__skill-level">
-                  <input value="5" name="traits1-1" id="traits1-1-5" type="radio" />
-                  <label for="traits1-1-5"></label>
-                  <input value="4" name="traits1-1" id="traits1-1-4" type="radio" />
-                  <label for="traits1-1-4"></label>
-                  <input value="3" name="traits1-1" id="traits1-1-3" type="radio" />
-                  <label for="traits1-1-3"></label>
-                  <input value="2" name="traits1-1" id="traits1-1-2" type="radio" />
-                  <label for="traits1-1-2"></label>
-                  <input value="1" name="traits1-1" id="traits1-1-1" type="radio" />
-                  <label for="traits1-1-1"></label>
-                </div>
-              </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
-                <input type="text" name="traits" id="traitscol1-2" />
-                <div class="content__skill-level">
-                  <input value="5" name="traits1-2" id="traits1-2-5" type="radio" />
-                  <label for="traits1-2-5"></label>
-                  <input value="4" name="traits1-2" id="traits1-2-4" type="radio" />
-                  <label for="traits1-2-4"></label>
-                  <input value="3" name="traits1-2" id="traits1-2-3" type="radio" />
-                  <label for="traits1-2-3"></label>
-                  <input value="2" name="traits1-2" id="traits1-2-2" type="radio" />
-                  <label for="traits1-2-2"></label>
-                  <input value="1" name="traits1-2" id="traits1-2-1" type="radio" />
-                  <label for="traits1-2-1"></label>
-                </div>
-              </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
-                <input type="text" name="traits" id="traitscol1-3" />
-                <div class="content__skill-level">
-                  <input value="5" name="traits1-3" id="traits1-3-5" type="radio" />
-                  <label for="traits1-3-5"></label>
-                  <input value="4" name="traits1-3" id="traits1-3-4" type="radio" />
-                  <label for="traits1-3-4"></label>
-                  <input value="3" name="traits1-3" id="traits1-3-3" type="radio" />
-                  <label for="traits1-3-3"></label>
-                  <input value="2" name="traits1-3" id="traits1-3-2" type="radio" />
-                  <label for="traits1-3-2"></label>
-                  <input value="1" name="traits1-3" id="traits1-3-1" type="radio" />
-                  <label for="traits1-3-1"></label>
-                </div>
-              </div>
-            </div>
-            <div class="content__item-group">
-              <div class="content__item-group-inner content__item-group-inner--row">
-                <input type="text" name="traits" id="traitscol2-1" />
-                <div class="content__skill-level">
-                  <input value="5" name="traits2-1" id="traits2-1-5" type="radio" />
-                  <label for="traits2-1-5"></label>
-                  <input value="4" name="traits2-1" id="traits2-1-4" type="radio" />
-                  <label for="traits2-1-4"></label>
-                  <input value="3" name="traits2-1" id="traits2-1-3" type="radio" />
-                  <label for="traits2-1-3"></label>
-                  <input value="2" name="traits2-1" id="traits2-1-2" type="radio" />
-                  <label for="traits2-1-2"></label>
-                  <input value="1" name="traits2-1" id="traits2-1-1" type="radio" />
-                  <label for="traits2-1-1"></label>
-                </div>
-              </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
-                <input type="text" name="traits" id="traitscol2-2" />
-                <div class="content__skill-level">
-                  <input value="5" name="traits2-2" id="traits2-2-5" type="radio" />
-                  <label for="traits2-2-5"></label>
-                  <input value="4" name="traits2-2" id="traits2-2-4" type="radio" />
-                  <label for="traits2-2-4"></label>
-                  <input value="3" name="traits2-2" id="traits2-2-3" type="radio" />
-                  <label for="traits2-2-3"></label>
-                  <input value="2" name="traits2-2" id="traits2-2-2" type="radio" />
-                  <label for="traits2-2-2"></label>
-                  <input value="1" name="traits2-2" id="traits2-2-1" type="radio" />
-                  <label for="traits2-2-1"></label>
-                </div>
-              </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
-                <input type="text" name="traits" id="traitscol2-3" />
-                <div class="content__skill-level">
-                  <input value="5" name="traits2-3" id="traits2-3-5" type="radio" />
-                  <label for="traits2-3-5"></label>
-                  <input value="4" name="traits2-3" id="traits2-3-4" type="radio" />
-                  <label for="traits2-3-4"></label>
-                  <input value="3" name="traits2-3" id="traits2-3-3" type="radio" />
-                  <label for="traits2-3-3"></label>
-                  <input value="2" name="traits2-3" id="traits2-3-2" type="radio" />
-                  <label for="traits2-3-2"></label>
-                  <input value="1" name="traits2-3" id="traits2-3-1" type="radio" />
-                  <label for="traits2-3-1"></label>
-                </div>
-              </div>
-            </div>
-            <div class="content__item-group">
-              <div class="content__item-group-inner content__item-group-inner--row">
-                <input type="text" name="traits" id="traitscol3-1" />
-                <div class="content__skill-level">
-                  <input value="5" name="traits3-1" id="traits3-1-5" type="radio" />
-                  <label for="traits3-1-5"></label>
-                  <input value="4" name="traits3-1" id="traits3-1-4" type="radio" />
-                  <label for="traits3-1-4"></label>
-                  <input value="3" name="traits3-1" id="traits3-1-3" type="radio" />
-                  <label for="traits3-1-3"></label>
-                  <input value="2" name="traits3-1" id="traits3-1-2" type="radio" />
-                  <label for="traits3-1-2"></label>
-                  <input value="1" name="traits3-1" id="traits3-1-1" type="radio" />
-                  <label for="traits3-1-1"></label>
-                </div>
-              </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
-                <input type="text" name="traits" id="traitscol3-2" />
-                <div class="content__skill-level">
-                  <input value="5" name="traits3-2" id="traits3-2-5" type="radio" />
-                  <label for="traits3-2-5"></label>
-                  <input value="4" name="traits3-2" id="traits3-2-4" type="radio" />
-                  <label for="traits3-2-4"></label>
-                  <input value="3" name="traits3-2" id="traits3-2-3" type="radio" />
-                  <label for="traits3-2-3"></label>
-                  <input value="2" name="traits3-2" id="traits3-2-2" type="radio" />
-                  <label for="traits3-2-2"></label>
-                  <input value="1" name="traits3-2" id="traits3-2-1" type="radio" />
-                  <label for="traits3-2-1"></label>
-                </div>
-              </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
-                <input type="text" name="traits" id="traitscol3-3" />
-                <div class="content__skill-level">
-                  <input value="5" name="traits3-3" id="traits3-3-5" type="radio" />
-                  <label for="traits3-3-5"></label>
-                  <input value="4" name="traits3-3" id="traits3-3-4" type="radio" />
-                  <label for="traits3-3-4"></label>
-                  <input value="3" name="traits3-3" id="traits3-3-3" type="radio" />
-                  <label for="traits3-3-3"></label>
-                  <input value="2" name="traits3-3" id="traits3-3-2" type="radio" />
-                  <label for="traits3-3-2"></label>
-                  <input value="1" name="traits3-3" id="traits3-3-1" type="radio" />
-                  <label for="traits3-3-2"></label>
-                </div>
-              </div>
+          <div class="content__item-group-inner ">
+            <input type="text" name="traits" id="traitscol1-2" />
+            <div class="content__skill-level">
+              <input value="5" name="traits1-2" id="traits1-2-5" type="radio" />
+              <label for="traits1-2-5"></label>
+              <input value="4" name="traits1-2" id="traits1-2-4" type="radio" />
+              <label for="traits1-2-4"></label>
+              <input value="3" name="traits1-2" id="traits1-2-3" type="radio" />
+              <label for="traits1-2-3"></label>
+              <input value="2" name="traits1-2" id="traits1-2-2" type="radio" />
+              <label for="traits1-2-2"></label>
+              <input value="1" name="traits1-2" id="traits1-2-1" type="radio" />
+              <label for="traits1-2-1"></label>
             </div>
           </div>
-          <div class="content__section">
-            <h2>Магия</h2>
-            <div class="content__item-group">
-              <div class="content__item-group-inner content__item-group-inner--row">
-                <h3>Чудеса</h3>
-                <textarea name="wonders" rows="7" cols="43" autocomplete="off" maxlength='189'></textarea>
-                <h3>Заклятья</h3>
-                <textarea name="rotes" rows="7" cols="43" autocomplete="off" maxlength='189'></textarea>
-              </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
-                <h3>Фокусы</h3>
-                <textarea name="focus" rows="17" cols="43" autocomplete="off" maxlength='459'></textarea>
-              </div>
-            </div>
-          </div>
-          <div class="content__section">
-            <h2>Боевое снаряжение</h2>
-            <div class="content__item-group">
-              <table>
-                <tbody>
-                  <tr>
-                    <td>Оружие/Атака</td>
-                    <td>Сложн.</td>
-                    <td>Урон</td>
-                    <td>Дальн.</td>
-                    <td>Скор. стр.</td>
-                    <td>Магазин</td>
-                    <td>Ношение</td>
-                  </tr>
-                  <tr>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                  </tr>
-                  <tr>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                  </tr>
-                  <tr>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                  </tr>
-                  <tr>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                  </tr>
-                  <tr>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                  </tr>
-                  <tr>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                  </tr>
-                </tbody>
-              </table>
-              <div class="content__item-group-inner content__item-group-inner--row">
-                <h3>Броня</h3>
-                <label for="armor_class">Класс:</label>
-                <input name="armor_class" id="armor_class" type="text" />
-              </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
-                <label for="armor_rating">Рейтинг:</label>
-                <input name="armor_rating" id="armor_rating" type="text" />
-              </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
-                <label for="armor_penality">Штраф:</label>
-                <input name="armor_penality" id="armor_penality" type="text" />
-              </div>
-              <div class="content__item-group-inner content__item-group-inner--row">
-                <label for="armor_description">Описание:</label>
-                <textarea name="armor_description" rows="3" cols="20" autocomplete="off" maxlength='35'
-                  id='armor_description'></textarea>
-              </div>
+          <div class="content__item-group-inner ">
+            <input type="text" name="traits" id="traitscol1-3" />
+            <div class="content__skill-level">
+              <input value="5" name="traits1-3" id="traits1-3-5" type="radio" />
+              <label for="traits1-3-5"></label>
+              <input value="4" name="traits1-3" id="traits1-3-4" type="radio" />
+              <label for="traits1-3-4"></label>
+              <input value="3" name="traits1-3" id="traits1-3-3" type="radio" />
+              <label for="traits1-3-3"></label>
+              <input value="2" name="traits1-3" id="traits1-3-2" type="radio" />
+              <label for="traits1-3-2"></label>
+              <input value="1" name="traits1-3" id="traits1-3-1" type="radio" />
+              <label for="traits1-3-1"></label>
             </div>
           </div>
         </div>
+        <div class="content__item-group">
+          <div class="content__item-group-inner ">
+            <input type="text" name="traits" id="traitscol2-1" />
+            <div class="content__skill-level">
+              <input value="5" name="traits2-1" id="traits2-1-5" type="radio" />
+              <label for="traits2-1-5"></label>
+              <input value="4" name="traits2-1" id="traits2-1-4" type="radio" />
+              <label for="traits2-1-4"></label>
+              <input value="3" name="traits2-1" id="traits2-1-3" type="radio" />
+              <label for="traits2-1-3"></label>
+              <input value="2" name="traits2-1" id="traits2-1-2" type="radio" />
+              <label for="traits2-1-2"></label>
+              <input value="1" name="traits2-1" id="traits2-1-1" type="radio" />
+              <label for="traits2-1-1"></label>
+            </div>
+          </div>
+          <div class="content__item-group-inner ">
+            <input type="text" name="traits" id="traitscol2-2" />
+            <div class="content__skill-level">
+              <input value="5" name="traits2-2" id="traits2-2-5" type="radio" />
+              <label for="traits2-2-5"></label>
+              <input value="4" name="traits2-2" id="traits2-2-4" type="radio" />
+              <label for="traits2-2-4"></label>
+              <input value="3" name="traits2-2" id="traits2-2-3" type="radio" />
+              <label for="traits2-2-3"></label>
+              <input value="2" name="traits2-2" id="traits2-2-2" type="radio" />
+              <label for="traits2-2-2"></label>
+              <input value="1" name="traits2-2" id="traits2-2-1" type="radio" />
+              <label for="traits2-2-1"></label>
+            </div>
+          </div>
+          <div class="content__item-group-inner ">
+            <input type="text" name="traits" id="traitscol2-3" />
+            <div class="content__skill-level">
+              <input value="5" name="traits2-3" id="traits2-3-5" type="radio" />
+              <label for="traits2-3-5"></label>
+              <input value="4" name="traits2-3" id="traits2-3-4" type="radio" />
+              <label for="traits2-3-4"></label>
+              <input value="3" name="traits2-3" id="traits2-3-3" type="radio" />
+              <label for="traits2-3-3"></label>
+              <input value="2" name="traits2-3" id="traits2-3-2" type="radio" />
+              <label for="traits2-3-2"></label>
+              <input value="1" name="traits2-3" id="traits2-3-1" type="radio" />
+              <label for="traits2-3-1"></label>
+            </div>
+          </div>
+        </div>
+        <div class="content__item-group">
+          <div class="content__item-group-inner ">
+            <input type="text" name="traits" id="traitscol3-1" />
+            <div class="content__skill-level">
+              <input value="5" name="traits3-1" id="traits3-1-5" type="radio" />
+              <label for="traits3-1-5"></label>
+              <input value="4" name="traits3-1" id="traits3-1-4" type="radio" />
+              <label for="traits3-1-4"></label>
+              <input value="3" name="traits3-1" id="traits3-1-3" type="radio" />
+              <label for="traits3-1-3"></label>
+              <input value="2" name="traits3-1" id="traits3-1-2" type="radio" />
+              <label for="traits3-1-2"></label>
+              <input value="1" name="traits3-1" id="traits3-1-1" type="radio" />
+              <label for="traits3-1-1"></label>
+            </div>
+          </div>
+          <div class="content__item-group-inner ">
+            <input type="text" name="traits" id="traitscol3-2" />
+            <div class="content__skill-level">
+              <input value="5" name="traits3-2" id="traits3-2-5" type="radio" />
+              <label for="traits3-2-5"></label>
+              <input value="4" name="traits3-2" id="traits3-2-4" type="radio" />
+              <label for="traits3-2-4"></label>
+              <input value="3" name="traits3-2" id="traits3-2-3" type="radio" />
+              <label for="traits3-2-3"></label>
+              <input value="2" name="traits3-2" id="traits3-2-2" type="radio" />
+              <label for="traits3-2-2"></label>
+              <input value="1" name="traits3-2" id="traits3-2-1" type="radio" />
+              <label for="traits3-2-1"></label>
+            </div>
+          </div>
+          <div class="content__item-group-inner ">
+            <input type="text" name="traits" id="traitscol3-3" />
+            <div class="content__skill-level">
+              <input value="5" name="traits3-3" id="traits3-3-5" type="radio" />
+              <label for="traits3-3-5"></label>
+              <input value="4" name="traits3-3" id="traits3-3-4" type="radio" />
+              <label for="traits3-3-4"></label>
+              <input value="3" name="traits3-3" id="traits3-3-3" type="radio" />
+              <label for="traits3-3-3"></label>
+              <input value="2" name="traits3-3" id="traits3-3-2" type="radio" />
+              <label for="traits3-3-2"></label>
+              <input value="1" name="traits3-3" id="traits3-3-1" type="radio" />
+              <label for="traits3-3-2"></label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content__section">
+        <h2>Магия</h2>
+        <div class="content__item-group">
+          <div class="content__item-group-inner ">
+            <h3>Чудеса</h3>
+            <textarea name="wonders" rows="7" cols="43" autocomplete="off" maxlength='189'></textarea>
+            <h3>Заклятья</h3>
+            <textarea name="rotes" rows="7" cols="43" autocomplete="off" maxlength='189'></textarea>
+          </div>
+          <div class="content__item-group-inner ">
+            <h3>Фокусы</h3>
+            <textarea name="focus" rows="17" cols="43" autocomplete="off" maxlength='459'></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="content__section">
+        <h2>Боевое снаряжение</h2>
+        <div class="content__item-group">
+          <table>
+            <tbody>
+              <tr>
+                <td>Оружие/Атака</td>
+                <td>Сложн.</td>
+                <td>Урон</td>
+                <td>Дальн.</td>
+                <td>Скор. стр.</td>
+                <td>Магазин</td>
+                <td>Ношение</td>
+              </tr>
+              <tr>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+              </tr>
+              <tr>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+              </tr>
+              <tr>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+              </tr>
+              <tr>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+              </tr>
+              <tr>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+              </tr>
+              <tr>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="content__item-group-inner ">
+            <h3>Броня</h3>
+            <label for="armor_class">Класс:</label>
+            <input name="armor_class" id="armor_class" type="text" />
+          </div>
+          <div class="content__item-group-inner ">
+            <label for="armor_rating">Рейтинг:</label>
+            <input name="armor_rating" id="armor_rating" type="text" />
+          </div>
+          <div class="content__item-group-inner ">
+            <label for="armor_penality">Штраф:</label>
+            <input name="armor_penality" id="armor_penality" type="text" />
+          </div>
+          <div class="content__item-group-inner ">
+            <label for="armor_description">Описание:</label>
+            <textarea name="armor_description" rows="3" cols="20" autocomplete="off" maxlength='35'
+              id='armor_description'></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
 
-        <div class="content__page visually-hidden" id="page3">
-          <div class="content__section">
-            <h2>Описание дополнений</h2>
-            <div class="expanded">
-              <div class="expanded__group">
-                <input type=" text" name='expanded-1-1' class='input-invisible' placeholder='(Напиши здесь текст)'>
-                <textarea name="expanded-1" id="expanded-1-1" class='textarea-style' rows="5" cols="33"></textarea>
-                <input type=" text" name='expanded-1-2' class='input-invisible' placeholder='(Напиши здесь текст)'>
-                <textarea name="expanded-1" id="expanded-1-2" class='textarea-style' rows="5" cols="33"></textarea>
-                <input type=" text" name='expanded-1-3' class='input-invisible' placeholder='(Напиши здесь текст)'>
-                <textarea name="expanded-1" id="expanded-1-3" class='textarea-style' rows="5" cols="33"></textarea>
-                <input type=" text" name='expanded-1-4' class='input-invisible' placeholder='(Напиши здесь текст)'>
-                <textarea name="expanded-1" id="expanded-1-4" class='textarea-style' rows="5" cols="33"></textarea>
-                <input type=" text" name='expanded-1-5' class='input-invisible' placeholder='(Напиши здесь текст)'>
-                <textarea name="expanded-1" id="expanded-1-5" class='textarea-style' rows="5" cols="33"></textarea>
-              </div>
-              <div class="expanded__group">
-                <input type=" text" name='expanded-2-1' class='input-invisible' placeholder='(Напиши здесь текст)'>
-                <textarea name="expanded-2" id="expanded-2-1" class='textarea-style' rows="5" cols="33"></textarea>
-                <input type=" text" name='expanded-2-2' class='input-invisible' placeholder='(Напиши здесь текст)'>
-                <textarea name="expanded-2" id="expanded-2-2" class='textarea-style' rows="5" cols="33"></textarea>
-                <input type=" text" name='expanded-2-3' class='input-invisible' placeholder='(Напиши здесь текст)'>
-                <textarea name="expanded-2" id="expanded-2-3" class='textarea-style' rows="5" cols="33"></textarea>
-                <input type=" text" name='expanded-2-4' class='input-invisible' placeholder='(Напиши здесь текст)'>
-                <textarea name="expanded-2" id="expanded-2-4" class='textarea-style' rows="5" cols="33"></textarea>
-                <input type=" text" name='expanded-2-5' class='input-invisible' placeholder='(Напиши здесь текст)'>
-                <textarea name="expanded-2" id="expanded-2-5" class='textarea-style' rows="5" cols="33"></textarea>
-              </div>
+    <div class="content__page visually-hidden" id="page3">
+      <div class="content__section">
+        <h2>Описание дополнений</h2>
+        <div class="expanded">
+          <div class="expanded__group">
+            <input type=" text" name='expanded-1-1' class='input-invisible' placeholder='(Напиши здесь текст)'>
+            <textarea name="expanded-1" id="expanded-1-1" class='textarea-style' rows="5" cols="33"></textarea>
+            <input type=" text" name='expanded-1-2' class='input-invisible' placeholder='(Напиши здесь текст)'>
+            <textarea name="expanded-1" id="expanded-1-2" class='textarea-style' rows="5" cols="33"></textarea>
+            <input type=" text" name='expanded-1-3' class='input-invisible' placeholder='(Напиши здесь текст)'>
+            <textarea name="expanded-1" id="expanded-1-3" class='textarea-style' rows="5" cols="33"></textarea>
+            <input type=" text" name='expanded-1-4' class='input-invisible' placeholder='(Напиши здесь текст)'>
+            <textarea name="expanded-1" id="expanded-1-4" class='textarea-style' rows="5" cols="33"></textarea>
+            <input type=" text" name='expanded-1-5' class='input-invisible' placeholder='(Напиши здесь текст)'>
+            <textarea name="expanded-1" id="expanded-1-5" class='textarea-style' rows="5" cols="33"></textarea>
+          </div>
+          <div class="expanded__group">
+            <input type=" text" name='expanded-2-1' class='input-invisible' placeholder='(Напиши здесь текст)'>
+            <textarea name="expanded-2" id="expanded-2-1" class='textarea-style' rows="5" cols="33"></textarea>
+            <input type=" text" name='expanded-2-2' class='input-invisible' placeholder='(Напиши здесь текст)'>
+            <textarea name="expanded-2" id="expanded-2-2" class='textarea-style' rows="5" cols="33"></textarea>
+            <input type=" text" name='expanded-2-3' class='input-invisible' placeholder='(Напиши здесь текст)'>
+            <textarea name="expanded-2" id="expanded-2-3" class='textarea-style' rows="5" cols="33"></textarea>
+            <input type=" text" name='expanded-2-4' class='input-invisible' placeholder='(Напиши здесь текст)'>
+            <textarea name="expanded-2" id="expanded-2-4" class='textarea-style' rows="5" cols="33"></textarea>
+            <input type=" text" name='expanded-2-5' class='input-invisible' placeholder='(Напиши здесь текст)'>
+            <textarea name="expanded-2" id="expanded-2-5" class='textarea-style' rows="5" cols="33"></textarea>
+          </div>
+        </div>
+        <div class="content__section">
+          <h2>Имущество</h2>
+          <div class="expanded">
+            <div class="expanded__group">
+              <label for="possession_gear">Своё снаряжение</label>
+              <textarea name="possession_gear" id="possession_gear" class='textarea-style' rows="5"
+                cols="33"></textarea>
+              <label for="possession_familiar">Фамильяр</label>
+              <textarea name="possession_familiar" id="possession_familiar" class='textarea-style' rows="5"
+                cols="33"></textarea>
             </div>
-            <div class="content__section">
-              <h2>Имущество</h2>
-              <div class="expanded">
-                <div class="expanded__group">
-                  <label for="possession_gear">Своё снаряжение</label>
-                  <textarea name="possession_gear" id="possession_gear" class='textarea-style' rows="5"
-                    cols="33"></textarea>
-                  <label for="possession_familiar">Фамильяр</label>
-                  <textarea name="possession_familiar" id="possession_familiar" class='textarea-style' rows="5"
-                    cols="33"></textarea>
-                </div>
-                <div class="expanded__group">
-                  <label for="possession_equipment">Чужое снаряжение</label>
-                  <textarea name="expanded_equipment" id="expanded_equipment" class='textarea-style' rows="5"
-                    cols="33"></textarea>
-                  <label for="possession_grimoire">Гримуар</label>
-                  <textarea name="expanded_grimoire" id="expanded_grimoire" class='textarea-style' rows="5"
-                    cols="33"></textarea>
-                </div>
-              </div>
-            </div>
-            <div class="content__section">
-              <h2>Часовня</h2>
-              <div class="expanded">
-                <div class="expanded__group">
-                  <label for="chantry_location">Локация</label>
-                  <textarea name="chantry_location" id="chantry_location" class='textarea-style' rows="5"
-                    cols="20"></textarea>
-                </div>
-                <div class="expanded__group">
-                  <label for="chantry_description">Описание</label>
-                  <textarea name="chantry_description" id="chantry_description" class='textarea-style' rows="5"
-                    cols="50"></textarea>
-                </div>
-              </div>
+            <div class="expanded__group">
+              <label for="expanded_equipment">Чужое снаряжение</label>
+              <textarea name="expanded_equipment" id="expanded_equipment" class='textarea-style' rows="5"
+                cols="33"></textarea>
+              <label for="expanded_grimoire">Гримуар</label>
+              <textarea name="expanded_grimoire" id="expanded_grimoire" class='textarea-style' rows="5"
+                cols="33"></textarea>
             </div>
           </div>
         </div>
-        <div class="content__page visually-hidden" id='page4'>
-          <div class="content__section">
-            <div class="expanded expanded--fd-column">
-              <div class="expanded__group">
-                <h2>История</h>
-                  <h3>Пробуждение</h3>
-                  <textarea name="awakening" id="awakening" class='textarea-style' rows="5" cols="50"></textarea>
-              </div>
-              <div class="expanded__group">
-                <h3>Цели/Судьба</h3>
-                <textarea name="goals-destiny" id="goals-destiny" class='textarea-style' rows="5" cols="50"></textarea>
-              </div>
+        <div class="content__section">
+          <h2>Часовня</h2>
+          <div class="expanded">
+            <div class="expanded__group">
+              <label for="chantry_location">Локация</label>
+              <textarea name="chantry_location" id="chantry_location" class='textarea-style' rows="5"
+                cols="20"></textarea>
             </div>
-            <div class="expanded">
-              <div class='expanded__group'>
-                <label for="history_seekings">Поиски</label>
-                <textarea name="history_seekings" id="history_seekings" class='textarea-style' rows="5"
-                  cols="33"></textarea>
-              </div>
-              <div class='expanded__group'>
-                <label for="history_quiets">Безмолвие</label>
-                <textarea name="history_quiets" id="history_quiets" class='textarea-style' rows="5"
-                  cols="33"></textarea>
-              </div>
-            </div>
-          </div>
-          <div class="content__section">
-            <h2>Описание</h2>
-            <div class="expanded">
-              <div class="">
-                <div class='row-group'>
-                  <label for="description_age">Возраст:</label>
-                  <input name="description_age" id="description_age" type="text" />
-                </div>
-                <div class='row-group'>
-                  <label for="description_apparent-age">Внешний
-                    возраст:</label>
-                  <input name="description_apparent-age" id="description_apparent-age" type="text" />
-                </div>
-                <div class='row-group'>
-                  <label for="description_date-of-birth">Дата
-                    рождения:</label>
-                  <input name="description_date-of-birth" id="description_date-of-birth" type="text" />
-                </div>
-                <div class='row-group'>
-                  <label for="description_age-of-awakening">Возраст
-                    пробуждения:</label>
-                  <input name="description_age-of-awakening" id="description_age-of-awakening" type="text" />
-                </div>
-                <div class='row-group'>
-                  <label for="description_hair">Причёска:</label>
-                  <input name="description_hair" id="description_hair" type="text" />
-                </div>
-                <div class='row-group'>
-                  <label for="description_eyes">Глаза:</label>
-                  <input name="description_eyes" id="description_eyes" type="text" />
-                </div>
-                <div class='row-group'>
-                  <label for="description_ethnicity" s>Раса:</label>
-                  <input name="description_ethnicity" id="description_ethnicity" type="text" />
-                </div>
-                <div class='row-group'>
-                  <label for="description_nationality">Национальность:</label>
-                  <input name="description_nationality" id="description_nationality" type="text" />
-                </div>
-                <div class='row-group'>
-                  <label for="description_height">Рост:</label>
-                  <input name="description_height" id="description_height" type="text" />
-                </div>
-                <div class='row-group'>
-                  <label for="description_weight">Вес:</label>
-                  <input name="description_weight" id="description_weight" type="text" />
-                </div>
-                <div class='row-group'>
-                  <label for="description_sex">Пол:</label>
-                  <input name="description_sex" id="description_sex" type="text" s />
-                </div>
-              </div>
-              <div class="expanded__group ">
-                <textarea name="description_" id="description_" class='textarea-style' rows="8" cols="33"></textarea>
-                <label for="appearance">Внешний вид/Природа аватара</label>
-                <textarea name="appearance" id="appearance" class='textarea-style' rows="3" cols="33"></textarea>
-              </div>
+            <div class="expanded__group">
+              <label for="chantry_description">Описание</label>
+              <textarea name="chantry_description" id="chantry_description" class='textarea-style' rows="5"
+                cols="50"></textarea>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="content__page visually-hidden" id='page4'>
+      <div class="content__section">
+        <div class="expanded expanded--fd-column">
+          <div class="expanded__group">
+            <h2>История</h>
+              <h3>Пробуждение</h3>
+              <textarea name="awakening" id="awakening" class='textarea-style' rows="5" cols="50"></textarea>
+          </div>
+          <div class="expanded__group">
+            <h3>Цели/Судьба</h3>
+            <textarea name="goals-destiny" id="goals-destiny" class='textarea-style' rows="5" cols="50"></textarea>
+          </div>
+        </div>
+        <div class="expanded">
+          <div class='expanded__group'>
+            <label for="history_seekings">Поиски</label>
+            <textarea name="history_seekings" id="history_seekings" class='textarea-style' rows="5"
+              cols="33"></textarea>
+          </div>
+          <div class='expanded__group'>
+            <label for="history_quiets">Безмолвие</label>
+            <textarea name="history_quiets" id="history_quiets" class='textarea-style' rows="5" cols="33"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="content__section">
+        <h2>Описание</h2>
+        <div class="expanded">
+          <div class="">
+            <div class='row-group'>
+              <label for="description_age">Возраст:</label>
+              <input name="description_age" id="description_age" type="text" />
+            </div>
+            <div class='row-group'>
+              <label for="description_apparent-age">Внешний
+                возраст:</label>
+              <input name="description_apparent-age" id="description_apparent-age" type="text" />
+            </div>
+            <div class='row-group'>
+              <label for="description_date-of-birth">Дата
+                рождения:</label>
+              <input name="description_date-of-birth" id="description_date-of-birth" type="text" />
+            </div>
+            <div class='row-group'>
+              <label for="description_age-of-awakening">Возраст
+                пробуждения:</label>
+              <input name="description_age-of-awakening" id="description_age-of-awakening" type="text" />
+            </div>
+            <div class='row-group'>
+              <label for="description_hair">Причёска:</label>
+              <input name="description_hair" id="description_hair" type="text" />
+            </div>
+            <div class='row-group'>
+              <label for="description_eyes">Глаза:</label>
+              <input name="description_eyes" id="description_eyes" type="text" />
+            </div>
+            <div class='row-group'>
+              <label for="description_ethnicity" s>Раса:</label>
+              <input name="description_ethnicity" id="description_ethnicity" type="text" />
+            </div>
+            <div class='row-group'>
+              <label for="description_nationality">Национальность:</label>
+              <input name="description_nationality" id="description_nationality" type="text" />
+            </div>
+            <div class='row-group'>
+              <label for="description_height">Рост:</label>
+              <input name="description_height" id="description_height" type="text" />
+            </div>
+            <div class='row-group'>
+              <label for="description_weight">Вес:</label>
+              <input name="description_weight" id="description_weight" type="text" />
+            </div>
+            <div class='row-group'>
+              <label for="description_sex">Пол:</label>
+              <input name="description_sex" id="description_sex" type="text" s />
+            </div>
+          </div>
+          <div class="expanded__group ">
+            <textarea name="description_" id="description_" class='textarea-style' rows="8" cols="33"></textarea>
+            <label for="appearance">Внешний вид/Природа аватара</label>
+            <textarea name="appearance" id="appearance" class='textarea-style' rows="3" cols="33"></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
   <footer class="footer">
-    <div class="contacts__wrapper container">
-      <div class="contacts">
+    <div class="footer__wrapper container">
+      <div class="footer__contacts">
         <a href="mailto:qwerty@mail.com">
-          <img class="logo" src="./images/mail-contact.svg" alt="logo" width="30" height="30" loading="lazy" />
+          <img src="./images/mail-contact.svg" alt="logo" width="30" height="30" loading="lazy" />
         </a>
         <span>qwerty@gmail.com</span>
       </div>

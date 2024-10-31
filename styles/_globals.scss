@@ -10,6 +10,7 @@ h2 {
   &::before,
   &::after {
     content: "";
+    display: inline-block;
     width: 220px;
     height: 20px;
     margin: 0 10px;
@@ -36,4 +37,19 @@ h3 {
   font-family: var(--font-family-title);
   font-weight: 400;
   margin: 0;
+}
+
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
 }

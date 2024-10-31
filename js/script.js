@@ -1,3 +1,17 @@
+const labels = document.querySelectorAll('.circle-container label');
+
+labels.forEach(label => {
+	label.addEventListener('dblclick', () => {
+		if (label.classList.contains('x')) {
+			label.classList.remove('x');
+			label.classList.add('o');
+		} else {
+			label.classList.remove('o');
+			label.classList.add('x');
+		}
+	});
+});
+
 const form = document.querySelector('.user-profile');
 const loginQuestion = document.querySelector('.login-question');
 const registerQuestion = document.querySelector('.register-question');
