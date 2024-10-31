@@ -102,7 +102,7 @@ function saveMode() {
 	}
 
 	for (let i = 1; i <= 19; i++) {
-		properties.particleImages.push(`./images/${i}.png`);
+		properties.particleImages.push(`./images/${i}.webp`);
 	}
 
 	properties.particleImages = properties.particleImages.map(src => {
