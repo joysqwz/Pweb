@@ -6,19 +6,11 @@
 'utils',
 'globals';
 
-@import 'blocks/header',
-'blocks/footer',
+@import 'blocks/footer',
 'blocks/body-gradient',
 'blocks/content',
-'blocks/button-list',
-'blocks/first-page',
-'blocks/btn-auth',
-'blocks/auth-overlay',
-'blocks/sheet-column',
-'blocks/section',
-'blocks/title-blocks',
-'blocks/input-style',
-'blocks/radio-alt',
-'blocks/sheet-textarea',
+'blocks/modal',
 'blocks/table',
-'blocks/expanded'
+'blocks/header',
+'blocks/user-profile',
+'blocks/circle-page-one'

@@ -1,12 +1,26 @@
-const form = document.querySelector('.button__wrapper');
-const loginLink = document.querySelector('.login-link');
-const registerLink = document.querySelector('.register-link');
+const labels = document.querySelectorAll('.circle-container label');
 
-registerLink.addEventListener('click', () => {
+labels.forEach(label => {
+	label.addEventListener('dblclick', () => {
+		if (label.classList.contains('x')) {
+			label.classList.remove('x');
+			label.classList.add('o');
+		} else {
+			label.classList.remove('o');
+			label.classList.add('x');
+		}
+	});
+});
+
+const form = document.querySelector('.user-profile');
+const loginQuestion = document.querySelector('.login-question');
+const registerQuestion = document.querySelector('.register-question');
+
+registerQuestion.addEventListener('click', () => {
 	form.classList.add('active');
 });
 
-loginLink.addEventListener('click', () => {
+loginQuestion.addEventListener('click', () => {
 	form.classList.remove('active');
 });
 
@@ -37,20 +51,20 @@ function setCanvasSize() {
 }
 
 function changeMode(button) {
-	const activePage = document.querySelector('.page:not(.visually-hidden)');
+	const activePage = document.querySelector('.content__page:not(.visually-hidden)');
 	if (activePage) {
 		activePage.classList.add('visually-hidden');
 		setCanvasSize();
 	}
 
 	if (activeButton) {
-		activeButton.classList.remove('button--active');
-		activeButton.classList.add('button--inactive');
+		activeButton.classList.remove('content__button--active');
+		activeButton.classList.add('content__button--inactive');
 	}
 
 	activeButton = button;
-	activeButton.classList.add('button--active');
-	activeButton.classList.remove('button--inactive');
+	activeButton.classList.add('content__button--active');
+	activeButton.classList.remove('content__button--inactive');
 
 	const pageToShow = document.getElementById(button.dataset.target);
 	if (pageToShow) {
@@ -60,12 +74,12 @@ function changeMode(button) {
 
 function saveMode() {
 	if (activeButton) {
-		if (activeButton.classList.contains('button--save')) {
-			activeButton.classList.remove('button--save');
-			activeButton.classList.add('button--active');
+		if (activeButton.classList.contains('content__button--save')) {
+			activeButton.classList.remove('content__button--save');
+			activeButton.classList.add('content__button--active');
 		} else {
-			activeButton.classList.remove('button--active');
-			activeButton.classList.add('button--save');
+			activeButton.classList.remove('content__button--active');
+			activeButton.classList.add('content__button--save');
 		}
 	}
 }
@@ -87,9 +101,9 @@ function saveMode() {
 // 		canvas.height = document.body.clientHeight;
 // 	}
 
-// 	for (let i = 1; i <= 19; i++) {
-// 		properties.particleImages.push(`./images/${i}.png`);
-// 	}
+	for (let i = 1; i <= 19; i++) {
+		properties.particleImages.push(`./images/${i}.webp`);
+	}
 
 // 	properties.particleImages = properties.particleImages.map(src => {
 // 		const img = new Image();
