@@ -261,7 +261,7 @@ h2 {
 h2::before, h2::after {
   content: "";
   display: inline-block;
-  width: 220px;
+  width: 190px;
   height: 20px;
   margin: 0 10px;
   background-image: url("/Pweb/images/h2-style.svg");
@@ -347,6 +347,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 100%;
   gap: 20px;
 }
 .content__navigation {
@@ -421,7 +422,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 5px;
+  gap: 10px;
 }
 .content__section {
   display: flex;
@@ -440,6 +441,7 @@ body {
   justify-content: center;
   align-items: start;
   flex-direction: column;
+  gap: 5px;
 }
 .content__input-group-inner {
   display: flex;
@@ -502,6 +504,18 @@ body {
 .content__skill-level--content-block label::before {
   content: "▢";
 }
+.content__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.content__item--fd-col {
+  flex-direction: column;
+}
+.content__item--gap0 {
+  gap: 0px;
+}
 .content__item-group {
   display: flex;
   justify-content: center;
@@ -522,7 +536,7 @@ body {
   width: 160px;
 }
 .content__item-group-inner > input {
-  all: unset;
+  outline: none;
   line-height: 1;
   padding: 5px;
   width: 120px;
@@ -554,17 +568,47 @@ body {
 .content__item-group-inner textarea {
   resize: none;
   outline: none;
+  padding: 5px;
   background-color: rgba(255, 255, 255, 0.5);
-  border: 2px solid var(--color-accent);
+  border: 2px solid var(--color-accent500);
+  border-radius: 5px;
+}
+.content__item-group-inner textarea:focus {
+  box-shadow: inset 0 0 0 2px var(--color-accent500);
 }
 .content__item-group-inner--gap10 {
   gap: 10px;
+}
+.content__item-group-inner--input-mb5 input {
+  margin-bottom: 5px;
 }
 .content__item-group-inner--mb20 {
   margin-bottom: 20px;
 }
 .content__item-group-inner--fd-col {
   flex-direction: column;
+}
+.content__item-group-inner--input-wd110 input {
+  height: 20px;
+  width: 110px;
+}
+.content__item-group-inner--input-wd110 label {
+  width: 80px;
+}
+.content__item-group-inner--input-wd185 input {
+  width: 185px;
+}
+.content__item-group-inner--input-wd100 input {
+  width: 100px;
+}
+.content__item-group-inner--input-wd45 input {
+  width: 45px;
+}
+.content__item-group--fd-row {
+  flex-direction: row;
+}
+.content__item-group--ai-start {
+  align-items: start;
 }
 
 .modal__wrapper {

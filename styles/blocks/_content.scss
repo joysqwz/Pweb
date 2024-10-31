@@ -9,6 +9,7 @@
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
+		width: 100%;
 		gap: 20px;
 	}
 
@@ -80,7 +81,7 @@
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
-		gap: 5px;
+		gap: 10px;
 	}
 
 	&__section {
@@ -103,6 +104,7 @@
 		justify-content: center;
 		align-items: start;
 		flex-direction: column;
+		gap: 5px;
 
 		&-inner {
 			display: flex;
@@ -182,80 +184,144 @@
 		}
 	}
 
-	&__item-group {
+	&__item {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		flex-direction: column;
-		gap: 10px;
+		gap: 5px;
+
+		&--fd-col {
+			flex-direction: column;
+		}
 
 		&--gap0 {
 			gap: 0px;
 		}
 
-		&-inner {
-			position: relative;
+		&-group {
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			flex-direction: column;
+			gap: 10px;
 
-			h4 {
-				width: 160px;
+			&--gap0 {
+				gap: 0px;
 			}
 
-			&>input {
-				all: unset;
-				line-height: 1;
-				padding: 5px;
-				width: 120px;
-				background-color: rgba(255, 255, 255, 0.5);
-				border: 2px solid var(--color-accent500);
-				border-radius: 5px;
+			&-inner {
+				position: relative;
+				display: flex;
+				justify-content: center;
+				align-items: center;
 
-				&:focus {
-					box-shadow: inset 0 0 0 2px var(--color-accent500);
+				h4 {
+					width: 160px;
 				}
-			}
 
-			span {
-				width: 140px;
+				&>input {
+					outline: none;
+					line-height: 1;
+					padding: 5px;
+					width: 120px;
+					background-color: rgba(255, 255, 255, 0.5);
+					border: 2px solid var(--color-accent500);
+					border-radius: 5px;
 
-				&+label {
+					&:focus {
+						box-shadow: inset 0 0 0 2px var(--color-accent500);
+					}
+				}
+
+				span {
+					width: 140px;
+
+					&+label {
+						width: 20px;
+					}
+				}
+
+				select {
+					all: unset;
 					width: 20px;
+					font-size: 16px;
+					text-align: center;
+					background-color: var(--color-accent200);
+					border-radius: 7px;
+					border: 2px solid var(--color-accent)
+				}
+
+				select option {
+					background-color: var(--color-accent500);
+				}
+
+				textarea {
+					resize: none;
+					outline: none;
+					padding: 5px;
+					background-color: rgba(255, 255, 255, 0.5);
+					border: 2px solid var(--color-accent500);
+					border-radius: 5px;
+
+					&:focus {
+						box-shadow: inset 0 0 0 2px var(--color-accent500);
+					}
+				}
+
+				&--gap10 {
+					gap: 10px;
+				}
+
+				&--input-mb5 {
+					input {
+						margin-bottom: 5px;
+					}
+				}
+
+				&--mb20 {
+					margin-bottom: 20px;
+				}
+
+				&--fd-col {
+					flex-direction: column;
+				}
+
+				&--input-wd110 {
+					input {
+						height: 20px;
+						width: 110px;
+					}
+
+					label {
+						width: 80px;
+					}
+				}
+
+				&--input-wd185 {
+					input {
+						width: 185px;
+					}
+				}
+
+				&--input-wd100 {
+					input {
+						width: 100px;
+					}
+				}
+
+				&--input-wd45 {
+					input {
+						width: 45px;
+					}
 				}
 			}
 
-			select {
-				all: unset;
-				width: 20px;
-				font-size: 16px;
-				text-align: center;
-				background-color: var(--color-accent200);
-				border-radius: 7px;
-				border: 2px solid var(--color-accent)
+			&--fd-row {
+				flex-direction: row;
 			}
 
-			select option {
-				background-color: var(--color-accent500);
-			}
-
-			textarea {
-				resize: none;
-				outline: none;
-				background-color: rgba(255, 255, 255, 0.5);
-				border: 2px solid var(--color-accent);
-			}
-
-			&--gap10 {
-				gap: 10px;
-			}
-
-			&--mb20 {
-				margin-bottom: 20px;
-			}
-
-			&--fd-col {
-				flex-direction: column;
+			&--ai-start {
+				align-items: start;
 			}
 		}
 	}
