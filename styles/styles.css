@@ -345,6 +345,7 @@ body {
 }
 
 .content {
+  flex-grow: 1;
   margin-top: 100px;
   display: flex;
   justify-content: center;
