@@ -46,7 +46,7 @@ function changeMode(button) {
 	const activePage = document.querySelector('.content__page:not(.visually-hidden)');
 	if (activePage) {
 		activePage.classList.add('visually-hidden');
-		setCanvasSize();
+		// setCanvasSize();
 	}
 
 	if (activeButton) {
