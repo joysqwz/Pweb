@@ -42,14 +42,6 @@ document.addEventListener('click', (e) => {
 let activeButton = document.getElementById('btn-one');
 let saveButton = null;
 
-function setCanvasSize() {
-	const canvas = document.querySelector('canvas');
-	if (canvas) {
-		canvas.width = document.body.clientWidth;
-		canvas.height = document.body.clientHeight;
-	}
-}
-
 function changeMode(button) {
 	const activePage = document.querySelector('.content__page:not(.visually-hidden)');
 	if (activePage) {
@@ -84,104 +76,110 @@ function saveMode() {
 	}
 }
 
-(function () {
-	var canvas = document.createElement('canvas'),
-		ctx = canvas.getContext('2d'),
-		particles = [],
-		properties = {
-			bgColor: 'rgba(0, 0, 0, 0)',
-			particleImages: [],
-			particleRadius: 18,
-			particleCount: 70,
-			particleMaxVelocity: 0.1,
-		};
+// function setCanvasSize() {
+// 	const canvas = document.querySelector('canvas');
+// 	if (canvas) {
+// 		canvas.width = document.body.clientWidth;
+// 		canvas.height = document.body.clientHeight;
+// 	}
+// }
 
-	function setCanvasSize() {
-		canvas.width = document.body.clientWidth;
-		canvas.height = document.body.clientHeight;
-	}
+// (function () {
+// 	var canvas = document.createElement('canvas'),
+// 		ctx = canvas.getContext('2d'),
+// 		particles = [],
+// 		properties = {
+// 			bgColor: 'rgba(0, 0, 0, 0)',
+// 			particleImages: [],
+// 			particleRadius: 14,
+// 			particleCount: 40,
+// 			particleMaxVelocity: 0.1,
+// 		};
 
-	for (let i = 1; i <= 19; i++) {
-		properties.particleImages.push(`./images/${i}.webp`);
-	}
+// 	function setCanvasSize() {
+// 		canvas.width = document.body.clientWidth;
+// 		canvas.height = document.body.clientHeight;
+// 	}
 
-	properties.particleImages = properties.particleImages.map(src => {
-		const img = new Image();
-		img.src = src;
-		return img;
-	});
+// 	for (let i = 1; i <= 19; i++) {
+// 		properties.particleImages.push(`./images/${i}.webp`);
+// 	}
 
-	canvas.style.position = 'fixed';
-	canvas.style.top = '0';
-	canvas.style.left = '0';
-	canvas.style.zIndex = '-1';
+// 	properties.particleImages = properties.particleImages.map(src => {
+// 		const img = new Image();
+// 		img.src = src;
+// 		return img;
+// 	});
 
-	document.querySelector('body').appendChild(canvas);
+// 	canvas.style.position = 'fixed';
+// 	canvas.style.top = '0';
+// 	canvas.style.left = '0';
+// 	canvas.style.zIndex = '-1';
 
-	setCanvasSize();
+// 	document.querySelector('body').appendChild(canvas);
 
-	window.onresize = function () {
-		setCanvasSize();
-	}
+// 	setCanvasSize();
 
-	class Particle {
-		constructor() {
-			this.x = Math.random() * canvas.width;
-			this.y = Math.random() * canvas.height;
-			this.velocityX = Math.random() * (properties.particleMaxVelocity * 2) - properties.particleMaxVelocity;
-			this.velocityY = Math.random() * (properties.particleMaxVelocity * 2) - properties.particleMaxVelocity;
-			this.image = properties.particleImages[Math.floor(Math.random() * properties.particleImages.length)];
-		}
-		position() {
-			this.x + this.velocityX > canvas.width && this.velocityX > 0 || this.x + this.velocityX < 0 && this.velocityX < 0 ? this.velocityX *= -1 : this.velocityX;
-			this.y + this.velocityY > canvas.height && this.velocityY > 0 || this.y + this.velocityY < 0 && this.velocityY < 0 ? this.velocityY *= -1 : this.velocityY;
-			this.x += this.velocityX;
-			this.y += this.velocityY;
-		}
-		reDraw() {
-			ctx.drawImage(this.image, this.x - properties.particleRadius, this.y - properties.particleRadius, properties.particleRadius * 2, properties.particleRadius * 2);
-		}
-		reCalculateLife() {}
-	}
+// 	window.onresize = function () {
+// 		setCanvasSize();
+// 	}
 
-	function reDrawBackground() {
-		ctx.fillStyle = properties.bgColor;
-		ctx.fillRect(0, 0, canvas.width, canvas.height);
-	}
+// 	class Particle {
+// 		constructor() {
+// 			this.x = Math.random() * canvas.width;
+// 			this.y = Math.random() * canvas.height;
+// 			this.velocityX = Math.random() * (properties.particleMaxVelocity * 2) - properties.particleMaxVelocity;
+// 			this.velocityY = Math.random() * (properties.particleMaxVelocity * 2) - properties.particleMaxVelocity;
+// 			this.image = properties.particleImages[Math.floor(Math.random() * properties.particleImages.length)];
+// 		}
+// 		position() {
+// 			this.x + this.velocityX > canvas.width && this.velocityX > 0 || this.x + this.velocityX < 0 && this.velocityX < 0 ? this.velocityX *= -1 : this.velocityX;
+// 			this.y + this.velocityY > canvas.height && this.velocityY > 0 || this.y + this.velocityY < 0 && this.velocityY < 0 ? this.velocityY *= -1 : this.velocityY;
+// 			this.x += this.velocityX;
+// 			this.y += this.velocityY;
+// 		}
+// 		reDraw() {
+// 			ctx.drawImage(this.image, this.x - properties.particleRadius, this.y - properties.particleRadius, properties.particleRadius * 2, properties.particleRadius * 2);
+// 		}
+// 	}
 
-	function reDrawParticles() {
-		for (var i in particles) {
-			particles[i].reCalculateLife();
-			particles[i].position();
-			particles[i].reDraw();
-		}
-	}
+// 	function reDrawBackground() {
+// 		ctx.fillStyle = properties.bgColor;
+// 		ctx.fillRect(0, 0, canvas.width, canvas.height);
+// 	}
 
-	function loop() {
-		ctx.clearRect(0, 0, canvas.width, canvas.height);
-		reDrawBackground();
-		reDrawParticles();
-		requestAnimationFrame(loop);
-	}
+// 	function reDrawParticles() {
+// 		for (var i in particles) {
+// 			particles[i].position();
+// 			particles[i].reDraw();
+// 		}
+// 	}
 
-	function init() {
-		for (var i = 0; i < properties.particleCount; i++) {
-			particles.push(new Particle);
-		}
-		loop();
-	}
+// 	function loop() {
+// 		ctx.clearRect(0, 0, canvas.width, canvas.height);
+// 		reDrawBackground();
+// 		reDrawParticles();
+// 		requestAnimationFrame(loop);
+// 	}
 
-	let imagesLoaded = 0;
-	properties.particleImages.forEach(img => {
-		img.onload = () => {
-			imagesLoaded++;
-			if (imagesLoaded === properties.particleImages.length) {
-				init();
-			}
-		};
-		img.onerror = () => {
-			console.error(`Ошибка загрузки изображения: ${img.src}`);
-		};
-	});
+// 	function init() {
+// 		for (var i = 0; i < properties.particleCount; i++) {
+// 			particles.push(new Particle);
+// 		}
+// 		loop();
+// 	}
 
-}());
+// 	let imagesLoaded = 0;
+// 	properties.particleImages.forEach(img => {
+// 		img.onload = () => {
+// 			imagesLoaded++;
+// 			if (imagesLoaded === properties.particleImages.length) {
+// 				init();
+// 			}
+// 		};
+// 		img.onerror = () => {
+// 			console.error(`Ошибка загрузки изображения: ${img.src}`);
+// 		};
+// 	});
+
+// }());
