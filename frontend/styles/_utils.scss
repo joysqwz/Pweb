@@ -2,6 +2,23 @@
   max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
   margin-inline: auto;
   padding-inline: var(--container-padding-x);
+
+  &--width800 {
+    max-width: calc(var(--container-page-width) + var(--container-padding-x) * 2);
+    margin-inline: auto;
+
+    @include desktop {
+      margin-inline: 10px;
+    }
+  }
+
+  @include desktop {
+    margin-inline: 10px;
+  }
+}
+
+.heading {
+  font-family: 'Goudy Bookletter 1911';
 }
 
 .visually-hidden {
@@ -21,14 +38,16 @@
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 
 }

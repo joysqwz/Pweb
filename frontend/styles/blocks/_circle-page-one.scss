@@ -1,0 +1,124 @@
+.circle-container {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	margin: 10px;
+
+	label {
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 18px;
+		color: var(--color-accent);
+		font-weight: 600;
+		border: 2px solid var(--color-black);
+		border-radius: 4px;
+		cursor: pointer;
+		transform-origin: 100px 100px;
+	}
+
+	input[type="checkbox"] {
+		display: none;
+
+		&:checked+label.x::before {
+			content: "X";
+		}
+
+		&:checked+label.o::before {
+			content: "O";
+		}
+	}
+}
+
+.dot {
+	position: absolute;
+	top: 100px;
+	left: -10px;
+	width: 8px;
+	height: 8px;
+	background-color: black;
+	border-radius: 50%;
+}
+
+.pos-1 {
+	transform: rotate(0deg) translate(100px);
+}
+
+.pos-2 {
+	transform: rotate(18deg) translate(100px);
+}
+
+.pos-3 {
+	transform: rotate(36deg) translate(100px);
+}
+
+.pos-4 {
+	transform: rotate(54deg) translate(100px);
+}
+
+.pos-5 {
+	transform: rotate(72deg) translate(100px);
+}
+
+.pos-6 {
+	transform: rotate(90deg) translate(100px);
+}
+
+.pos-7 {
+	transform: rotate(108deg) translate(100px);
+}
+
+.pos-8 {
+	transform: rotate(126deg) translate(100px);
+}
+
+.pos-9 {
+	transform: rotate(144deg) translate(100px);
+}
+
+.pos-10 {
+	transform: rotate(162deg) translate(100px);
+}
+
+.pos-11 {
+	transform: rotate(180deg) translate(100px);
+}
+
+.pos-12 {
+	transform: rotate(198deg) translate(100px);
+}
+
+.pos-13 {
+	transform: rotate(216deg) translate(100px);
+}
+
+.pos-14 {
+	transform: rotate(234deg) translate(100px);
+}
+
+.pos-15 {
+	transform: rotate(252deg) translate(100px);
+}
+
+.pos-16 {
+	transform: rotate(270deg) translate(100px);
+}
+
+.pos-17 {
+	transform: rotate(288deg) translate(100px);
+}
+
+.pos-18 {
+	transform: rotate(306deg) translate(100px);
+}
+
+.pos-19 {
+	transform: rotate(324deg) translate(100px);
+}
+
+.pos-20 {
+	transform: rotate(342deg) translate(100px);
+}

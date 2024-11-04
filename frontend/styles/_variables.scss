@@ -1,9 +1,21 @@
 :root {
-  --color-dark: #191A23;
-  --color-light: #FFFFFF;
-  --color-accent: #B9FF66;
-  --font-family-base: 'Goudy Bookletter 1911', sans-serif;
-  --container-width: 1240px;
-  --container-padding-x: 20px;
-
+  --font-family-base: 'Lato', sans-serif;
+  --font-family-content: 'GoudyBookletter1911', sans-serif;
+  --font-family-title: 'PTSerif', sans-serif;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-gray: #cccccc;
+  --color-accent: rgb(177, 138, 255);
+  --color-accent200: rgba(177, 138, 255, 0.2);
+  --color-accent500: rgba(177, 138, 255, 0.5);
+  --color-back-btn-active: var(--color-accent500);
+  --color-borer-btn-active: var(--color-accent200);
+  --color-shadow-btn-active: var(--color-accent);
+  --color-back-btn-inactive: var(--color-accent500);
+  --color-border-btn-inactive: var(--color-accent);
+  --color-back-btn-save: var(--color-accent200);
+  --color-border-btn-save: var(--color-accent500);
+  --container-width: 1260px;
+  --container-page-width: 800px;
+  --container-padding-x: 10px;
 }

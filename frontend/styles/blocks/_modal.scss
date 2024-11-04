@@ -1,0 +1,95 @@
+.modal {
+	&__wrapper {
+		display: flex;
+		justify-content: start;
+		align-items: center;
+		flex-direction: column;
+		padding: 10px;
+		gap: 10px;
+
+		&--registration {
+			opacity: 0;
+			position: absolute;
+			top: 0;
+			left: 0;
+			transform: translateY(300px);
+		}
+	}
+
+	&__title {
+		font-size: 18px;
+		font-weight: 600;
+	}
+
+	&__form {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	&__group-input {
+		label {
+			font-size: 16px;
+		}
+
+		input {
+			outline: none;
+			width: 100%;
+			height: 30px;
+			padding: 5px;
+			background-color: var(--color-accent200);
+			border: 2px solid var(--color-accent500);
+			border-radius: 6px;
+			transition-duration: 0.2s;
+
+			&:focus {
+				box-shadow: inset 0 0 12px 1px rgba(0, 0, 0, 0.1);
+				border-color: var(--color-accent);
+			}
+		}
+	}
+
+	&__password-question {
+		font-size: 14px;
+		color: rgba(0, 0, 0, 0.5);
+	}
+
+	&__account-question {
+		font-size: 14px;
+		color: rgba(0, 0, 0, 0.5);
+
+		.register-question,
+		.login-question {
+			color: rgba(0, 0, 0, 0.7);
+			transition-duration: 0.2s;
+
+			@include hover {
+				cursor: pointer;
+				color: rgba(0, 0, 0);
+			}
+		}
+	}
+
+	&__button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		padding: 5px;
+		border-radius: 6px;
+		font-size: 16px;
+		font-weight: 600;
+		border: none;
+		cursor: pointer;
+		border: 2px solid var(--color-accent200);
+		background-color: var(--color-accent500);
+		transition-duration: 0.2s;
+
+		@include hover {
+			box-shadow: inset 0 0 12px 1px rgba(0, 0, 0, 0.1);
+			border: 2px solid var(--color-accent);
+		}
+	}
+}
