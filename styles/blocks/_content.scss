@@ -207,6 +207,10 @@
 			flex-wrap: wrap;
 			gap: 10px;
 
+			&:hover .content_skill-clear-button {
+				opacity: 1;
+			}
+
 			&-inner {
 				position: relative;
 				display: flex;
@@ -214,7 +218,7 @@
 				align-items: center;
 
 				h4 {
-					width: 160px;
+					width: 174px;
 				}
 
 				&>input {
@@ -271,7 +275,11 @@
 				}
 
 				&--gap10 {
-					gap: 10px;
+					gap: 24px;
+				}
+
+				&--gap30 {
+					gap: 26px;
 				}
 
 				&--input-mb5 {
