@@ -26,7 +26,7 @@
               </div>
               <div class="modal__group-input">
                 <label for="password">Пароль</label>
-                <input type="password" name="password" id="password" placeholder="********">
+                <input type="password" name="password" id="password" placeholder="********" autocomplete='none'>
               </div>
               <p class="modal__password-question">Восстановить пароль?</p>
               <button class="modal__button modal__button--submit">Войти</button>
@@ -47,11 +47,13 @@
               </div>
               <div class="modal__group-input">
                 <label for="reg-password">Пароль</label>
-                <input type="password" name="reg-password" id="reg-password" placeholder="********">
+                <input type="password" name="reg-password" id="reg-password" placeholder="********"
+                       autocomplete='new-password'>
               </div>
               <div class="modal__group-input">
                 <label for="reg-conf-password">Подтверждение пароля</label>
-                <input type="password" name="reg-conf-password" id="reg-conf-password" placeholder="********">
+                <input type="password" name="reg-conf-password" id="reg-conf-password" placeholder="********"
+                       autocomplete='new-password'>
               </div>
               <button class="modal__button modal__button--submit">Зарегистрироваться</button>
               <p class="modal__account-question">Есть аккаунт? <span class='login-question'>Войти</span></p>
@@ -1835,7 +1837,7 @@
               <div class="content__item-group-inner">
                 <span>Обморок</span>
                 <label for="incapactitated"></label>
-                <select name="incapacitated" id="incapacitated">
+                <select name="incapactitated" id="incapactitated">
                   <option value="">&nbsp;</option>
                   <option value="\">\</option>
                   <option value="x">x</option>
