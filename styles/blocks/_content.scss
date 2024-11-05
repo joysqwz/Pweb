@@ -276,6 +276,10 @@
 
 				&--gap10 {
 					gap: 24px;
+
+					@media (max-width: 400px) {
+						gap: 5px;
+					}
 				}
 
 				&--gap30 {
@@ -296,9 +300,9 @@
 					flex-direction: column;
 				}
 
-				&--input-wd110 {
+				&--input-wd100 {
 					input {
-						width: 110px;
+						width: 100px;
 
 						@media (max-width: 400px) {
 							width: 80px;
