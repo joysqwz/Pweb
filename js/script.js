@@ -1,3 +1,11 @@
+window.onload = function () {
+	if (window.innerWidth <= 767) {
+		document.getElementById("change-first").innerHTML = "Достоинства и<br>Недостатки"
+		document.getElementById("change-second").innerHTML = "&nbsp;&nbsp;Описание<br>дополнений"
+		document.getElementById("change-third").innerHTML = "&nbsp;&nbsp;&nbsp;Внешний вид/<br>Природа аватара"
+	}
+}
+
 function clearRadioSelection(name) {
 	const radios = document.querySelectorAll(`input[name="${name}"]`)
 	radios.forEach(radio => {

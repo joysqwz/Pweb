@@ -612,6 +612,11 @@ body {
 .content__item-group-inner--input-wd110 input {
   width: 110px;
 }
+@media (max-width: 400px) {
+  .content__item-group-inner--input-wd110 input {
+    width: 80px;
+  }
+}
 .content__item-group-inner--input-ht20 input {
   height: 20px;
 }
@@ -759,6 +764,11 @@ table {
 table input {
   all: unset;
   width: 100%;
+}
+@media (max-width: 440px) {
+  table {
+    font-size: 9px;
+  }
 }
 
 table,

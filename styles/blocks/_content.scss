@@ -299,6 +299,10 @@
 				&--input-wd110 {
 					input {
 						width: 110px;
+
+						@media (max-width: 400px) {
+							width: 80px;
+						}
 					}
 				}
 
