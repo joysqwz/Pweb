@@ -1,0 +1,26 @@
+version: "3.8"
+services:
+  quest-controller1:
+    image: quest-controller:latest
+    container_name: quest-controller1
+    restart: always
+    logging:
+      driver: "json-file"
+      options:
+        max-size: 10m
+        max-file: "3"
+        tag: "{{.Name}}"
+    environment:
+      ENVIRONMENT: server
+      POSTGRES_HOST: postgres
+      POSTGRES_PORT: 5432
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_DB: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_PREFIX: quest_c1_
+      PORT: 8088
+    ports:
+      - 8088:8088
+    networks:
+      apps_subnet:
+        ipv4_address: 172.16.1.108
