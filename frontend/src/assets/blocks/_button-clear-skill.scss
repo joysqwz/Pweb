@@ -1,7 +1,9 @@
+@use '../mixins';
+
 .content_skill-clear-button {
 	width: 14px;
 	height: 14px;
-	@include reset-button;
+	@include mixins.reset-button;
 	display: flex;
 	justify-content: center;
 	align-items: center;

@@ -1,3 +1,6 @@
+@use 'media';
+@use 'mixins';
+
 .container {
   max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
   margin-inline: auto;
@@ -7,12 +10,12 @@
     max-width: calc(var(--container-page-width) + var(--container-padding-x) * 2);
     margin-inline: auto;
 
-    @include desktop {
+    @include media.desktop {
       margin-inline: 10px;
     }
   }
 
-  @include desktop {
+  @include media.desktop {
     margin-inline: 10px;
   }
 }
@@ -22,32 +25,17 @@
 }
 
 .visually-hidden {
-  @include visually-hidden;
+  @include mixins.visually-hidden;
 }
 
 .hidden-mobile {
-  @include mobile {
+  @include media.mobile {
     display: none !important;
   }
 }
 
 .visible-mobile {
-  @include mobile-above {
+  @include media.mobile-above {
     display: none !important;
   }
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-
 }

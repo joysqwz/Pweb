@@ -1,11 +1,19 @@
+@use '../media';
+
 .footer {
 	margin-top: 100px;
+
+	&__wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 
 	&__contacts {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		flex-direction: column;
+		gap: 100px;
 		width: 100%;
 		padding: 10px;
 		height: 80px;
@@ -20,6 +28,22 @@
 
 		img {
 			filter: drop-shadow(0 0 2px rgb(85, 0, 255));
+		}
+	}
+
+	&__link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	a {
+		color: #000;
+		text-decoration: none;
+
+		@include media.hover {
+			text-decoration: underline;
 		}
 	}
 }
