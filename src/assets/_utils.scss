@@ -1,0 +1,41 @@
+@use 'media';
+@use 'mixins';
+
+.container {
+  max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+  margin-inline: auto;
+  padding-inline: var(--container-padding-x);
+
+  &--width800 {
+    max-width: calc(var(--container-page-width) + var(--container-padding-x) * 2);
+    margin-inline: auto;
+
+    @include media.desktop {
+      margin-inline: 10px;
+    }
+  }
+
+  @include media.desktop {
+    margin-inline: 10px;
+  }
+}
+
+.heading {
+  font-family: 'Goudy Bookletter 1911';
+}
+
+.visually-hidden {
+  @include mixins.visually-hidden;
+}
+
+.hidden-mobile {
+  @include media.mobile {
+    display: none !important;
+  }
+}
+
+.visible-mobile {
+  @include media.mobile-above {
+    display: none !important;
+  }
+}

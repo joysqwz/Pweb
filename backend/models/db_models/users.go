@@ -5,8 +5,8 @@ import (
 )
 
 type User struct {
-	ID       uint64        `gorm:"primarykey" json:"id"`
-	Login    string        `gorm:"type:text"`
+	Login    string        `gorm:"primarykey"`
 	Password string        `gorm:"type:text"`
 	Sheets   pq.Int64Array `gorm:"type:integer[]"`
+	LoggedIn bool          `gorm:"type:bool"`
 }

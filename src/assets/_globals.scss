@@ -1,0 +1,61 @@
+@use 'media';
+
+body {
+  font-family: var(--font-family-base);
+  font-weight: 400;
+  color: var(--color-black);
+}
+
+h2 {
+  font-size: 24px;
+
+  &::before,
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 190px;
+    height: 20px;
+    margin: 0 10px;
+    background-image: url("/images/h2-style.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include media.mobile {
+      all: unset;
+    }
+  }
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 14px;
+  font-family: var(--font-family-content);
+  font-weight: 400;
+  margin: 0;
+}
+
+h2,
+h3 {
+  font-family: var(--font-family-title);
+  font-weight: 400;
+  margin: 0;
+}
+
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+}
