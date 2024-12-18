@@ -27,9 +27,9 @@ export default {
 		const login = computed(() => store.state.login)
 		console.log(login.value)
 		const logout = async () => {
+			await store.dispatch('setAuth', false)
 			try {
 				const response = await fetch('http://localhost:8000/api/logout', {
-					mode: 'no-cors',
 					method: 'POST',
 					headers: { 'Content-Type': 'application/json' },
 				})

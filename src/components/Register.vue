@@ -37,7 +37,7 @@ export default {
 			try {
 				const response = await fetch('http://localhost:8000/api/register', {
 					method: 'POST',
-					headers: { 'Content-Type': 'application/json' },
+					headers: { 'Content-Type': 'X-www-form-urlencoded' },
 					body: JSON.stringify(data)
 				})
 
@@ -45,6 +45,7 @@ export default {
 					throw new Error('Ошибка при регистрации: ' + response.statusText)
 				}
 				console.log('Регистрация успешна!')
+				await location.reload()
 			} catch (error) {
 				console.error('Ошибка:', error)
 			}

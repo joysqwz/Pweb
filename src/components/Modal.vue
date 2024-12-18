@@ -20,6 +20,7 @@ export default {
 		const message = ref('Вы не вошли в систему')
 		var resp = reactive({
 			login: '',
+			found: false,
 		})
 		onMounted(async () => {
 			try {
@@ -31,7 +32,8 @@ export default {
 				},)
 				resp = await response.json()
 				message.value = resp.login
-				await store.dispatch('setAuth', true)	
+				console.log(resp.found)
+				await store.dispatch('setAuth', resp.found)	
 				await store.dispatch('setLogin', resp.login	)
 				 
 			}
