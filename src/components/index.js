@@ -14,6 +14,7 @@ import SkillCircle from './blocks/SkillCircle.vue'
 import SkillOption from './blocks/SkillOption.vue'
 import Login from './Login.vue'
 import Register from './Register.vue'
+import SkillInput from './blocks/SkillInput.vue'
 
 export default [
 	Header,
@@ -31,5 +32,6 @@ export default [
 	SkillCircle,
 	SkillOption,
 	Login,
-	Register
+	Register,
+	SkillInput,
 ]

@@ -9,7 +9,7 @@
 				<Modal v-show='showModal' @close="showModal = false" />
 			</div>
 			<div class="user-profile" v-if='auth'>
-				<button class="user-profile__button-user">{{ login }}</button>
+				<button class="user-profile__button-user" @click='toStore'>{{ login }}</button>
 				<button class="user-profile__button-user-logout" @click='logout'></button>
 			</div>
 		</div>
@@ -18,14 +18,13 @@
 
 <script lang='ts'>
 import { computed } from 'vue'
-import store from './store/store';
+import store from './store/store'
 
 export default {
 	name: 'Header',
 	setup() {
 		const auth = computed(() => store.state.authenticated)
 		const login = computed(() => store.state.login)
-		console.log(login.value)
 		const logout = async () => {
 			await store.dispatch('setAuth', false)
 			try {
@@ -57,6 +56,9 @@ export default {
 	methods: {
 		changeShow() {
 			this.showModal = !this.showModal
+		},
+		toStore() {
+			this.$router.push('/storage')
 		}
 	}
 }

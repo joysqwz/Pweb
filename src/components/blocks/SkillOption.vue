@@ -31,7 +31,7 @@ export default {
 	},
 	methods: {
 		handleSelectionChange(index) {
-			// console.log(`Selected value for ${this.items[index].label}: ${this.items[index].selected}`)
+			// console.log(`${this.items[index].label}: ${this.items[index].selected}`)
 		}
 	}
 }

@@ -2,24 +2,9 @@
 	<img class="content__logo" src="/images/logoMtA.svg" alt="" width="220" height="110" loading="lazy">
 	<div class="content__page" id="page1">
 		<div class="content__section">
-			<div class="content__input-group">
-				<div v-for="(field, index) in firstGroupFields" :key="index" class="content__input-group-inner">
-					<label :for="field.id">{{ field.label }}:</label>
-					<input type="text" :name="field.name" :id="field.id" v-model="formData[field.name]">
-				</div>
-			</div>
-			<div class="content__input-group">
-				<div v-for="(field, index) in secondGroupFields" :key="index" class="content__input-group-inner">
-					<label :for="field.id">{{ field.label }}:</label>
-					<input type="text" :name="field.name" :id="field.id" v-model="formData[field.name]">
-				</div>
-			</div>
-			<div class="content__input-group">
-				<div v-for="(field, index) in thirdGroupFields" :key="index" class="content__input-group-inner">
-					<label :for="field.id">{{ field.label }}:</label>
-					<input type="text" :name="field.name" :id="field.id" v-model="formData[field.name]">
-				</div>
-			</div>
+			<SkillInput :fields="firstGroupFields" :formData="formData" />
+			<SkillInput :fields="secondGroupFields" :formData="formData" />
+			<SkillInput :fields="thirdGroupFields" :formData="formData" />
 		</div>
 		<h2>Атрибуты</h2>
 		<div class="content__section">
@@ -273,6 +258,17 @@ export default {
 		}
 	},
 	methods: {
+		saveAsPDF() {
+			const element = this.$el
+			const options = {
+				margin: 10,
+				filename: 'PageOne.pdf',
+				image: { type: 'jpeg', quality: 0.98 },
+				html2canvas: { scale: 2 },
+				jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+			}
+			html2pdf().set(options).from(element).save()
+		},
 		clearSelection(skillGroupRef) {
 			this.$refs[skillGroupRef].clearSelection()
 		},

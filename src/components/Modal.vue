@@ -11,7 +11,7 @@
 
 <script>
 import { onMounted, ref } from 'vue'
-import store from './store/store';
+import store from './store/store'
 import { reactive } from 'vue'
 
 export default {
@@ -25,7 +25,6 @@ export default {
 		onMounted(async () => {
 			try {
 				const response = await fetch('http://localhost:8000/api/user', {
-					
 					method: 'POST',
 					headers: { 'Content-Type': 'X-www-form-urlencoded' },
 					credentials: 'include'
@@ -33,9 +32,9 @@ export default {
 				resp = await response.json()
 				message.value = resp.login
 				console.log(resp.found)
-				await store.dispatch('setAuth', resp.found)	
-				await store.dispatch('setLogin', resp.login	)
-				 
+				await store.dispatch('setAuth', resp.found)
+				await store.dispatch('setLogin', resp.login)
+
 			}
 			catch (e) {
 				await store.dispatch('setAuth', false)
