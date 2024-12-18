@@ -14,7 +14,7 @@
 								}">
 					Лист 1
 				</button>
-				<button
+				<!-- <button
 								type="button"
 								class="content__button"
 								id="btn-two"
@@ -46,7 +46,7 @@
 									'content__button--save': saveStates[4]
 								}">
 					Лист 4
-				</button>
+				</button> -->
 			</div>
 			<div class="content__wrapper">
 				<PageOne v-if="activePage === 1"></PageOne>
@@ -54,7 +54,10 @@
 				<PageThree v-if="activePage === 3"></PageThree>
 				<PageFour v-if="activePage === 4"></PageFour>
 			</div>
-			<button type="button" @click="setSavePage">SAVE</button>
+			<div class="content__menu">
+				<button type="button" class='content__button content__button--alt' @click="setSavePage">Сохранить</button>
+				<button type="button" class='content__button content__button--alt' @click="setSavePage">Скачать PDF</button>
+			</div>
 		</div>
 	</main>
 	<Footer></Footer>
