@@ -42,11 +42,13 @@ export default {
 				})
 
 				if (!response.ok) {
+					alert('Ошибка при регистрации')
 					throw new Error('Ошибка при регистрации: ' + response.statusText)
 				}
 				console.log('Регистрация успешна!')
 				await location.reload()
 			} catch (error) {
+				alert('Ошибка при регистрации')
 				console.error('Ошибка:', error)
 			}
 		}

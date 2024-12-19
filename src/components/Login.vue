@@ -47,9 +47,11 @@ export default {
 				console.log(resp.statusText)
 				if (!resp.ok) {
 					throw new Error('Ошибка при входе: ' + resp.statusText)
+					alert('Ошибка при авторизации')
 				}
 				await location.reload()
 			} catch (error) {
+				alert('Ошибка при авторизации')
 				console.error('Ошибка:', error)
 			}
 		}
