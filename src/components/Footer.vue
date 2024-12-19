@@ -8,7 +8,6 @@
 					</a>
 					<span>qwerty@gmail.com</span>
 				</div>
-				<a href="#">Политика конфиденциальности</a>
 			</div>
 		</div>
 	</footer>
