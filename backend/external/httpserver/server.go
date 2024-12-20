@@ -56,9 +56,9 @@ func (httpServer *HttpServer) LoginAttempt(w http.ResponseWriter, r *http.Reques
 	if !getBodyAndUnmarshal(w, r, &command) {
 		return
 	}
-	log.Println(command.Login, " ", command.Password)
+
 	loginSuccess, err := httpServer.storage.CheckLogin(command.Login, command.Password)
-	log.Println(loginSuccess)
+
 	if err != nil {
 		log.Printf("error checking DB password:", err)
 		w.WriteHeader(http.StatusInternalServerError)
@@ -148,9 +148,7 @@ func (HttpServer *HttpServer) Logout(w http.ResponseWriter, r *http.Request) {
 		w.WriteHeader(http.StatusInternalServerError)
 	}
 	w.Header().Set("Content-Type", "application/json")
-	w.Header().Set("Access-Control-Allow-Origin", "http://localhost:5173")
-	w.Header().Set("Access-Control-Allow-Credentials", "true")
-	w.Header().Set("Access-Control-Allow-Headers", "Content-Type, Authorization, X-Requested-With")
+	enableCors(&w)
 	w.WriteHeader(http.StatusOK)
 }
 
@@ -161,15 +159,12 @@ func (httpServer *HttpServer) marshalAndSendJson(w http.ResponseWriter, data int
 		w.WriteHeader(http.StatusInternalServerError)
 		return
 	}
-	log.Println(jsAnswer)
 	httpServer.sendJson(w, jsAnswer)
 }
 
 func (httpServer *HttpServer) sendJson(w http.ResponseWriter, json []byte) {
 	w.Header().Set("Content-Type", "application/json")
-	w.Header().Set("Access-Control-Allow-Origin", "http://localhost:5173")
-	w.Header().Set("Access-Control-Allow-Credentials", "true")
-	w.Header().Set("Access-Control-Allow-Headers", "Content-Type, Authorization, X-Requested-With")
+	enableCors(&w)
 	w.WriteHeader(http.StatusOK)
 	w.Write(json)
 }

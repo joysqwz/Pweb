@@ -5,6 +5,6 @@ import (
 )
 
 type Sheet struct {
-	ID   uint64          `gorm:"primarykey" json:"id"`
-	Data json.RawMessage `gorm:"type:jsonb;NOT NULL" json:"-"`
+	Login string          `gorm:"primarykey" json:"login"`
+	Data  json.RawMessage `gorm:"type:jsonb;NOT NULL" json:"-"`
 }

@@ -18,10 +18,9 @@
 			<div class="content__wrapper">
 				<PageOne v-if="activePage === 1"></PageOne>
 			</div>
-			<div class="content__menu" v-if="authenticated">
+			<div class="content__menu">
 				<button type="button" class='content__button content__button--alt' @click="setSavePage">Сохранить</button>
-				<button type="button" class='content__button content__button--alt' @click="exportPDF">Скачать
-					PDF</button>
+				<button type="button" class='content__button content__button--alt' @click="exportPDF">Загрузить</button>
 			</div>
 		</div>
 	</main>
