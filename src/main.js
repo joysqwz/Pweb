@@ -2,7 +2,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import components from './components'
 import router from './router/router'
-import { createStore } from 'vuex'
+import store from './components/store/store' // Импортируйте ваше хранилище
 
 import '@/assets/styles.scss'
 
@@ -13,6 +13,6 @@ components.forEach(component => {
 })
 
 app
-	.use(createStore())
+	.use(store)
 	.use(router)
 	.mount('#app')

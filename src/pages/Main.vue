@@ -18,9 +18,9 @@
 			<div class="content__wrapper">
 				<PageOne v-if="activePage === 1"></PageOne>
 			</div>
-			<div class="content__menu">
+			<div class="content__menu" v-if='authenticated'>
 				<button type="button" class='content__button content__button--alt' @click="setSavePage">Сохранить</button>
-				<button type="button" class='content__button content__button--alt' @click="exportPDF">Загрузить</button>
+				<button type="button" class='content__button content__button--alt' @click="exportJSON">Загрузить</button>
 			</div>
 		</div>
 	</main>
@@ -31,7 +31,9 @@
 import { mapState } from 'vuex'
 export default {
 	computed: {
-		...mapState(['authenticated']),
+		...mapState([
+			'authenticated',
+		]),
 	},
 	data() {
 		return {
@@ -48,20 +50,8 @@ export default {
 		setSavePage(page) {
 			this.saveStates[this.activePage] = true
 		},
-		exportPDF() {
-			const pageOneElement = document.querySelector('.content__wrapper')
-			if (!pageOneElement) {
-				console.error("PageOne not found.")
-				return
-			}
-			const options = {
-				margin: 0.5,
-				filename: 'PageOne.pdf',
-				image: { type: 'jpeg', quality: 0.98 },
-				html2canvas: { scale: 2 },
-				jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
-			}
-			html2pdf().set(options).from(pageOneElement).save()
+		exportJSON() {
+
 		}
 	}
 }
