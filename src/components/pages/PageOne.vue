@@ -2,9 +2,9 @@
 	<img class="content__logo" src="/images/logoMtA.svg" alt="" width="220" height="110" loading="lazy">
 	<div class="content__page" id="page1">
 		<div class="content__section">
-			<SkillInput :fields="firstGroupFields" :formData="formData" />
-			<SkillInput :fields="secondGroupFields" :formData="formData" />
-			<SkillInput :fields="thirdGroupFields" :formData="formData" />
+			<SkillInput ref="skillInputFirstGroup" :fields="firstGroupFields" :firstSection="firstSection" />
+			<SkillInput ref="skillInputSecondGroup" :fields="secondGroupFields" :firstSection="firstSection" />
+			<SkillInput ref="skillInputThirdGroup" :fields="thirdGroupFields" :firstSection="firstSection" />
 		</div>
 		<h2>Атрибуты</h2>
 		<div class="content__section">
@@ -226,20 +226,15 @@
 <script>
 export default {
 	name: 'PageOne',
+	props: {
+		firstSection: {
+			type: Object,
+			required: true
+		}
+	},
 	data() {
 		return {
 			experienceText: '',
-			formData: {
-				attr_Name: '',
-				attr_Player: '',
-				attr_Chronicle: '',
-				attr_Nature: '',
-				attr_Mask: '',
-				attr_Energy: '',
-				attr_Fraction: '',
-				attr_Sect: '',
-				attr_Concept: ''
-			},
 			firstGroupFields: [
 				{ label: 'Имя', name: 'attr_Name', id: 'attr_Name' },
 				{ label: 'Игрок', name: 'attr_Player', id: 'attr_Player' },
@@ -264,8 +259,16 @@ export default {
 		clearGroup2Selections() {
 			this.$refs.skillGroup2.clearSelection()
 			this.$refs.skillGroup2_2.clearSelection()
+		},
+		updFirstSectionFromJSON(data) {
+			// Обновляем данные в firstSection на основе загруженного JSON
+			Object.assign(this.firstSection, data) // Обновляем firstSection
+			this.$refs.skillInputFirstGroup.updFirstSectionFromJSON(data)
+			this.$refs.skillInputSecondGroup.updFirstSectionFromJSON(data)
+			this.$refs.skillInputThirdGroup.updFirstSectionFromJSON(data)
 		}
 	}
 }
 </script>
+
 <style></style>
